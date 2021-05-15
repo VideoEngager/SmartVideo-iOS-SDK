@@ -296,6 +296,7 @@ typedef SWIFT_ENUM(NSInteger, SmartVideoErrorType, closed) {
   SmartVideoErrorTypeSocket = 1,
   SmartVideoErrorTypeWebRTC = 2,
   SmartVideoErrorTypeGenesysSocket = 3,
+  SmartVideoErrorTypeSdkInitialization = 4,
 };
 
 

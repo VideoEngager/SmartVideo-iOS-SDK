@@ -14,4 +14,5 @@ pod 'SmartVideo', :git => 'https://github.com/VideoEngager/SmartVideo-iOS-SDK'
 
 ## Usage
 
+Please refer to our [Demo App](https://github.com/VideoEngager/SmartVideo-iOS-SDK-Demo-App) for an usage example. 
 

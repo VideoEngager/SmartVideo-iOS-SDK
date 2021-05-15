@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/SmartVideo-Swift.h</key>
 		<data>
-		0rsdiX3emNN5pvBulkvcYiBdMos=
+		oB3moEc9PkJJ57mEU/zIgkgo1QY=
 		</data>
 		<key>Headers/SmartVideo.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		jPSnJJYv1blzqPXSw77OQKkvJEM=
+		0edWN5ODw3DAAWTrjb1DoZ0dcKM=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		jPSnJJYv1blzqPXSw77OQKkvJEM=
+		0edWN5ODw3DAAWTrjb1DoZ0dcKM=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YDSLrqwKTrhwuf6DRot+LfY54AM=
+		iykb/fSXZXDhyffBkGQegpOp7y8=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		YDSLrqwKTrhwuf6DRot+LfY54AM=
+		iykb/fSXZXDhyffBkGQegpOp7y8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,7 +80,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r3jgrGl+K9m223cqao2lpO2mAC/YxEtQf3LMnYJv5SQ=
+			pVZZOg+5eM62h2y1gYFR5raNgMQLDCnAt8c7xSLfbQs=
 			</data>
 		</dict>
 		<key>Headers/SmartVideo.h</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fDxzuOdJJJhd7TeptQK2Ah0D3/u05jYNiVNGhBdBgQM=
+			8Z+FfDa2UzjDsgYkNiQjpQ/CEKacs08LQjT1TW3aoo8=
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fDxzuOdJJJhd7TeptQK2Ah0D3/u05jYNiVNGhBdBgQM=
+			8Z+FfDa2UzjDsgYkNiQjpQ/CEKacs08LQjT1TW3aoo8=
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -115,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N1wlCFbyrKdZ1WGSvljqT3zgcPOJBb92J6g1YdGCbzU=
+			UrxKoxZ9D/2pHo9BAbq6XM3IfPE0ww0xo7tfZ/fQ9AM=
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftdoc</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N1wlCFbyrKdZ1WGSvljqT3zgcPOJBb92J6g1YdGCbzU=
+			UrxKoxZ9D/2pHo9BAbq6XM3IfPE0ww0xo7tfZ/fQ9AM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
