@@ -251,6 +251,13 @@ SWIFT_CLASS("_TtC10SmartVideo12NativeEngine") SWIFT_AVAILABILITY(tvos,introduced
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+typedef SWIFT_ENUM(NSInteger, OngoingCallState, closed) {
+  OngoingCallStateAgentPutsCallOnHold = 0,
+  OngoingCallStateAgentResumesCallOnHold = 1,
+  OngoingCallStateVisitorPutsCallOnHold = 2,
+  OngoingCallStateVisitorResumesCallOnHold = 3,
+};
+
 @class NSNumber;
 @class NSBundle;
 @class NSCoder;
