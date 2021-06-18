@@ -286,6 +286,7 @@ SWIFT_PROTOCOL("_TtP10SmartVideo18SmartVideoDelegate_")
 - (void)genesysCloudChatWithMessage:(NSString * _Nonnull)message;
 - (void)genesysCloudChatWithData:(NSData * _Nonnull)data;
 - (void)genesysCloudChatWithStatus:(NSString * _Nonnull)status;
+- (void)genesysEngageChatWithMessage:(NSString * _Nonnull)message from:(NSString * _Nonnull)from;
 - (void)isConnectedToInternetWithIsConnected:(BOOL)isConnected;
 - (void)errorHandlerWithError:(SmartVideoError * _Nonnull)error;
 - (void)peerConnectionLost;
