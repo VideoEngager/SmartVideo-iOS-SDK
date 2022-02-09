@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		GkOSbM2NM0e9FuAqXZq2abtECVY=
+		KU7Bb896pHIeiK/ldAiFBU7yyCU=
 		</data>
 		<key>Headers/SmartVideo-Swift.h</key>
 		<data>
-		oB3moEc9PkJJ57mEU/zIgkgo1QY=
+		2coX12LCfI6tL+akwwZJkIuoQXE=
 		</data>
 		<key>Headers/SmartVideo.h</key>
 		<data>
@@ -18,41 +18,95 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ev0+z/3phrTeEzh0EII9GM5MoDg=
+		FYXOlSKWtQcqB3kvnL8OptEza00=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		0edWN5ODw3DAAWTrjb1DoZ0dcKM=
+		B6vPVOgseMsIPRN6rNngzozf1m8=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		0edWN5ODw3DAAWTrjb1DoZ0dcKM=
+		B6vPVOgseMsIPRN6rNngzozf1m8=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		5Kx2DgPd9rXupJtOxNK/aePLneQ=
+		QU+zNiaWK6gGQTtdkGCSFA7Als4=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iykb/fSXZXDhyffBkGQegpOp7y8=
+		ehmDKiJTTDiCUgtcpINg/RXlmMU=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		5Kx2DgPd9rXupJtOxNK/aePLneQ=
+		QU+zNiaWK6gGQTtdkGCSFA7Als4=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		iykb/fSXZXDhyffBkGQegpOp7y8=
+		ehmDKiJTTDiCUgtcpINg/RXlmMU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		RENKWuKHWYfgRCMkVXgrro48zeY=
 		</data>
+		<key>bg-BG.lproj/Localizable.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R1UvW2Rho3SZ1o/8aCA9YB32Ku4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>bg-BG.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2UHj6GJchf/a7Kp3I/GpdHkCCpc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U7bOBGMzQ4auauDR8X29lIQzvAE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yJQ2Cz64EM+oG3YJ7J6hQ8vHpIw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+Xrv3HS9LEc5u8Q7+EqByuWGUP4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3zM0BfiPxk8jR+8/D0n26AZF3vw=
+			Dv+Kz4TPGsGo+n8W7NOXv0ogInE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2rCAklQK8cTTgI/6GKrIDo5UH18=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -61,7 +115,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WmqF8RIHYMlXqUtEWZWSyXXZdz8=
+			Z6uMKQiI4hZqDcFWqYijcKEqqL4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt-PT.lproj/Localizable.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sYzZtru9SOYI4aHtpjVNiKRH0h4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt-PT.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q58QexHUt+K6FnLxTz6l2bhU1cE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -73,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VEC4FsNGSFnB8Nt8D+lZvne2fZrmbr4TwK7Y4+9hgWg=
+			gCV3WgITRsmosGricDv9jrGil+bYa0dWsdgQFh54Ij4=
 			</data>
 		</dict>
 		<key>Headers/SmartVideo-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pVZZOg+5eM62h2y1gYFR5raNgMQLDCnAt8c7xSLfbQs=
+			WccnSsTzNCqurNBfp6+XbwXMQUJ2jc1R+attbe8hfx4=
 			</data>
 		</dict>
 		<key>Headers/SmartVideo.h</key>
@@ -94,42 +166,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Z+FfDa2UzjDsgYkNiQjpQ/CEKacs08LQjT1TW3aoo8=
+			FaYBAtzoB1NJaMgePhUC1vkr8vYWgdDgnjqo87pPUr0=
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Z+FfDa2UzjDsgYkNiQjpQ/CEKacs08LQjT1TW3aoo8=
+			FaYBAtzoB1NJaMgePhUC1vkr8vYWgdDgnjqo87pPUr0=
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jbO1XeVPiXY9orMpvGvEpmNJ9Dia2p+v4khlzMhXeYE=
+			VdJRTE8lbX+CgmH+XRUdpZpnar+Y3sjv/8LCT92/ik8=
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UrxKoxZ9D/2pHo9BAbq6XM3IfPE0ww0xo7tfZ/fQ9AM=
+			wWJQI1yOkNTa5UUia1Sr4MhesZCFVBGi+1v2BNUaK9A=
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jbO1XeVPiXY9orMpvGvEpmNJ9Dia2p+v4khlzMhXeYE=
+			VdJRTE8lbX+CgmH+XRUdpZpnar+Y3sjv/8LCT92/ik8=
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UrxKoxZ9D/2pHo9BAbq6XM3IfPE0ww0xo7tfZ/fQ9AM=
+			wWJQI1yOkNTa5UUia1Sr4MhesZCFVBGi+1v2BNUaK9A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -139,11 +211,65 @@
 			AbA0raG4SVa3Xck+lhsx27NWjmNgLwwndZqtA+EDFYA=
 			</data>
 		</dict>
+		<key>bg-BG.lproj/Localizable.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BOLsQ+p/ZBQ1aeQSeDON7SHYUsTnAxWR2/xjDk1+9yA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>bg-BG.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			L494AksAm3+HTHwMq2gHTrPtfJRmqad3LeBgpD3uvsc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			C1rafivp0IKMEgeXNcPKXfgIgq0gqM+B16/hncPqlUI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vRNzkn15vfVTv44Cxw/+TkR5iuEgxaaNup9hfZrhYPo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XtqS+GOJAYGC450dOTTBqqBsgIBOKNFXvt/j0gJFVWs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yEy0A/ejylJUAWsOZvRCI6lfS0AH+lGmPbV8UYnexK0=
+			NT2lwfh6I90rc5kyta7ZUAsn2CH1kZaeL26AxXdNK2A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>es.lproj/Localizable.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w6CY3rDg2dgyc1p4AIkS9Koag9Dmosncg+BacMO5uIY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -152,7 +278,25 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pSBcrNFVZ/olvR4WxYfnm1/9XPQjsOwvdNcsMkwgmIo=
+			gU8xyE8IQCuZnXSnfqmbmCU40OGBS3IN2BGhlghiTjw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt-PT.lproj/Localizable.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3RRHSfgEupm/bFZiBIhwbO5JuGN9FcslSQwNB/HoAM4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pt-PT.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QGdOnfUYYoC6sNTV/j0QIjwRzOF2UkD7WQ3LwKa3Zr4=
 			</data>
 			<key>optional</key>
 			<true/>
