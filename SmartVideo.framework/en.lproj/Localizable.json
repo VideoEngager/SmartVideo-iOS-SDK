@@ -40,7 +40,8 @@
             "torch_configErr_buttonTitle": "OK",
             "call_on_hold": "The agent put this call on hold. Hang on a sec.",
             "file_transfer_in_accept": "Accept",
-            "file_transfer_in_reject": "Reject"
+            "file_transfer_in_reject": "Reject",
+            "switch_from_audio_to_video_call_not_allowed": "This operation is prohibited by app administrator"
         },
         "sendfile": {
             "recent": "Recent",

@@ -40,7 +40,8 @@
             "torch_configErr_buttonTitle": "Multa",
             "call_on_hold": "El agente puso esta llamada en espera. Espera un segundo.",
             "file_transfer_in_accept": "Aceptar",
-            "file_transfer_in_reject": "Rechazar" 
+            "file_transfer_in_reject": "Rechazar",
+            "switch_from_audio_to_video_call_not_allowed": "Esta operación está prohibida por el administrador de la aplicación."
         },
         "sendfile": {
             "recent": "Recent",

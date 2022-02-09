@@ -40,7 +40,8 @@
             "torch_configErr_buttonTitle": "Fein",
             "call_on_hold": "Der Agent hat diesen Anruf gehalten. Warte eine Sekunde.",
             "file_transfer_in_accept": "Akzeptieren",
-            "file_transfer_in_reject": "Ablehnen"
+            "file_transfer_in_reject": "Ablehnen",
+            "switch_from_audio_to_video_call_not_allowed": "Dieser Vorgang wurde vom App-Administrator verboten"
         },
         "sendfile": {
             "recent": "Recent",
