@@ -6,7 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
+<<<<<<< HEAD
 		KU7Bb896pHIeiK/ldAiFBU7yyCU=
+=======
+		NRtMe6oZ2DpWcFquyeDi11hpoTs=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 		</data>
 		<key>Headers/SmartVideo-Swift.h</key>
 		<data>
@@ -18,6 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		FYXOlSKWtQcqB3kvnL8OptEza00=
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
@@ -27,6 +32,17 @@
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
 		B6vPVOgseMsIPRN6rNngzozf1m8=
+=======
+		0+z/DKe5CQ1MyjTPdgPuRZylFKE=
+		</data>
+		<key>Modules/SmartVideo.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<data>
+		dc+gDoCPR/+61f1c5u5FUx2lELM=
+		</data>
+		<key>Modules/SmartVideo.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<data>
+		dc+gDoCPR/+61f1c5u5FUx2lELM=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,7 +50,11 @@
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
+<<<<<<< HEAD
 		ehmDKiJTTDiCUgtcpINg/RXlmMU=
+=======
+		BDd20gNUriv1EjpspG0UvBhq/JI=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,7 +62,11 @@
 		</data>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftmodule</key>
 		<data>
+<<<<<<< HEAD
 		ehmDKiJTTDiCUgtcpINg/RXlmMU=
+=======
+		BDd20gNUriv1EjpspG0UvBhq/JI=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -145,7 +169,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			gCV3WgITRsmosGricDv9jrGil+bYa0dWsdgQFh54Ij4=
+=======
+			dwb94thkZj8qTapPMpXESbh7B2Ds1cnRa/2sf+YnIT0=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 			</data>
 		</dict>
 		<key>Headers/SmartVideo-Swift.h</key>
@@ -166,14 +194,22 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			FaYBAtzoB1NJaMgePhUC1vkr8vYWgdDgnjqo87pPUr0=
+=======
+			37JHyfHxUoCC6Mdi/j3Wge+0E3ABQjp+H9sUT/ryags=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			FaYBAtzoB1NJaMgePhUC1vkr8vYWgdDgnjqo87pPUr0=
+=======
+			37JHyfHxUoCC6Mdi/j3Wge+0E3ABQjp+H9sUT/ryags=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -187,7 +223,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			wWJQI1yOkNTa5UUia1Sr4MhesZCFVBGi+1v2BNUaK9A=
+=======
+			HHMHO35Wq12j3+4LmFkJPb2Ofw1tHmb8eHYbnKDp5oE=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 			</data>
 		</dict>
 		<key>Modules/SmartVideo.swiftmodule/arm64.swiftdoc</key>
@@ -201,7 +241,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			wWJQI1yOkNTa5UUia1Sr4MhesZCFVBGi+1v2BNUaK9A=
+=======
+			HHMHO35Wq12j3+4LmFkJPb2Ofw1tHmb8eHYbnKDp5oE=
+>>>>>>> 609baef928d15c30f7e88c6eef0d77675a40dbdd
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
