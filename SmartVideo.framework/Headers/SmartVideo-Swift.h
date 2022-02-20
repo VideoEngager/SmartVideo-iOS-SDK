@@ -216,6 +216,14 @@ typedef SWIFT_ENUM(NSInteger, AudioStreamState, closed) {
 };
 
 
+SWIFT_CLASS("_TtC10SmartVideo11ChatMessage")
+@interface ChatMessage : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
 SWIFT_CLASS("_TtC10SmartVideo4File")
 @interface File : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -233,6 +241,13 @@ typedef SWIFT_ENUM(NSInteger, FileTransferState, closed) {
 SWIFT_CLASS("_TtC10SmartVideo19FoundationTransport")
 @interface FoundationTransport : NSObject <NSStreamDelegate>
 - (void)stream:(NSStream * _Nonnull)aStream handleEvent:(NSStreamEvent)eventCode;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10SmartVideo16GenesysAgentInfo")
+@interface GenesysAgentInfo : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -273,15 +288,44 @@ SWIFT_CLASS("_TtC10SmartVideo14OutgoingCallVC")
 
 
 
-typedef SWIFT_ENUM(NSInteger, SmartVideoAction, closed) {
-  SmartVideoActionNone = 0,
-  SmartVideoActionActionDidEstablishCommunicationChannel = 1,
+typedef SWIFT_ENUM(NSInteger, SmartVideoCallStatus, closed) {
+  SmartVideoCallStatusInteractionStarted = 0,
+  SmartVideoCallStatusInteractionEstablished = 1,
+  SmartVideoCallStatusCallWaiting = 2,
+  SmartVideoCallStatusCallStarted = 3,
+  SmartVideoCallStatusCallOnHold = 4,
+  SmartVideoCallStatusCallFinished = 5,
 };
 
+enum SmartVideoChatStatus : NSInteger;
 @class SmartVideoError;
+
+SWIFT_PROTOCOL("_TtP10SmartVideo22SmartVideoChatDelegate_")
+@protocol SmartVideoChatDelegate
+@optional
+- (void)genesysCloudChatWithMessage:(ChatMessage * _Nonnull)message;
+- (void)chatStatusChangedWithStatus:(enum SmartVideoChatStatus)status;
+- (void)errorHandlerWithError:(SmartVideoError * _Nonnull)error;
+- (void)endChat;
+@end
+
+typedef SWIFT_ENUM(NSInteger, SmartVideoChatStatus, closed) {
+  SmartVideoChatStatusInteractionStarted = 0,
+  SmartVideoChatStatusInteractionEstablished = 1,
+  SmartVideoChatStatusAgentAnswered = 2,
+  SmartVideoChatStatusChatFinished = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, SmartVideoCommunicationChannelType, closed) {
+  SmartVideoCommunicationChannelTypeCall = 0,
+  SmartVideoCommunicationChannelTypeChat = 1,
+};
+
 
 SWIFT_PROTOCOL("_TtP10SmartVideo18SmartVideoDelegate_")
 @protocol SmartVideoDelegate
+- (void)didEstablishCommunicationChannelWithType:(enum SmartVideoCommunicationChannelType)type;
+- (void)callStatusChangedWithStatus:(enum SmartVideoCallStatus)status;
 @optional
 - (void)genesysCloudChatWithMessage:(NSString * _Nonnull)message;
 - (void)genesysCloudChatWithData:(NSData * _Nonnull)data;
