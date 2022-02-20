@@ -1,0 +1,16 @@
+on: 
+  push:
+    branches: 
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Tag 
+      run: |
+        tag=$(awk '/spec.version/{print $NF; exit;}' SmartVideo.podspec)
+        echo $tag
