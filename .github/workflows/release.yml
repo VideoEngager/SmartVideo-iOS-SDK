@@ -5,12 +5,21 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Tag 
+    - name: Release Tag  
       run: |
-        tag=$(awk '/spec.version/{print $NF; exit;}' SmartVideo.podspec)
+        tag=$(awk '/spec.version/{print $NF; exit;}' SmartVideo.podspec | tr -d '"')
         echo $tag
+        git tag "$tag"
+        git push origin --tags
+
+    - name: Publish to CocoaPods
+      run: |
+        set -eo pipefail
+        pod trunk push --allow-warnings
+      env:
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
