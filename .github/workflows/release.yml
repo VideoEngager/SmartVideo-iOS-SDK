@@ -2,6 +2,8 @@ on:
   push:
     branches: 
       - main
+    paths:
+      - 'SmartVideo.framework/**'
 
 jobs:
   release:
@@ -13,7 +15,7 @@ jobs:
     - name: Release Tag  
       run: |
         tag=$(awk '/spec.version/{print $NF; exit;}' SmartVideo.podspec | tr -d '"')
-        echo $tag
+        echo "$tag" >> $GITHUB_ENV
         git tag "$tag"
         git push origin --tags
 
@@ -23,3 +25,14 @@ jobs:
         pod trunk push --allow-warnings
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+
+
+    - name: Notify customers that new version of the SDK is out
+      run: |
+        brew install jo
+        topic_ARN="arn:aws:sns:us-east-1:376474804475:iOS_SDK_New_Release_Available"
+        SDK_RELEASE_TAG=${{ env.tag }}
+        jo -p -B -- -s default="$SDK_RELEASE_TAG" > release.json
+        json=$(cat release.json) 
+        aws configure set region us-east-1 
+        AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY}} AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_KEY }} aws sns publish --topic-arn $topic_ARN --message-structure json --message "$json"
