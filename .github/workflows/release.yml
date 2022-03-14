@@ -15,6 +15,7 @@ jobs:
     - name: Release Tag  
       run: |
         tag=$(awk '/spec.version/{print $NF; exit;}' SmartVideo.podspec | tr -d '"')
+        echo "tag={$tag}" >> $GITHUB_ENV        
         git tag "$tag"
         git push origin --tags
 
