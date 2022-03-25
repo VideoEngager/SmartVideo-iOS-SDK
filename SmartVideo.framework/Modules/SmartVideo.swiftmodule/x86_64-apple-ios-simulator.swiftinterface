@@ -27,27 +27,27 @@ internal protocol _AnyDecodable {
   var value: Any { get }
   init<T>(_ value: T?)
 }
-extension SmartVideo.AnyDecodable : SmartVideo._AnyDecodable {
+extension AnyDecodable : _AnyDecodable {
 }
-extension SmartVideo._AnyDecodable {
+extension _AnyDecodable {
   public init(from decoder: Swift.Decoder) throws
 }
-extension SmartVideo.AnyDecodable : Swift.Equatable {
-  public static func == (lhs: SmartVideo.AnyDecodable, rhs: SmartVideo.AnyDecodable) -> Swift.Bool
+extension AnyDecodable : Swift.Equatable {
+  public static func == (lhs: AnyDecodable, rhs: AnyDecodable) -> Swift.Bool
 }
-extension SmartVideo.AnyDecodable : Swift.CustomStringConvertible {
+extension AnyDecodable : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension SmartVideo.AnyDecodable : Swift.CustomDebugStringConvertible {
+extension AnyDecodable : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
 }
 public enum FoundationSecurityError : Swift.Error {
   case invalidRequest
-  public static func == (a: SmartVideo.FoundationSecurityError, b: SmartVideo.FoundationSecurityError) -> Swift.Bool
+  public static func == (a: FoundationSecurityError, b: FoundationSecurityError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -57,10 +57,10 @@ public class FoundationSecurity {
   public init(allowSelfSigned: Swift.Bool = false)
   @objc deinit
 }
-extension SmartVideo.FoundationSecurity : SmartVideo.CertificatePinning {
-  public func evaluateTrust(trust: Security.SecTrust, domain: Swift.String?, completion: ((SmartVideo.PinningState) -> ()))
+extension FoundationSecurity : CertificatePinning {
+  public func evaluateTrust(trust: Security.SecTrust, domain: Swift.String?, completion: ((PinningState) -> ()))
 }
-extension SmartVideo.FoundationSecurity : SmartVideo.HeaderValidator {
+extension FoundationSecurity : HeaderValidator {
   public func validate(headers: [Swift.String : Swift.String], key: Swift.String) -> Swift.Error?
 }
 public protocol SmartVideoEngine {
@@ -70,27 +70,27 @@ public protocol SmartVideoEngine {
 }
 public enum TCPTransportError : Swift.Error {
   case invalidRequest
-  public static func == (a: SmartVideo.TCPTransportError, b: SmartVideo.TCPTransportError) -> Swift.Bool
+  public static func == (a: TCPTransportError, b: TCPTransportError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
 @available(macOS 10.14, iOS 12.0, watchOS 5.0, tvOS 12.0, *)
-public class TCPTransport : SmartVideo.Transport {
+public class TCPTransport : Transport {
   public var usingTLS: Swift.Bool {
     get
   }
   public init(connection: Network.NWConnection)
   public init()
-  public func connect(url: Foundation.URL, timeout: Swift.Double = 10, certificatePinning: SmartVideo.CertificatePinning? = nil)
+  public func connect(url: Foundation.URL, timeout: Swift.Double = 10, certificatePinning: CertificatePinning? = nil)
   public func disconnect()
-  public func register(delegate: SmartVideo.TransportEventClient)
+  public func register(delegate: TransportEventClient)
   public func write(data: Foundation.Data, completion: @escaping ((Swift.Error?) -> ()))
   @objc deinit
 }
 @objc public class File : ObjectiveC.NSObject {
-  public init(id: Swift.String, _ fileInfo: SmartVideo.FileInfo)
+  public init(id: Swift.String, _ fileInfo: FileInfo)
   @objc deinit
 }
 public enum FileStatus {
@@ -98,21 +98,21 @@ public enum FileStatus {
   case transferring
   case rejected
   case done
-  public static func == (a: SmartVideo.FileStatus, b: SmartVideo.FileStatus) -> Swift.Bool
+  public static func == (a: FileStatus, b: FileStatus) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
 public struct GenesysEngageConfigurations {
-  public let environment: SmartVideo.Environment
+  public let environment: Environment
   public let engineURL: Swift.String
   public let chatURL: Swift.String
   public var serverBaseURL: Swift.String
   public var service: Swift.String
   public var agentURL: Swift.String
   public var authorizationValue: Swift.String
-  public init(environment: SmartVideo.Environment, engineURL: Swift.String, chatURL: Swift.String, serverBaseURL: Swift.String, service: Swift.String, agentURL: Swift.String, authorizationValue: Swift.String)
+  public init(environment: Environment, engineURL: Swift.String, chatURL: Swift.String, serverBaseURL: Swift.String, service: Swift.String, agentURL: Swift.String, authorizationValue: Swift.String)
   public init(dictionary: [Swift.String : Any]) throws
 }
 @frozen public struct AnyEncodable : Swift.Encodable {
@@ -124,51 +124,51 @@ internal protocol _AnyEncodable {
   var value: Any { get }
   init<T>(_ value: T?)
 }
-extension SmartVideo.AnyEncodable : SmartVideo._AnyEncodable {
+extension AnyEncodable : _AnyEncodable {
 }
-extension SmartVideo._AnyEncodable {
+extension _AnyEncodable {
   public func encode(to encoder: Swift.Encoder) throws
 }
-extension SmartVideo.AnyEncodable : Swift.Equatable {
-  public static func == (lhs: SmartVideo.AnyEncodable, rhs: SmartVideo.AnyEncodable) -> Swift.Bool
+extension AnyEncodable : Swift.Equatable {
+  public static func == (lhs: AnyEncodable, rhs: AnyEncodable) -> Swift.Bool
 }
-extension SmartVideo.AnyEncodable : Swift.CustomStringConvertible {
+extension AnyEncodable : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension SmartVideo.AnyEncodable : Swift.CustomDebugStringConvertible {
+extension AnyEncodable : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
 }
-extension SmartVideo.AnyEncodable : Swift.ExpressibleByNilLiteral {
+extension AnyEncodable : Swift.ExpressibleByNilLiteral {
 }
-extension SmartVideo.AnyEncodable : Swift.ExpressibleByBooleanLiteral {
+extension AnyEncodable : Swift.ExpressibleByBooleanLiteral {
   public typealias BooleanLiteralType = Swift.Bool
 }
-extension SmartVideo.AnyEncodable : Swift.ExpressibleByIntegerLiteral {
+extension AnyEncodable : Swift.ExpressibleByIntegerLiteral {
   public typealias IntegerLiteralType = Swift.Int
 }
-extension SmartVideo.AnyEncodable : Swift.ExpressibleByFloatLiteral {
+extension AnyEncodable : Swift.ExpressibleByFloatLiteral {
   public typealias FloatLiteralType = Swift.Double
 }
-extension SmartVideo.AnyEncodable : Swift.ExpressibleByStringLiteral {
+extension AnyEncodable : Swift.ExpressibleByStringLiteral {
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
   public typealias StringLiteralType = Swift.String
   public typealias UnicodeScalarLiteralType = Swift.String
 }
-extension SmartVideo.AnyEncodable : Swift.ExpressibleByStringInterpolation {
+extension AnyEncodable : Swift.ExpressibleByStringInterpolation {
   public typealias StringInterpolation = Swift.DefaultStringInterpolation
 }
-extension SmartVideo.AnyEncodable : Swift.ExpressibleByArrayLiteral {
+extension AnyEncodable : Swift.ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = Any
 }
-extension SmartVideo.AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
+extension AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.AnyHashable
   public typealias Value = Any
 }
-extension SmartVideo._AnyEncodable {
+extension _AnyEncodable {
   public init(nilLiteral _: ())
   public init(booleanLiteral value: Swift.Bool)
   public init(integerLiteral value: Swift.Int)
@@ -179,7 +179,7 @@ extension SmartVideo._AnyEncodable {
   public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
 }
 public protocol FrameCollectorDelegate : AnyObject {
-  func didForm(event: SmartVideo.FrameCollector.Event)
+  func didForm(event: FrameCollector.Event)
   func decompress(data: Foundation.Data, isFinal: Swift.Bool) -> Foundation.Data?
 }
 @_hasMissingDesignatedInitializers public class FrameCollector {
@@ -191,7 +191,7 @@ public protocol FrameCollectorDelegate : AnyObject {
     case error(Swift.Error)
     case closed(Swift.String, Swift.UInt16)
   }
-  public func add(frame: SmartVideo.Frame)
+  public func add(frame: Frame)
   @objc deinit
 }
 public enum HTTPUpgradeError : Swift.Error {
@@ -207,18 +207,18 @@ public enum HTTPEvent {
   case failure(Swift.Error)
 }
 public protocol HTTPHandlerDelegate : AnyObject {
-  func didReceiveHTTP(event: SmartVideo.HTTPEvent)
+  func didReceiveHTTP(event: HTTPEvent)
 }
 public protocol HTTPHandler {
-  func register(delegate: SmartVideo.HTTPHandlerDelegate)
+  func register(delegate: HTTPHandlerDelegate)
   func convert(request: Foundation.URLRequest) -> Foundation.Data
   func parse(data: Foundation.Data) -> Swift.Int
 }
 public protocol HTTPServerDelegate : AnyObject {
-  func didReceive(event: SmartVideo.HTTPEvent)
+  func didReceive(event: HTTPEvent)
 }
 public protocol HTTPServerHandler {
-  func register(delegate: SmartVideo.HTTPServerDelegate)
+  func register(delegate: HTTPServerDelegate)
   func parse(data: Foundation.Data)
   func createResponse(headers: [Swift.String : Swift.String]) -> Foundation.Data
 }
@@ -228,32 +228,32 @@ extension Foundation.URL {
   public var isTLSScheme: Swift.Bool {
     get
   }
-  public func getParts() -> SmartVideo.URLParts?
+  public func getParts() -> URLParts?
 }
-public class WSEngine : SmartVideo.Engine, SmartVideo.TransportEventClient, SmartVideo.FramerEventClient, SmartVideo.FrameCollectorDelegate, SmartVideo.HTTPHandlerDelegate {
+public class WSEngine : Engine, TransportEventClient, FramerEventClient, FrameCollectorDelegate, HTTPHandlerDelegate {
   public var respondToPingWithPong: Swift.Bool
-  public init(transport: SmartVideo.Transport, certPinner: SmartVideo.CertificatePinning? = nil, headerValidator: SmartVideo.HeaderValidator = FoundationSecurity(), httpHandler: SmartVideo.HTTPHandler = FoundationHTTPHandler(), framer: SmartVideo.Framer = WSFramer(), compressionHandler: SmartVideo.CompressionHandler? = nil)
-  public func register(delegate: SmartVideo.EngineDelegate)
+  public init(transport: Transport, certPinner: CertificatePinning? = nil, headerValidator: HeaderValidator = FoundationSecurity(), httpHandler: HTTPHandler = FoundationHTTPHandler(), framer: Framer = WSFramer(), compressionHandler: CompressionHandler? = nil)
+  public func register(delegate: EngineDelegate)
   public func start(request: Foundation.URLRequest)
   public func stop(closeCode: Swift.UInt16 = CloseCode.normal.rawValue)
   public func forceStop()
   public func write(string: Swift.String, completion: (() -> ())?)
-  public func write(data: Foundation.Data, opcode: SmartVideo.FrameOpCode, completion: (() -> ())?)
-  public func connectionChanged(state: SmartVideo.ConnectionState)
-  public func didReceiveHTTP(event: SmartVideo.HTTPEvent)
-  public func frameProcessed(event: SmartVideo.FrameEvent)
+  public func write(data: Foundation.Data, opcode: FrameOpCode, completion: (() -> ())?)
+  public func connectionChanged(state: ConnectionState)
+  public func didReceiveHTTP(event: HTTPEvent)
+  public func frameProcessed(event: FrameEvent)
   public func decompress(data: Foundation.Data, isFinal: Swift.Bool) -> Foundation.Data?
-  public func didForm(event: SmartVideo.FrameCollector.Event)
+  public func didForm(event: FrameCollector.Event)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
-public class NativeEngine : ObjectiveC.NSObject, SmartVideo.Engine, Foundation.URLSessionDataDelegate, Foundation.URLSessionWebSocketDelegate {
-  public func register(delegate: SmartVideo.EngineDelegate)
+public class NativeEngine : ObjectiveC.NSObject, Engine, Foundation.URLSessionDataDelegate, Foundation.URLSessionWebSocketDelegate {
+  public func register(delegate: EngineDelegate)
   public func start(request: Foundation.URLRequest)
   public func stop(closeCode: Swift.UInt16)
   public func forceStop()
   public func write(string: Swift.String, completion: (() -> ())?)
-  public func write(data: Foundation.Data, opcode: SmartVideo.FrameOpCode, completion: (() -> ())?)
+  public func write(data: Foundation.Data, opcode: FrameOpCode, completion: (() -> ())?)
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didOpenWithProtocol protocol: Swift.String?)
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
   @objc override dynamic public init()
@@ -263,41 +263,41 @@ public class NativeEngine : ObjectiveC.NSObject, SmartVideo.Engine, Foundation.U
   public let value: Any
   public init<T>(_ value: T?)
 }
-extension SmartVideo.AnyCodable : SmartVideo._AnyEncodable, SmartVideo._AnyDecodable {
+extension AnyCodable : _AnyEncodable, _AnyDecodable {
 }
-extension SmartVideo.AnyCodable : Swift.Equatable {
-  public static func == (lhs: SmartVideo.AnyCodable, rhs: SmartVideo.AnyCodable) -> Swift.Bool
+extension AnyCodable : Swift.Equatable {
+  public static func == (lhs: AnyCodable, rhs: AnyCodable) -> Swift.Bool
 }
-extension SmartVideo.AnyCodable : Swift.CustomStringConvertible {
+extension AnyCodable : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension SmartVideo.AnyCodable : Swift.CustomDebugStringConvertible {
+extension AnyCodable : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
 }
-extension SmartVideo.AnyCodable : Swift.ExpressibleByNilLiteral {
+extension AnyCodable : Swift.ExpressibleByNilLiteral {
 }
-extension SmartVideo.AnyCodable : Swift.ExpressibleByBooleanLiteral {
+extension AnyCodable : Swift.ExpressibleByBooleanLiteral {
   public typealias BooleanLiteralType = Swift.Bool
 }
-extension SmartVideo.AnyCodable : Swift.ExpressibleByIntegerLiteral {
+extension AnyCodable : Swift.ExpressibleByIntegerLiteral {
   public typealias IntegerLiteralType = Swift.Int
 }
-extension SmartVideo.AnyCodable : Swift.ExpressibleByFloatLiteral {
+extension AnyCodable : Swift.ExpressibleByFloatLiteral {
   public typealias FloatLiteralType = Swift.Double
 }
-extension SmartVideo.AnyCodable : Swift.ExpressibleByStringLiteral {
+extension AnyCodable : Swift.ExpressibleByStringLiteral {
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
   public typealias StringLiteralType = Swift.String
   public typealias UnicodeScalarLiteralType = Swift.String
 }
-extension SmartVideo.AnyCodable : Swift.ExpressibleByArrayLiteral {
+extension AnyCodable : Swift.ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = Any
 }
-extension SmartVideo.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
+extension AnyCodable : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.AnyHashable
   public typealias Value = Any
 }
@@ -305,28 +305,28 @@ public enum FoundationTransportError : Swift.Error {
   case invalidRequest
   case invalidOutputStream
   case timeout
-  public static func == (a: SmartVideo.FoundationTransportError, b: SmartVideo.FoundationTransportError) -> Swift.Bool
+  public static func == (a: FoundationTransportError, b: FoundationTransportError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-@objc public class FoundationTransport : ObjectiveC.NSObject, SmartVideo.Transport, Foundation.StreamDelegate {
+@objc public class FoundationTransport : ObjectiveC.NSObject, Transport, Foundation.StreamDelegate {
   public var usingTLS: Swift.Bool {
     get
   }
   public init(streamConfiguration: ((Foundation.InputStream, Foundation.OutputStream) -> Swift.Void)? = nil)
   @objc deinit
-  public func connect(url: Foundation.URL, timeout: Swift.Double = 10, certificatePinning: SmartVideo.CertificatePinning? = nil)
+  public func connect(url: Foundation.URL, timeout: Swift.Double = 10, certificatePinning: CertificatePinning? = nil)
   public func disconnect()
-  public func register(delegate: SmartVideo.TransportEventClient)
+  public func register(delegate: TransportEventClient)
   public func write(data: Foundation.Data, completion: @escaping ((Swift.Error?) -> ()))
   @objc open func stream(_ aStream: Foundation.Stream, handle eventCode: Foundation.Stream.Event)
 }
 @_hasMissingDesignatedInitializers public class GenesysEngage {
-  public static var shared: SmartVideo.GenesysEngage
-  public func connect(with connectEngine: SmartVideo.GenesysEngageEngine)
-  public func updateConfiguration(configuration: SmartVideo.GenesysEngageConfigurations)
+  public static var shared: GenesysEngage
+  public func connect(with connectEngine: GenesysEngageEngine)
+  public func updateConfiguration(configuration: GenesysEngageConfigurations)
   @objc deinit
 }
 public struct FileInfo : Swift.Codable {
@@ -342,11 +342,11 @@ public protocol CompressionHandler {
   func compress(data: Foundation.Data) -> Foundation.Data?
 }
 public protocol WebRTCManagerDelegate : AnyObject {
-  func remoteVideoChanged(state: SmartVideo.VideoStreamState)
-  func remoteAudioChanged(state: SmartVideo.AudioStreamState)
-  func localVideoChanged(state: SmartVideo.VideoStreamState)
-  func localAudioChanged(state: SmartVideo.AudioStreamState)
-  func remoteScreenChanged(state: SmartVideo.VideoStreamState)
+  func remoteVideoChanged(state: VideoStreamState)
+  func remoteAudioChanged(state: AudioStreamState)
+  func localVideoChanged(state: VideoStreamState)
+  func localAudioChanged(state: AudioStreamState)
+  func remoteScreenChanged(state: VideoStreamState)
   func torchControl(isSupported: Swift.Bool)
   func torchConfigError()
   func cameraStateChanged(processing: Swift.Bool)
@@ -354,24 +354,24 @@ public protocol WebRTCManagerDelegate : AnyObject {
   func peerConnectionEstablished()
 }
 @_hasMissingDesignatedInitializers public class Genesys {
-  public static var shared: SmartVideo.Genesys
-  public func connect(with connectEngine: SmartVideo.GenesysEngine)
+  public static var shared: Genesys
+  public func connect(with connectEngine: GenesysEngine)
   public func disconnect()
   public func applicationDidBecomeActive()
-  public func updateConfiguration(configuration: SmartVideo.GenesysConfigurations)
+  public func updateConfiguration(configuration: GenesysConfigurations)
   @objc deinit
 }
-extension SmartVideo.Genesys : SmartVideo.WebSocketDelegate {
-  public func didReceive(event: SmartVideo.WebSocketEvent, client: SmartVideo.WebSocketClient)
+extension Genesys : WebSocketDelegate {
+  public func didReceive(event: WebSocketEvent, client: WebSocketClient)
 }
-extension SmartVideo.SmartVideo {
-  public static func sendGenesysCloudChat(message: SmartVideo.ChatMessage)
+extension SmartVideo {
+  public static func sendGenesysCloudChat(message: ChatMessage)
 }
-public class FoundationHTTPHandler : SmartVideo.HTTPHandler {
+public class FoundationHTTPHandler : HTTPHandler {
   public init()
   public func convert(request: Foundation.URLRequest) -> Foundation.Data
   public func parse(data: Foundation.Data) -> Swift.Int
-  public func register(delegate: SmartVideo.HTTPHandlerDelegate)
+  public func register(delegate: HTTPHandlerDelegate)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class OutgoingCallVC : UIKit.UIViewController {
@@ -393,17 +393,17 @@ public class FoundationHTTPHandler : SmartVideo.HTTPHandler {
   @objc deinit
 }
 public struct GenesysConfigurations {
-  public let environment: SmartVideo.Environment
+  public let environment: Environment
   public var organizationID: Swift.String
   public var deploymentID: Swift.String
   public var engineUrl: Swift.String
   public var environmentURL: Swift.String
   public var queue: Swift.String
   public var baseURL: Swift.String
-  public init(environment: SmartVideo.Environment, organizationID: Swift.String, deploymentID: Swift.String, shortUrl: Swift.String, tenantId: Swift.String, environmentURL: Swift.String, queue: Swift.String, engineUrl: Swift.String)
+  public init(environment: Environment, organizationID: Swift.String, deploymentID: Swift.String, shortUrl: Swift.String, tenantId: Swift.String, environmentURL: Swift.String, queue: Swift.String, engineUrl: Swift.String)
   public init(dictionary: [Swift.String : Any]) throws
 }
-public class WSCompression : SmartVideo.CompressionHandler {
+public class WSCompression : CompressionHandler {
   public init()
   public func load(headers: [Swift.String : Swift.String])
   public func decompress(data: Foundation.Data, isFinal: Swift.Bool) -> Foundation.Data?
@@ -442,34 +442,34 @@ public enum FrameOpCode : Swift.UInt8 {
 public struct Frame {
 }
 public enum FrameEvent {
-  case frame(SmartVideo.Frame)
+  case frame(Frame)
   case error(Swift.Error)
 }
 public protocol FramerEventClient : AnyObject {
-  func frameProcessed(event: SmartVideo.FrameEvent)
+  func frameProcessed(event: FrameEvent)
 }
 public protocol Framer {
   func add(data: Foundation.Data)
-  func register(delegate: SmartVideo.FramerEventClient)
-  func createWriteFrame(opcode: SmartVideo.FrameOpCode, payload: Foundation.Data, isCompressed: Swift.Bool) -> Foundation.Data
+  func register(delegate: FramerEventClient)
+  func createWriteFrame(opcode: FrameOpCode, payload: Foundation.Data, isCompressed: Swift.Bool) -> Foundation.Data
   func updateCompression(supports: Swift.Bool)
   func supportsCompression() -> Swift.Bool
 }
-public class WSFramer : SmartVideo.Framer {
+public class WSFramer : Framer {
   public var compressionEnabled: Swift.Bool
   public init(isServer: Swift.Bool = false)
   public func updateCompression(supports: Swift.Bool)
   public func supportsCompression() -> Swift.Bool
   public func add(data: Foundation.Data)
-  public func register(delegate: SmartVideo.FramerEventClient)
-  public func createWriteFrame(opcode: SmartVideo.FrameOpCode, payload: Foundation.Data, isCompressed: Swift.Bool) -> Foundation.Data
+  public func register(delegate: FramerEventClient)
+  public func createWriteFrame(opcode: FrameOpCode, payload: Foundation.Data, isCompressed: Swift.Bool) -> Foundation.Data
   @objc deinit
 }
 public protocol MyWSArrayType {
 }
-extension Swift.UInt8 : SmartVideo.MyWSArrayType {
+extension Swift.UInt8 : MyWSArrayType {
 }
-extension Swift.Array where Element : SmartVideo.MyWSArrayType, Element : Swift.UnsignedInteger {
+extension Swift.Array where Element : MyWSArrayType, Element : Swift.UnsignedInteger {
   public func readUint16(offset: Swift.Int) -> Swift.UInt16
   public func readUint64(offset: Swift.Int) -> Swift.UInt64
   public func unmaskData(maskStart: Swift.Int, offset: Swift.Int, length: Swift.Int) -> Foundation.Data
@@ -478,32 +478,32 @@ public func writeUint16(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
 public func writeUint32(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value: Swift.UInt32)
 public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value: Swift.UInt64)
 @_hasMissingDesignatedInitializers open class SmartVideo {
-  public static var environment: SmartVideo.Environment
-  public static var delegate: SmartVideo.SmartVideoDelegate?
-  public static var chatDelegate: SmartVideo.SmartVideoChatDelegate?
-  public static var callManager: SmartVideo.CallManager
+  public static var environment: Environment
+  public static var delegate: SmartVideoDelegate?
+  public static var chatDelegate: SmartVideoChatDelegate?
+  public static var callManager: CallManager
   public static func connect(shortURL: Swift.String)
-  public static func connect(engine: SmartVideo.SmartVideoEngine, isVideo: Swift.Bool? = nil, lang: Swift.String)
+  public static func connect(engine: SmartVideoEngine, isVideo: Swift.Bool? = nil, lang: Swift.String)
   public static func disconnect()
-  public static func setLogging(level: SmartVideo.LogLevel, types: [SmartVideo.LogType])
+  public static func setLogging(level: LogLevel, types: [LogType])
   public static func applicationDidBecomeActive()
   @objc deinit
 }
 @objc public protocol SmartVideoDelegate {
-  @objc func didEstablishCommunicationChannel(type: SmartVideo.SmartVideoCommunicationChannelType)
-  @objc func callStatusChanged(status: SmartVideo.SmartVideoCallStatus)
+  @objc func didEstablishCommunicationChannel(type: SmartVideoCommunicationChannelType)
+  @objc func callStatusChanged(status: SmartVideoCallStatus)
   @objc optional func genesysCloudChat(message: Swift.String)
   @objc optional func genesysCloudChat(data: Foundation.Data)
   @objc optional func genesysCloudChat(status: Swift.String)
   @objc optional func genesysEngageChat(message: Swift.String, from: Swift.String)
   @objc optional func isConnectedToInternet(isConnected: Swift.Bool)
-  @objc optional func errorHandler(error: SmartVideo.SmartVideoError)
+  @objc optional func errorHandler(error: SmartVideoError)
   @objc optional func peerConnectionLost()
 }
 @objc public protocol SmartVideoChatDelegate {
-  @objc optional func genesysCloudChat(message: SmartVideo.ChatMessage)
-  @objc optional func chatStatusChanged(status: SmartVideo.SmartVideoChatStatus)
-  @objc optional func errorHandler(error: SmartVideo.SmartVideoError)
+  @objc optional func genesysCloudChat(message: ChatMessage)
+  @objc optional func chatStatusChanged(status: SmartVideoChatStatus)
+  @objc optional func errorHandler(error: SmartVideoError)
   @objc optional func endChat()
 }
 @_hasMissingDesignatedInitializers @objc public class GenesysAgentInfo : ObjectiveC.NSObject {
@@ -598,7 +598,7 @@ public enum Environment : Swift.String {
   }
 }
 @_hasMissingDesignatedInitializers @objc public class SmartVideoError : ObjectiveC.NSObject {
-  public var type: SmartVideo.SmartVideoErrorType
+  public var type: SmartVideoErrorType
   public var error: Swift.String
   @objc deinit
 }
@@ -614,11 +614,11 @@ public enum Environment : Swift.String {
     get
   }
 }
-public class StringHTTPHandler : SmartVideo.HTTPHandler {
+public class StringHTTPHandler : HTTPHandler {
   public init()
   public func convert(request: Foundation.URLRequest) -> Foundation.Data
   public func parse(data: Foundation.Data) -> Swift.Int
-  public func register(delegate: SmartVideo.HTTPHandlerDelegate)
+  public func register(delegate: HTTPHandlerDelegate)
   @objc deinit
 }
 public enum ConnectionState {
@@ -631,25 +631,25 @@ public enum ConnectionState {
   case receive(Foundation.Data)
 }
 public protocol TransportEventClient : AnyObject {
-  func connectionChanged(state: SmartVideo.ConnectionState)
+  func connectionChanged(state: ConnectionState)
 }
 public protocol Transport : AnyObject {
-  func register(delegate: SmartVideo.TransportEventClient)
-  func connect(url: Foundation.URL, timeout: Swift.Double, certificatePinning: SmartVideo.CertificatePinning?)
+  func register(delegate: TransportEventClient)
+  func connect(url: Foundation.URL, timeout: Swift.Double, certificatePinning: CertificatePinning?)
   func disconnect()
   func write(data: Foundation.Data, completion: @escaping ((Swift.Error?) -> ()))
   var usingTLS: Swift.Bool { get }
 }
-public struct GenesysEngine : SmartVideo.SmartVideoEngine {
-  public var environment: SmartVideo.Environment
-  public var commType: SmartVideo.SmartVideoCommunicationChannelType?
+public struct GenesysEngine : SmartVideoEngine {
+  public var environment: Environment
+  public var commType: SmartVideoCommunicationChannelType?
   public var isVideo: Swift.Bool
   public var customSettings: [Swift.String : Any]?
   public var displayName: Swift.String
   public var firstName: Swift.String
   public var lastName: Swift.String
   public var memberInfo: [Swift.String : Any]?
-  public init(environment: SmartVideo.Environment = .live, commType: SmartVideo.SmartVideoCommunicationChannelType? = .call, isVideo: Swift.Bool = true, customSettings: [Swift.String : Any]? = nil, displayName: Swift.String = "DisplayName", firstName: Swift.String = "Firstname", lastName: Swift.String = "Lastname", memberInfo: [Swift.String : Any]? = nil)
+  public init(environment: Environment = .live, commType: SmartVideoCommunicationChannelType? = .call, isVideo: Swift.Bool = true, customSettings: [Swift.String : Any]? = nil, displayName: Swift.String = "DisplayName", firstName: Swift.String = "Firstname", lastName: Swift.String = "Lastname", memberInfo: [Swift.String : Any]? = nil)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
@@ -670,20 +670,20 @@ extension Swift.String {
   public func mimeType() -> Swift.String
 }
 @_hasMissingDesignatedInitializers public class SmartVideoToast {
-  public static func show(file: SmartVideo.File, controller: UIKit.UIViewController, acceptAction: @escaping () -> Swift.Void, rejectAction: @escaping () -> Swift.Void)
+  public static func show(file: File, controller: UIKit.UIViewController, acceptAction: @escaping () -> Swift.Void, rejectAction: @escaping () -> Swift.Void)
   @objc deinit
 }
-public struct GenericEngine : SmartVideo.SmartVideoEngine {
-  public var environment: SmartVideo.Environment
+public struct GenericEngine : SmartVideoEngine {
+  public var environment: Environment
   public var shortURL: Swift.String
   public var userAgent: Swift.String
-  public init(environment: SmartVideo.Environment = .live, shortURL: Swift.String, userAgent: Swift.String = "")
+  public init(environment: Environment = .live, shortURL: Swift.String, userAgent: Swift.String = "")
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
 }
-@_hasMissingDesignatedInitializers public class FoundationHTTPServerHandler : SmartVideo.HTTPServerHandler {
-  public func register(delegate: SmartVideo.HTTPServerDelegate)
+@_hasMissingDesignatedInitializers public class FoundationHTTPServerHandler : HTTPServerHandler {
+  public func register(delegate: HTTPServerDelegate)
   public func createResponse(headers: [Swift.String : Swift.String]) -> Foundation.Data
   public func parse(data: Foundation.Data)
   @objc deinit
@@ -702,17 +702,17 @@ public enum ErrorType : Swift.Error {
   case securityError
   case protocolError
   case serverError
-  public static func == (a: SmartVideo.ErrorType, b: SmartVideo.ErrorType) -> Swift.Bool
+  public static func == (a: ErrorType, b: ErrorType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
 public struct WSError : Swift.Error {
-  public let type: SmartVideo.ErrorType
+  public let type: ErrorType
   public let message: Swift.String
   public let code: Swift.UInt16
-  public init(type: SmartVideo.ErrorType, message: Swift.String, code: Swift.UInt16)
+  public init(type: ErrorType, message: Swift.String, code: Swift.UInt16)
 }
 public protocol WebSocketClient : AnyObject {
   func connect()
@@ -723,7 +723,7 @@ public protocol WebSocketClient : AnyObject {
   func write(ping: Foundation.Data, completion: (() -> ())?)
   func write(pong: Foundation.Data, completion: (() -> ())?)
 }
-extension SmartVideo.WebSocketClient {
+extension WebSocketClient {
   public func write(string: Swift.String)
   public func write(data: Foundation.Data)
   public func write(ping: Foundation.Data)
@@ -743,19 +743,19 @@ public enum WebSocketEvent {
   case cancelled
 }
 public protocol WebSocketDelegate : AnyObject {
-  func didReceive(event: SmartVideo.WebSocketEvent, client: SmartVideo.WebSocketClient)
+  func didReceive(event: WebSocketEvent, client: WebSocketClient)
 }
-open class WebSocket : SmartVideo.WebSocketClient, SmartVideo.EngineDelegate {
-  weak public var delegate: SmartVideo.WebSocketDelegate?
-  public var onEvent: ((SmartVideo.WebSocketEvent) -> Swift.Void)?
+open class WebSocket : WebSocketClient, EngineDelegate {
+  weak public var delegate: WebSocketDelegate?
+  public var onEvent: ((WebSocketEvent) -> Swift.Void)?
   public var request: Foundation.URLRequest
   public var callbackQueue: Dispatch.DispatchQueue
   public var respondToPingWithPong: Swift.Bool {
     get
     set(newValue)
   }
-  public init(request: Foundation.URLRequest, engine: SmartVideo.Engine)
-  public convenience init(request: Foundation.URLRequest, certPinner: SmartVideo.CertificatePinning? = FoundationSecurity(), compressionHandler: SmartVideo.CompressionHandler? = nil, useCustomEngine: Swift.Bool = true)
+  public init(request: Foundation.URLRequest, engine: Engine)
+  public convenience init(request: Foundation.URLRequest, certPinner: CertificatePinning? = FoundationSecurity(), compressionHandler: CompressionHandler? = nil, useCustomEngine: Swift.Bool = true)
   public func connect()
   public func disconnect(closeCode: Swift.UInt16 = CloseCode.normal.rawValue)
   public func forceDisconnect()
@@ -764,20 +764,20 @@ open class WebSocket : SmartVideo.WebSocketClient, SmartVideo.EngineDelegate {
   public func write(stringData: Foundation.Data, completion: (() -> ())?)
   public func write(ping: Foundation.Data, completion: (() -> ())?)
   public func write(pong: Foundation.Data, completion: (() -> ())?)
-  public func didReceive(event: SmartVideo.WebSocketEvent)
+  public func didReceive(event: WebSocketEvent)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class GenesysEngageEngine : SmartVideo.SmartVideoEngine {
-  public var environment: SmartVideo.Environment
+@_hasMissingDesignatedInitializers public class GenesysEngageEngine : SmartVideoEngine {
+  public var environment: Environment
   public var email: Swift.String
   public var firstName: Swift.String
   public var lastName: Swift.String
   public var nickname: Swift.String
   public var subject: Swift.String
   public var shortURL: Swift.String
-  public convenience init(environment: SmartVideo.Environment = .live, shortURL: Swift.String, firstName: Swift.String, lastName: Swift.String, email: Swift.String?, subject: Swift.String?)
-  public convenience init(environment: SmartVideo.Environment = .live, shortURL: Swift.String, nickname: Swift.String, email: Swift.String?, subject: Swift.String?)
-  public convenience init(environment: SmartVideo.Environment = .live, shortURL: Swift.String, firstName: Swift.String, lastName: Swift.String, nickname: Swift.String, email: Swift.String?, subject: Swift.String?)
+  public convenience init(environment: Environment = .live, shortURL: Swift.String, firstName: Swift.String, lastName: Swift.String, email: Swift.String?, subject: Swift.String?)
+  public convenience init(environment: Environment = .live, shortURL: Swift.String, nickname: Swift.String, email: Swift.String?, subject: Swift.String?)
+  public convenience init(environment: Environment = .live, shortURL: Swift.String, firstName: Swift.String, lastName: Swift.String, nickname: Swift.String, email: Swift.String?, subject: Swift.String?)
   public func connect()
   public func disconnect()
   public func startChat()
@@ -807,10 +807,10 @@ open class WebSocket : SmartVideo.WebSocketClient, SmartVideo.EngineDelegate {
   public func turnOnShareScreen()
   public func turnOffSpeaker()
   public func turnOnSpeaker()
-  public func setupCamera(state: SmartVideo.CameraState?, position: SmartVideo.CameraPosition?)
+  public func setupCamera(state: CameraState?, position: CameraPosition?)
   public func renderRemoteVideo(renderer: WebRTC.RTCVideoRenderer)
   public func renderRemoteShareScreen(renderer: WebRTC.RTCVideoRenderer)
-  public func agentInfo() -> SmartVideo.AgentInfo?
+  public func agentInfo() -> AgentInfo?
   public func sendFile(url: Foundation.URL, isSecurityScopedResource: Swift.Bool)
   public func sendFile(name: Swift.String, type: Swift.String, data: Foundation.Data)
   @objc deinit
@@ -819,7 +819,7 @@ public enum CameraPosition {
   case front
   case back
   case shareScreen
-  public static func == (a: SmartVideo.CameraPosition, b: SmartVideo.CameraPosition) -> Swift.Bool
+  public static func == (a: CameraPosition, b: CameraPosition) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -829,7 +829,7 @@ public enum CameraState {
   case on
   case off
   case unknown
-  public static func == (a: SmartVideo.CameraState, b: SmartVideo.CameraState) -> Swift.Bool
+  public static func == (a: CameraState, b: CameraState) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -863,43 +863,43 @@ public enum LogType : Swift.String {
     get
   }
 }
-public func debug(_ message: Swift.String, level: SmartVideo.LogLevel, type: SmartVideo.LogType, file: Swift.String = #file, method: Swift.String = #function, line: Swift.Int = #line)
+public func debug(_ message: Swift.String, level: LogLevel, type: LogType, file: Swift.String = #file, method: Swift.String = #function, line: Swift.Int = #line)
 @available(macOS 10.14, iOS 12.0, watchOS 5.0, tvOS 12.0, *)
 @available(watchOS, unavailable)
-public class WebSocketServer : SmartVideo.Server, SmartVideo.ConnectionDelegate {
-  public var onEvent: ((SmartVideo.ServerEvent) -> Swift.Void)?
+public class WebSocketServer : Server, ConnectionDelegate {
+  public var onEvent: ((ServerEvent) -> Swift.Void)?
   public init()
   public func start(address: Swift.String, port: Swift.UInt16) -> Swift.Error?
-  public func didReceive(event: SmartVideo.ServerEvent)
+  public func didReceive(event: ServerEvent)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(macOS 10.14, iOS 12.0, watchOS 5.0, tvOS 12.0, *)
-public class ServerConnection : SmartVideo.Connection, SmartVideo.HTTPServerDelegate, SmartVideo.FramerEventClient, SmartVideo.FrameCollectorDelegate, SmartVideo.TransportEventClient {
-  public var onEvent: ((SmartVideo.ConnectionEvent) -> Swift.Void)?
-  weak public var delegate: SmartVideo.ConnectionDelegate?
-  public func write(data: Foundation.Data, opcode: SmartVideo.FrameOpCode)
-  public func connectionChanged(state: SmartVideo.ConnectionState)
-  public func didReceive(event: SmartVideo.HTTPEvent)
-  public func frameProcessed(event: SmartVideo.FrameEvent)
-  public func didForm(event: SmartVideo.FrameCollector.Event)
+public class ServerConnection : Connection, HTTPServerDelegate, FramerEventClient, FrameCollectorDelegate, TransportEventClient {
+  public var onEvent: ((ConnectionEvent) -> Swift.Void)?
+  weak public var delegate: ConnectionDelegate?
+  public func write(data: Foundation.Data, opcode: FrameOpCode)
+  public func connectionChanged(state: ConnectionState)
+  public func didReceive(event: HTTPEvent)
+  public func frameProcessed(event: FrameEvent)
+  public func didForm(event: FrameCollector.Event)
   public func decompress(data: Foundation.Data, isFinal: Swift.Bool) -> Foundation.Data?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GenesysAgentData {
-  public static var shared: SmartVideo.GenesysAgentData
-  public var memberInfo: SmartVideo.GenesysAgentInfo?
+  public static var shared: GenesysAgentData
+  public var memberInfo: GenesysAgentInfo?
   public func clean()
   @objc deinit
 }
 public protocol EngineDelegate : AnyObject {
-  func didReceive(event: SmartVideo.WebSocketEvent)
+  func didReceive(event: WebSocketEvent)
 }
 public protocol Engine {
-  func register(delegate: SmartVideo.EngineDelegate)
+  func register(delegate: EngineDelegate)
   func start(request: Foundation.URLRequest)
   func stop(closeCode: Swift.UInt16)
   func forceStop()
-  func write(data: Foundation.Data, opcode: SmartVideo.FrameOpCode, completion: (() -> ())?)
+  func write(data: Foundation.Data, opcode: FrameOpCode, completion: (() -> ())?)
   func write(string: Swift.String, completion: (() -> ())?)
 }
 public enum SecurityErrorCode : Swift.UInt16 {
@@ -916,7 +916,7 @@ public enum PinningState {
   case failed(CoreFoundation.CFError?)
 }
 public protocol CertificatePinning : AnyObject {
-  func evaluateTrust(trust: Security.SecTrust, domain: Swift.String?, completion: ((SmartVideo.PinningState) -> ()))
+  func evaluateTrust(trust: Security.SecTrust, domain: Swift.String?, completion: ((PinningState) -> ()))
 }
 public protocol HeaderValidator : AnyObject {
   func validate(headers: [Swift.String : Swift.String], key: Swift.String) -> Swift.Error?
@@ -928,11 +928,11 @@ extension Swift.KeyedEncodingContainer {
   public mutating func encode<K, V, R>(_ value: [K : V], forKey key: Swift.KeyedEncodingContainer<K>.Key) throws where K : Swift.Encodable, K : Swift.Hashable, K : Swift.RawRepresentable, V : Swift.Encodable, R : Swift.Encodable, R : Swift.Hashable, R == K.RawValue
 }
 @_hasMissingDesignatedInitializers open class RestManager {
-  public static var shared: SmartVideo.RestManager
+  public static var shared: RestManager
   @objc deinit
 }
 @_hasMissingDesignatedInitializers open class Networking {
-  public static var shared: SmartVideo.Networking
+  public static var shared: Networking
   public func get(urlString: Swift.String, headers: [Swift.String : Swift.String] = defaultHeaders, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   public func get(url: Foundation.URL, headers: [Swift.String : Swift.String] = defaultHeaders, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   public func post(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeaders, params: [Swift.String : Any], jsonParams: Swift.Bool = true, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
@@ -950,18 +950,18 @@ public enum ConnectionEvent {
   case error(Swift.Error)
 }
 public protocol Connection {
-  func write(data: Foundation.Data, opcode: SmartVideo.FrameOpCode)
+  func write(data: Foundation.Data, opcode: FrameOpCode)
 }
 public protocol ConnectionDelegate : AnyObject {
-  func didReceive(event: SmartVideo.ServerEvent)
+  func didReceive(event: ServerEvent)
 }
 public enum ServerEvent {
-  case connected(SmartVideo.Connection, [Swift.String : Swift.String])
-  case disconnected(SmartVideo.Connection, Swift.String, Swift.UInt16)
-  case text(SmartVideo.Connection, Swift.String)
-  case binary(SmartVideo.Connection, Foundation.Data)
-  case pong(SmartVideo.Connection, Foundation.Data?)
-  case ping(SmartVideo.Connection, Foundation.Data?)
+  case connected(Connection, [Swift.String : Swift.String])
+  case disconnected(Connection, Swift.String, Swift.UInt16)
+  case text(Connection, Swift.String)
+  case binary(Connection, Foundation.Data)
+  case pong(Connection, Foundation.Data?)
+  case ping(Connection, Foundation.Data?)
 }
 public protocol Server {
   func start(address: Swift.String, port: Swift.UInt16) -> Swift.Error?
