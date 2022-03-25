@@ -208,7 +208,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-typedef SWIFT_ENUM(NSInteger, AudioStreamState, closed) {
+typedef SWIFT_ENUM(NSInteger, AudioStreamState, open) {
   AudioStreamStateLoading = 0,
   AudioStreamStateReady = 1,
   AudioStreamStateMuted = 2,
@@ -231,7 +231,7 @@ SWIFT_CLASS("_TtC10SmartVideo4File")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, FileTransferState, closed) {
+typedef SWIFT_ENUM(NSInteger, FileTransferState, open) {
   FileTransferStateInactive = 0,
   FileTransferStateInprogress = 1,
   FileTransferStateDone = 2,
@@ -267,7 +267,7 @@ SWIFT_CLASS("_TtC10SmartVideo12NativeEngine") SWIFT_AVAILABILITY(tvos,introduced
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, OngoingCallState, closed) {
+typedef SWIFT_ENUM(NSInteger, OngoingCallState, open) {
   OngoingCallStateAgentPutsCallOnHold = 0,
   OngoingCallStateAgentResumesCallOnHold = 1,
   OngoingCallStateVisitorPutsCallOnHold = 2,
@@ -289,7 +289,7 @@ SWIFT_CLASS("_TtC10SmartVideo14OutgoingCallVC")
 
 
 
-typedef SWIFT_ENUM(NSInteger, SmartVideoCallStatus, closed) {
+typedef SWIFT_ENUM(NSInteger, SmartVideoCallStatus, open) {
   SmartVideoCallStatusInteractionStarted = 0,
   SmartVideoCallStatusInteractionEstablished = 1,
   SmartVideoCallStatusCallWaiting = 2,
@@ -310,14 +310,14 @@ SWIFT_PROTOCOL("_TtP10SmartVideo22SmartVideoChatDelegate_")
 - (void)endChat;
 @end
 
-typedef SWIFT_ENUM(NSInteger, SmartVideoChatStatus, closed) {
+typedef SWIFT_ENUM(NSInteger, SmartVideoChatStatus, open) {
   SmartVideoChatStatusInteractionStarted = 0,
   SmartVideoChatStatusInteractionEstablished = 1,
   SmartVideoChatStatusAgentAnswered = 2,
   SmartVideoChatStatusChatFinished = 3,
 };
 
-typedef SWIFT_ENUM(NSInteger, SmartVideoCommunicationChannelType, closed) {
+typedef SWIFT_ENUM(NSInteger, SmartVideoCommunicationChannelType, open) {
   SmartVideoCommunicationChannelTypeCall = 0,
   SmartVideoCommunicationChannelTypeChat = 1,
 };
@@ -344,7 +344,7 @@ SWIFT_CLASS("_TtC10SmartVideo15SmartVideoError")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, SmartVideoErrorType, closed) {
+typedef SWIFT_ENUM(NSInteger, SmartVideoErrorType, open) {
   SmartVideoErrorTypeRest = 0,
   SmartVideoErrorTypeSocket = 1,
   SmartVideoErrorTypeWebRTC = 2,
@@ -359,7 +359,7 @@ typedef SWIFT_ENUM(NSInteger, SmartVideoErrorType, closed) {
 
 
 
-typedef SWIFT_ENUM(NSInteger, VideoStreamState, closed) {
+typedef SWIFT_ENUM(NSInteger, VideoStreamState, open) {
   VideoStreamStateLoading = 0,
   VideoStreamStateReady = 1,
   VideoStreamStatePlaying = 2,
