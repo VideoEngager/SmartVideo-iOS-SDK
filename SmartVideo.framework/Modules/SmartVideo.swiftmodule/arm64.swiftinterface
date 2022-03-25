@@ -104,43 +104,6 @@ public enum FileStatus {
     get
   }
 }
-public struct Version : Swift.Comparable {
-  public let major: Swift.Int
-  public let minor: Swift.Int
-  public let patch: Swift.Int
-  public let prereleaseIdentifiers: [Swift.String]
-  public let buildMetadataIdentifiers: [Swift.String]
-  public init(_ major: Swift.Int, _ minor: Swift.Int, _ patch: Swift.Int, prereleaseIdentifiers: [Swift.String] = [], buildMetadataIdentifiers: [Swift.String] = [])
-  public static func < (lhs: SmartVideo.Version, rhs: SmartVideo.Version) -> Swift.Bool
-  public static func == (a: SmartVideo.Version, b: SmartVideo.Version) -> Swift.Bool
-}
-extension SmartVideo.Version : Swift.ExpressibleByStringLiteral {
-  public init(stringLiteral value: Swift.String)
-  public init(_ version: SmartVideo.Version)
-  public init?(_ versionString: Swift.String)
-  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
-  public typealias StringLiteralType = Swift.String
-  public typealias UnicodeScalarLiteralType = Swift.String
-}
-extension SmartVideo.Version : Swift.CustomStringConvertible {
-  public enum Format {
-    case full
-    case compact
-    public static func == (a: SmartVideo.Version.Format, b: SmartVideo.Version.Format) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public func formatted(_ format: SmartVideo.Version.Format) -> Swift.String
-  public var description: Swift.String {
-    get
-  }
-}
-extension SmartVideo.Version : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
 public struct GenesysEngageConfigurations {
   public let environment: SmartVideo.Environment
   public let engineURL: Swift.String
@@ -360,17 +323,6 @@ public enum FoundationTransportError : Swift.Error {
   public func write(data: Foundation.Data, completion: @escaping ((Swift.Error?) -> ()))
   @objc open func stream(_ aStream: Foundation.Stream, handle eventCode: Foundation.Stream.Event)
 }
-public struct UserAgent : Swift.Codable, Swift.Equatable {
-  public static var shared: SmartVideo.UserAgent
-  public static func == (a: SmartVideo.UserAgent, b: SmartVideo.UserAgent) -> Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-extension SmartVideo.UserAgent : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
 @_hasMissingDesignatedInitializers public class GenesysEngage {
   public static var shared: SmartVideo.GenesysEngage
   public func connect(with connectEngine: SmartVideo.GenesysEngageEngine)
@@ -526,7 +478,6 @@ public func writeUint16(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
 public func writeUint32(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value: Swift.UInt32)
 public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value: Swift.UInt64)
 @_hasMissingDesignatedInitializers open class SmartVideo {
-  public static var version: Swift.String
   public static var environment: SmartVideo.Environment
   public static var delegate: SmartVideo.SmartVideoDelegate?
   public static var chatDelegate: SmartVideo.SmartVideoChatDelegate?
@@ -982,15 +933,13 @@ extension Swift.KeyedEncodingContainer {
 }
 @_hasMissingDesignatedInitializers open class Networking {
   public static var shared: SmartVideo.Networking
-  public func get(urlString: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
-  public func get(url: Foundation.URL, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
-  public func post(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, params: [Swift.String : Any], jsonParams: Swift.Bool = true, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
-  public func delete(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  public func get(urlString: Swift.String, headers: [Swift.String : Swift.String] = defaultHeaders, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  public func get(url: Foundation.URL, headers: [Swift.String : Swift.String] = defaultHeaders, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  public func post(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeaders, params: [Swift.String : Any], jsonParams: Swift.Bool = true, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  public func delete(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeaders, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 public var defaultHeaders: [Swift.String : Swift.String]
-public var defaultHeadersWithUserAgent: [Swift.String : Swift.String]
-public var defaultUserAgent: Swift.String
 public enum ConnectionEvent {
   case connected([Swift.String : Swift.String])
   case disconnected(Swift.String, Swift.UInt16)
