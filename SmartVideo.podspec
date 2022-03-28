@@ -26,9 +26,9 @@ Pod::Spec.new do |spec|
   spec.license = { :type => "MIT", :file => "LICENSE" }
   spec.authors = { 'VideoEngager' => 'support@videoengager.com' }
   spec.source = { :git => 'https://github.com/VideoEngager/SmartVideo-iOS-SDK.git', :tag => spec.version }
-  spec.source_files  = "SmartVideoSDK.framework/Headers/**/*.h"
-  spec.public_header_files = "SmartVideoSDK.framework/Headers/**/*.h"
-  spec.vendored_frameworks = "SmartVideoSDK.framework"
+  spec.source_files  = "SmartVideo.framework/Headers/**/*.h"
+  spec.public_header_files = "SmartVideo.framework/Headers/**/*.h"
+  spec.vendored_frameworks = "SmartVideo.framework"
 
   spec.dependency 'GoogleWebRTC'
 
