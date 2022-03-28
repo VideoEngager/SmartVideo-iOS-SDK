@@ -216,6 +216,7 @@ typedef SWIFT_ENUM(NSInteger, AudioStreamState, open) {
 };
 
 
+
 SWIFT_CLASS("_TtC10SmartVideo11ChatMessage")
 @interface ChatMessage : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -350,6 +351,8 @@ typedef SWIFT_ENUM(NSInteger, SmartVideoErrorType, open) {
   SmartVideoErrorTypeGenesysSocket = 3,
   SmartVideoErrorTypeSdkInitialization = 4,
 };
+
+
 
 
 
