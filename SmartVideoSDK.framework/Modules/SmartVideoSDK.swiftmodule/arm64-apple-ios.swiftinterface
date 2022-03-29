@@ -724,11 +724,11 @@ extension Swift.String {
 }
 @_hasMissingDesignatedInitializers public class SmartVideoSettings {
   public var ui: SmartVideoSDK.SmartVideoSettingsUI
-  public var clientName: Swift.String?
+  public var customerLabel: Swift.String?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SmartVideoSettingsUI {
-  public var inCallViewToolbarsPresentingDuration: Swift.Int
+  public var toolBarHideTimeout: Swift.Int
   @objc deinit
 }
 public struct GenericEngine : SmartVideoSDK.SmartVideoEngine {
