@@ -4,7 +4,7 @@ on:
     branches: 
       - main
     paths:
-      - 'SmartVideo.framework/**'
+      - 'SmartVideoSDK.framework/**'
 
 jobs:
   release:
@@ -25,7 +25,8 @@ jobs:
     - name: Publish to CocoaPods
       run: |
         set -eo pipefail
-        pod trunk push --allow-warnings
+        pod spec lint --verbose SmartVideo.podspec
+        pod trunk push --allow-warnings --verbose
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
 
