@@ -1,4 +1,0 @@
-framework module SmartVideoSDK {
-  header "SmartVideoSDK-Swift.h"
-  requires objc
-}
