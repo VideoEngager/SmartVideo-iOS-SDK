@@ -20,7 +20,7 @@ jobs:
         echo "$tag" >> $GITHUB_ENV
         echo 'EOF' >> $GITHUB_ENV      
         git tag "$tag"
-        git push origin --tags
+        git push -f origin --tags
 
     - name: Publish to CocoaPods
       run: |
