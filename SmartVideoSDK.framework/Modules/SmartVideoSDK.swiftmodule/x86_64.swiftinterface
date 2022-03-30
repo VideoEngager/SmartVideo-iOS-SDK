@@ -548,6 +548,7 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   @objc optional func isConnectedToInternet(isConnected: Swift.Bool)
   @objc optional func errorHandler(error: SmartVideoSDK.SmartVideoError)
   @objc optional func peerConnectionLost()
+  @objc optional func shouldPresentTimeoutViewController() -> Swift.Bool
 }
 @objc public protocol SmartVideoChatDelegate {
   @objc optional func genesysCloudChat(message: SmartVideoSDK.ChatMessage)
@@ -725,6 +726,7 @@ extension Swift.String {
 @_hasMissingDesignatedInitializers public class SmartVideoSettings {
   public var ui: SmartVideoSDK.SmartVideoSettingsUI
   public var customerLabel: Swift.String?
+  public var agentWaitingTimeout: Swift.Int
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SmartVideoSettingsUI {
