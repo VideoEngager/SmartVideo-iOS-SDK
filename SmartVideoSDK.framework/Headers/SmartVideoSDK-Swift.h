@@ -335,6 +335,7 @@ SWIFT_PROTOCOL("_TtP13SmartVideoSDK18SmartVideoDelegate_")
 - (void)isConnectedToInternetWithIsConnected:(BOOL)isConnected;
 - (void)errorHandlerWithError:(SmartVideoError * _Nonnull)error;
 - (void)peerConnectionLost;
+- (BOOL)shouldPresentTimeoutViewController SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
