@@ -425,6 +425,7 @@ public class FoundationHTTPHandler : SmartVideoSDK.HTTPHandler {
   @_Concurrency.MainActor(unsafe) public var hasVideo: Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
     @_Concurrency.MainActor(unsafe) @objc get
@@ -548,7 +549,7 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   @objc optional func isConnectedToInternet(isConnected: Swift.Bool)
   @objc optional func errorHandler(error: SmartVideoSDK.SmartVideoError)
   @objc optional func peerConnectionLost()
-  @objc optional func shouldPresentTimeoutViewController() -> Swift.Bool
+  @objc optional func onAgentTimeout() -> Swift.Bool
 }
 @objc public protocol SmartVideoChatDelegate {
   @objc optional func genesysCloudChat(message: SmartVideoSDK.ChatMessage)
