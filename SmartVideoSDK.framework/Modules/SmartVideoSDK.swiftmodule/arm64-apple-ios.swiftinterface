@@ -9,7 +9,6 @@ import CoreAudioTypes
 import Foundation
 import Network
 import PDFKit
-import Photos
 import ReplayKit
 import Swift
 import SystemConfiguration
@@ -458,6 +457,23 @@ public class WSCompression : SmartVideoSDK.CompressionHandler {
   public func compress(data: Foundation.Data) -> Foundation.Data?
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc public class SmartVideoError : ObjectiveC.NSObject {
+  public var type: SmartVideoSDK.SmartVideoErrorType
+  public var error: Swift.String
+  @objc deinit
+}
+@objc public enum SmartVideoErrorType : Swift.Int {
+  case rest
+  case socket
+  case webRTC
+  case genesysSocket
+  case sdkInitialization
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public enum CloseCode : Swift.UInt16 {
   case normal
   case goingAway
@@ -642,23 +658,6 @@ public enum Environment : Swift.String {
   case inactive
   case inprogress
   case done
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers @objc public class SmartVideoError : ObjectiveC.NSObject {
-  public var type: SmartVideoSDK.SmartVideoErrorType
-  public var error: Swift.String
-  @objc deinit
-}
-@objc public enum SmartVideoErrorType : Swift.Int {
-  case rest
-  case socket
-  case webRTC
-  case genesysSocket
-  case sdkInitialization
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
