@@ -9,7 +9,6 @@ import CoreAudioTypes
 import Foundation
 import Network
 import PDFKit
-import Photos
 import ReplayKit
 import Swift
 import SystemConfiguration
@@ -425,6 +424,7 @@ public class FoundationHTTPHandler : SmartVideoSDK.HTTPHandler {
   @_Concurrency.MainActor(unsafe) public var hasVideo: Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
     @_Concurrency.MainActor(unsafe) @objc get
@@ -456,6 +456,23 @@ public class WSCompression : SmartVideoSDK.CompressionHandler {
   public func decompress(data: Foundation.Data, isFinal: Swift.Bool) -> Foundation.Data?
   public func compress(data: Foundation.Data) -> Foundation.Data?
   @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class SmartVideoError : ObjectiveC.NSObject {
+  public var type: SmartVideoSDK.SmartVideoErrorType
+  public var error: Swift.String
+  @objc deinit
+}
+@objc public enum SmartVideoErrorType : Swift.Int {
+  case rest
+  case socket
+  case webRTC
+  case genesysSocket
+  case sdkInitialization
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public enum CloseCode : Swift.UInt16 {
   case normal
@@ -548,6 +565,7 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   @objc optional func isConnectedToInternet(isConnected: Swift.Bool)
   @objc optional func errorHandler(error: SmartVideoSDK.SmartVideoError)
   @objc optional func peerConnectionLost()
+  @objc optional func onAgentTimeout() -> Swift.Bool
 }
 @objc public protocol SmartVideoChatDelegate {
   @objc optional func genesysCloudChat(message: SmartVideoSDK.ChatMessage)
@@ -646,23 +664,6 @@ public enum Environment : Swift.String {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc public class SmartVideoError : ObjectiveC.NSObject {
-  public var type: SmartVideoSDK.SmartVideoErrorType
-  public var error: Swift.String
-  @objc deinit
-}
-@objc public enum SmartVideoErrorType : Swift.Int {
-  case rest
-  case socket
-  case webRTC
-  case genesysSocket
-  case sdkInitialization
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public class StringHTTPHandler : SmartVideoSDK.HTTPHandler {
   public init()
   public func convert(request: Foundation.URLRequest) -> Foundation.Data
@@ -725,6 +726,7 @@ extension Swift.String {
 @_hasMissingDesignatedInitializers public class SmartVideoSettings {
   public var ui: SmartVideoSDK.SmartVideoSettingsUI
   public var customerLabel: Swift.String?
+  public var agentWaitingTimeout: Swift.Int
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SmartVideoSettingsUI {
