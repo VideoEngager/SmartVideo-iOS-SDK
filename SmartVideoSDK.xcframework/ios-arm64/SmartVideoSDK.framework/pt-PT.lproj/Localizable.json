@@ -1,0 +1,71 @@
+
+{
+    "vc": {
+        "general": {
+            "alertTitle": "Desculpas",
+            "alertMessage": "Infelizmente, ocorreu um erro inesperado. Por favor, tente novamente mais tarde.",
+            "alertButton": "Multar"
+        },
+        "comm": {
+            "alertTitle_401": "Desculpas",
+            "alertMessage_401": "Infelizmente, não podemos atender sua solicitação. Por favor, tente novamente mais tarde.",
+            "alertButton_401": "Multar"
+        },
+        "outgoing": {
+            "connecting": "Conectando ...",
+            "agentName": "Nome do agente"
+        },
+        "callTimeout": {
+            "agentBusy": "Agente ocupado",
+            "cancelButtonText": "Cancelar",
+            "callBackButtonText": "Ligue de volta"
+        },
+        "no_internet_ctrl": {
+            "exit": "Saída",
+            "title": "Sem conexão com a Internet",
+            "subtitle": "Você não está conectado à internet. Continuaremos monitorando sua conectividade e avisaremos assim que for restaurada. Enquanto isso, certifique-se de que o Wi-Fi esteja ativado ou o modo avião esteja desativado.",
+            "alertTitle": "Agora você está conectado",
+            "alertMessage": "Sua conectividade com a Internet foi restaurada e agora você pode fazer uma chamada para seu agente de suporte.",
+            "alertButton": "Multar"
+        },
+        "incall": {
+            "peerConnectionLost_alertTitle": "Desculpas",
+            "peerConnectionLost_alertMessage": "Infelizmente, perdemos a comunicação com seu agente e a chamada será encerrada em breve.",
+            "peerConnectionLost_buttonTitle": "Multar",
+            "torch_notSupported_alertTitle": "Desculpas",
+            "torch_notSupported_alertMessage": "Sua câmera atual não suporta tocha. Se você atualmente usa sua câmera frontal, por favor, mude para a câmera traseira e tente novamente.",
+            "torch_notSupported_buttonTitle": "Multar",
+            "torch_configErr_alertTitle": "Desculpas",
+            "torch_configErr_alertMessage": "Infelizmente, ocorreu um erro de configuração da tocha e não podemos atender à sua solicitação. Por favor, tente novamente mais tarde.",
+            "torch_configErr_buttonTitle": "Multar",
+            "call_on_hold": "O agente colocou esta chamada em espera. Espera um segundo.",
+            "file_transfer_in_accept": "Aceitar",
+            "file_transfer_in_reject": "Rejeitar",
+            "switch_from_audio_to_video_call_not_allowed": "Esta operação é proibida pelo administrador do aplicativo"
+        },
+        "sendfile": {
+            "recent": "Recente",
+            "media": "Media",
+            "browse": "Navegar",
+            "photo_selector_backBarButton_cancel": "Cancelar",
+            "photo_selector_rightBarButton_share": "Mandar",
+            "photo_selector_notificationTitleString1": "Permitir",
+            "photo_selector_notificationTitleString2": "acesso às suas fotos".
+            "photo_selector_notificationSubtitleString": "O acesso foi negado anteriormente, conceda acesso em Configurações.",
+            "photo_selector_iOSSettingsLabel": "Abra as configurações do iPhone",
+            "photo_selector_iOSPrivacyLabel": "Toque em Privacidade",
+            "photo_selector_iOSSwitchLabel1": "Mudar",
+            "photo_selector_iOSSwitchLabel2": "de nenhuma para todas as fotos",
+            "photo_selector_iOSPhotosLabel": "Toque em Fotos",
+            "photo_selector_iOSSwitchIcon": "Nenhum",
+            "photo_selector_gotItButtonText": "Entendi"
+        },
+        "photoselector": {
+            "selectedImage_alertTitle": "Desculpas",
+            "selectedImage_alertMessage1": "A imagem que você gostaria de enviar é maior que o limite permitido de ",
+            "selectedImage_alertMessage2": "Não poderemos enviar. Selecione uma imagem diferente ou compacte-a e tente enviá-la novamente.",
+            "selectedImage_buttonTitle": "Multar"
+            
+        }
+    }
+}
