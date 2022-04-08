@@ -910,11 +910,13 @@ public enum LogLevel : Swift.Int {
   }
 }
 public enum LogType : Swift.String {
+  case all
+  case general
   case rest
   case socket
   case rtc
   case webRTC
-  case genesys
+  case genesysCloud
   case genesysEngage
   case generic
   case callkit
@@ -990,6 +992,8 @@ extension Swift.KeyedEncodingContainer {
   public mutating func encode<K, V, R>(_ value: [K : V], forKey key: Swift.KeyedEncodingContainer<K>.Key) throws where K : Swift.Encodable, K : Swift.Hashable, K : Swift.RawRepresentable, V : Swift.Encodable, R : Swift.Encodable, R : Swift.Hashable, R == K.RawValue
 }
 public let configurationsParamsError: SmartVideoSDK.SmartVideoError
+public let micPermissionsMissingError: SmartVideoSDK.SmartVideoError
+public let camPermissionsMissingError: SmartVideoSDK.SmartVideoError
 @_hasMissingDesignatedInitializers open class RestManager {
   public static let shared: SmartVideoSDK.RestManager
   @objc deinit
