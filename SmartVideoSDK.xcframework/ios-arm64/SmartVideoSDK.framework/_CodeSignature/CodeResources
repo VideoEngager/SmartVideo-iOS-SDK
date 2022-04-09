@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/WebRTC.framework/WebRTC</key>
 		<data>
-		2eIywTIq1lzU9JSR8pfoLMjrvew=
+		CF+zVgun8vrY2N/b4pS8AFiKuG4=
 		</data>
 		<key>Frameworks/WebRTC.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/SmartVideoSDK-Swift.h</key>
 		<data>
-		PlzMa4TwfKciV994ANjb59TNkdg=
+		FNwcvoxJnar07qJ20UUUR68SCV4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		8Z9ssIs73/TYOw0WjQMAtNuhDQs=
+		01+BewQyaRYee+YZOEiH3dymV6E=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hb7tUqzzO5p2WZDaF1Lw+/N5GB8=
+		s/5gUGVJP5wyUoLg+S/Embd9OWM=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		8Z9ssIs73/TYOw0WjQMAtNuhDQs=
+		01+BewQyaRYee+YZOEiH3dymV6E=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		hb7tUqzzO5p2WZDaF1Lw+/N5GB8=
+		s/5gUGVJP5wyUoLg+S/Embd9OWM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vqK6NhkM+ASFOy9eH0VXWMRg27ocEoSiRdPXSA3ID/0=
+			dUK2JlxcWBHKKgMP88lrJG6NMWFb8fvV0ZJbhH84ZO4=
 			</data>
 		</dict>
 		<key>Frameworks/WebRTC.framework/_CodeSignature/CodeResources</key>
@@ -192,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			31sFaYlEHqAem3+vf5TYRLaudtt0cRWYiCfg1g+PBSc=
+			uZmHPuL7WuhzrKj09RX01FDOwwQDz3eY5wpRwLBS9TE=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -206,14 +206,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oq2gHO4jZMwrcL/oMdixcxTvzWsMGQ5xcwooPaVQ6CY=
+			vobUmZGzNw7OkTfuUyDc6zs91gvO4wmaSOtfgxRCeoc=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5WPrI26ywjoKej+3ir7ap16G8D/SKwch5i7bCiTHraI=
+			oErEe2zZns976Gp3hT5763JMUKxrk5GA0jaEsucgBKg=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -227,14 +227,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oq2gHO4jZMwrcL/oMdixcxTvzWsMGQ5xcwooPaVQ6CY=
+			vobUmZGzNw7OkTfuUyDc6zs91gvO4wmaSOtfgxRCeoc=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5WPrI26ywjoKej+3ir7ap16G8D/SKwch5i7bCiTHraI=
+			oErEe2zZns976Gp3hT5763JMUKxrk5GA0jaEsucgBKg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
