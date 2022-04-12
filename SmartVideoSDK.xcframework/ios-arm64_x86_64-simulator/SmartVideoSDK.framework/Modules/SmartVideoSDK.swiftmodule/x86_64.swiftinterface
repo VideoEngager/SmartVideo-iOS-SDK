@@ -447,7 +447,7 @@ public class WSCompression : SmartVideoSDK.CompressionHandler {
 }
 @_hasMissingDesignatedInitializers @objc public class SmartVideoError : ObjectiveC.NSObject {
   public var level: SmartVideoSDK.SmartVideoErrorLevel
-  public var destination: SmartVideoSDK.SmartVideoErrorDestination
+  public var domain: SmartVideoSDK.SmartVideoErrorDomain
   public var error: Swift.String
   public var code: Swift.Int
   public var errorDescription: Swift.String
@@ -462,11 +462,12 @@ public class WSCompression : SmartVideoSDK.CompressionHandler {
     get
   }
 }
-@objc public enum SmartVideoErrorDestination : Swift.Int {
+@objc public enum SmartVideoErrorDomain : Swift.Int {
   case rest
   case socket
   case webRTC
-  case genesysSocket
+  case genesysCloudSocket
+  case genesysEngageSocket
   case sdkInitialization
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -559,9 +560,6 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   @objc func didEstablishCommunicationChannel(type: SmartVideoSDK.SmartVideoCommunicationChannelType)
   @objc func failedEstablishCommunicationChannel(type: SmartVideoSDK.SmartVideoCommunicationChannelType)
   @objc func callStatusChanged(status: SmartVideoSDK.SmartVideoCallStatus)
-  @objc optional func genesysCloudChat(message: Swift.String)
-  @objc optional func genesysCloudChat(data: Foundation.Data)
-  @objc optional func genesysCloudChat(status: Swift.String)
   @objc optional func genesysEngageChat(message: Swift.String, from: Swift.String)
   @objc optional func isConnectedToInternet(isConnected: Swift.Bool)
   @objc optional func errorHandler(error: SmartVideoSDK.SmartVideoError)
@@ -910,11 +908,13 @@ public enum LogLevel : Swift.Int {
   }
 }
 public enum LogType : Swift.String {
+  case all
+  case general
   case rest
   case socket
   case rtc
   case webRTC
-  case genesys
+  case genesysCloud
   case genesysEngage
   case generic
   case callkit
@@ -990,6 +990,8 @@ extension Swift.KeyedEncodingContainer {
   public mutating func encode<K, V, R>(_ value: [K : V], forKey key: Swift.KeyedEncodingContainer<K>.Key) throws where K : Swift.Encodable, K : Swift.Hashable, K : Swift.RawRepresentable, V : Swift.Encodable, R : Swift.Encodable, R : Swift.Hashable, R == K.RawValue
 }
 public let configurationsParamsError: SmartVideoSDK.SmartVideoError
+public let micPermissionsMissingError: SmartVideoSDK.SmartVideoError
+public let camPermissionsMissingError: SmartVideoSDK.SmartVideoError
 @_hasMissingDesignatedInitializers open class RestManager {
   public static let shared: SmartVideoSDK.RestManager
   @objc deinit
@@ -1044,9 +1046,9 @@ extension SmartVideoSDK.FoundationTransportError : Swift.Hashable {}
 extension SmartVideoSDK.SmartVideoErrorLevel : Swift.Equatable {}
 extension SmartVideoSDK.SmartVideoErrorLevel : Swift.Hashable {}
 extension SmartVideoSDK.SmartVideoErrorLevel : Swift.RawRepresentable {}
-extension SmartVideoSDK.SmartVideoErrorDestination : Swift.Equatable {}
-extension SmartVideoSDK.SmartVideoErrorDestination : Swift.Hashable {}
-extension SmartVideoSDK.SmartVideoErrorDestination : Swift.RawRepresentable {}
+extension SmartVideoSDK.SmartVideoErrorDomain : Swift.Equatable {}
+extension SmartVideoSDK.SmartVideoErrorDomain : Swift.Hashable {}
+extension SmartVideoSDK.SmartVideoErrorDomain : Swift.RawRepresentable {}
 extension SmartVideoSDK.CloseCode : Swift.Equatable {}
 extension SmartVideoSDK.CloseCode : Swift.Hashable {}
 extension SmartVideoSDK.CloseCode : Swift.RawRepresentable {}

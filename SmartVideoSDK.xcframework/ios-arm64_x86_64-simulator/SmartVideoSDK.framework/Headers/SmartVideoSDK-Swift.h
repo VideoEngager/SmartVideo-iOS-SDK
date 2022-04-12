@@ -332,9 +332,6 @@ SWIFT_PROTOCOL("_TtP13SmartVideoSDK18SmartVideoDelegate_")
 - (void)failedEstablishCommunicationChannelWithType:(enum SmartVideoCommunicationChannelType)type;
 - (void)callStatusChangedWithStatus:(enum SmartVideoCallStatus)status;
 @optional
-- (void)genesysCloudChatWithMessage:(NSString * _Nonnull)message;
-- (void)genesysCloudChatWithData:(NSData * _Nonnull)data;
-- (void)genesysCloudChatWithStatus:(NSString * _Nonnull)status;
 - (void)genesysEngageChatWithMessage:(NSString * _Nonnull)message from:(NSString * _Nonnull)from;
 - (void)isConnectedToInternetWithIsConnected:(BOOL)isConnected;
 - (void)errorHandlerWithError:(SmartVideoError * _Nonnull)error;
@@ -349,12 +346,13 @@ SWIFT_CLASS("_TtC13SmartVideoSDK15SmartVideoError")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, SmartVideoErrorDestination, open) {
-  SmartVideoErrorDestinationRest = 0,
-  SmartVideoErrorDestinationSocket = 1,
-  SmartVideoErrorDestinationWebRTC = 2,
-  SmartVideoErrorDestinationGenesysSocket = 3,
-  SmartVideoErrorDestinationSdkInitialization = 4,
+typedef SWIFT_ENUM(NSInteger, SmartVideoErrorDomain, open) {
+  SmartVideoErrorDomainRest = 0,
+  SmartVideoErrorDomainSocket = 1,
+  SmartVideoErrorDomainWebRTC = 2,
+  SmartVideoErrorDomainGenesysCloudSocket = 3,
+  SmartVideoErrorDomainGenesysEngageSocket = 4,
+  SmartVideoErrorDomainSdkInitialization = 5,
 };
 
 typedef SWIFT_ENUM(NSInteger, SmartVideoErrorLevel, open) {
@@ -715,9 +713,6 @@ SWIFT_PROTOCOL("_TtP13SmartVideoSDK18SmartVideoDelegate_")
 - (void)failedEstablishCommunicationChannelWithType:(enum SmartVideoCommunicationChannelType)type;
 - (void)callStatusChangedWithStatus:(enum SmartVideoCallStatus)status;
 @optional
-- (void)genesysCloudChatWithMessage:(NSString * _Nonnull)message;
-- (void)genesysCloudChatWithData:(NSData * _Nonnull)data;
-- (void)genesysCloudChatWithStatus:(NSString * _Nonnull)status;
 - (void)genesysEngageChatWithMessage:(NSString * _Nonnull)message from:(NSString * _Nonnull)from;
 - (void)isConnectedToInternetWithIsConnected:(BOOL)isConnected;
 - (void)errorHandlerWithError:(SmartVideoError * _Nonnull)error;
@@ -732,12 +727,13 @@ SWIFT_CLASS("_TtC13SmartVideoSDK15SmartVideoError")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, SmartVideoErrorDestination, open) {
-  SmartVideoErrorDestinationRest = 0,
-  SmartVideoErrorDestinationSocket = 1,
-  SmartVideoErrorDestinationWebRTC = 2,
-  SmartVideoErrorDestinationGenesysSocket = 3,
-  SmartVideoErrorDestinationSdkInitialization = 4,
+typedef SWIFT_ENUM(NSInteger, SmartVideoErrorDomain, open) {
+  SmartVideoErrorDomainRest = 0,
+  SmartVideoErrorDomainSocket = 1,
+  SmartVideoErrorDomainWebRTC = 2,
+  SmartVideoErrorDomainGenesysCloudSocket = 3,
+  SmartVideoErrorDomainGenesysEngageSocket = 4,
+  SmartVideoErrorDomainSdkInitialization = 5,
 };
 
 typedef SWIFT_ENUM(NSInteger, SmartVideoErrorLevel, open) {

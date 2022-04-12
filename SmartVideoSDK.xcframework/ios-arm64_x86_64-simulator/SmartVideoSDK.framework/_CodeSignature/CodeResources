@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/SmartVideoSDK-Swift.h</key>
 		<data>
-		oPsob5kzAg9lIP1m9P/fOYvhyCk=
+		vRWvrANAlCPqT7hVHTx76ldMfGQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		J3OjAjMeTtcrkoGw5pozc+Bh/WQ=
+		A8Q4K4abuhevHpvXo97kcGOHu5o=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		q4fCn1iQsBu7kiK3YH+mmSjZnis=
+		kZsV7s5Gv9LmCdslNdMa22mxd3E=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		J3OjAjMeTtcrkoGw5pozc+Bh/WQ=
+		A8Q4K4abuhevHpvXo97kcGOHu5o=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		q4fCn1iQsBu7kiK3YH+mmSjZnis=
+		kZsV7s5Gv9LmCdslNdMa22mxd3E=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/nQ9jPpR9CjIob6glDYx7u8QnXc=
+		my77QMvkm858VuBVSxH64RtVibo=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aEQvrUpcis7jaGBmmFpNP91Xwy4=
+		Pf5MP9giPz7n5Jy4lnw56VFKJL8=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		/nQ9jPpR9CjIob6glDYx7u8QnXc=
+		my77QMvkm858VuBVSxH64RtVibo=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		aEQvrUpcis7jaGBmmFpNP91Xwy4=
+		Pf5MP9giPz7n5Jy4lnw56VFKJL8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -216,7 +216,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vuDXmKLTRbGiWuY2KFNj0I+98zdIQ4ZP9kZfsavi7Vo=
+			hyW7D45CNIGOnX3qUKpC4XeaaTUpwx5ciFopRU/Ytgk=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -230,14 +230,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0fEh8wNfuYr+cxH1Jkoga4d4zEV3khhQ2kUDP6JerTY=
+			SAzfoDNbHEL0rn/ERiURv0Am69ywNoeHQRMfN5/8LTM=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nJrjpXpXz8kc5tm9+CAHu74hFbr65LoaAwsDKBUZgcY=
+			uLy/iygnE/l/YgSpxYX1GCCoLLuSnL3JN4/JYK2ogyA=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -251,14 +251,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0fEh8wNfuYr+cxH1Jkoga4d4zEV3khhQ2kUDP6JerTY=
+			SAzfoDNbHEL0rn/ERiURv0Am69ywNoeHQRMfN5/8LTM=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nJrjpXpXz8kc5tm9+CAHu74hFbr65LoaAwsDKBUZgcY=
+			uLy/iygnE/l/YgSpxYX1GCCoLLuSnL3JN4/JYK2ogyA=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -272,14 +272,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2GKpVl6c/JSQQ6vA7udFCidUqZoZb2VUYKNtLERocwU=
+			/xMVXiaJRsau+gT7/ASlRuEKDenfrHKk/KUZz+GmkY4=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aQO4+7OhCgXPlEtd6Wv/85sxujDlC6tcgxguBFzXsKg=
+			RcWNlW7oK1FA+T98gZxJhzP2r5FGezHh7BR2PpA4imU=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -293,14 +293,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2GKpVl6c/JSQQ6vA7udFCidUqZoZb2VUYKNtLERocwU=
+			/xMVXiaJRsau+gT7/ASlRuEKDenfrHKk/KUZz+GmkY4=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aQO4+7OhCgXPlEtd6Wv/85sxujDlC6tcgxguBFzXsKg=
+			RcWNlW7oK1FA+T98gZxJhzP2r5FGezHh7BR2PpA4imU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
