@@ -28,6 +28,6 @@ Pod::Spec.new do |spec|
   spec.source = { :git => 'https://github.com/VideoEngager/SmartVideo-iOS-SDK.git', :tag => spec.version }
   spec.vendored_frameworks = 'SmartVideoSDK.xcframework'
 
-  spec.dependency 'WebRTC-lib'
+#  spec.dependency 'WebRTC-lib'
 
 end
