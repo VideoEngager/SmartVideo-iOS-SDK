@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		KU7Bb896pHIeiK/ldAiFBU7yyCU=
+		NRtMe6oZ2DpWcFquyeDi11hpoTs=
 		</data>
 		<key>Frameworks/WebRTC.framework/Info.plist</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A8Q4K4abuhevHpvXo97kcGOHu5o=
+		iA30nM7jmSZsAHL/+bUMrC91gY8=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kZsV7s5Gv9LmCdslNdMa22mxd3E=
+		7cOJSXIMtflUdjUB5ZSRHX42Kr8=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		A8Q4K4abuhevHpvXo97kcGOHu5o=
+		iA30nM7jmSZsAHL/+bUMrC91gY8=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		kZsV7s5Gv9LmCdslNdMa22mxd3E=
+		7cOJSXIMtflUdjUB5ZSRHX42Kr8=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		my77QMvkm858VuBVSxH64RtVibo=
+		r6JtK3R7urmQex1MZ0ehhvCDnv8=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Pf5MP9giPz7n5Jy4lnw56VFKJL8=
+		ffRPA/2wfetwAjBHnHimYSHonMg=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		my77QMvkm858VuBVSxH64RtVibo=
+		r6JtK3R7urmQex1MZ0ehhvCDnv8=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Pf5MP9giPz7n5Jy4lnw56VFKJL8=
+		ffRPA/2wfetwAjBHnHimYSHonMg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -181,7 +181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gCV3WgITRsmosGricDv9jrGil+bYa0dWsdgQFh54Ij4=
+			dwb94thkZj8qTapPMpXESbh7B2Ds1cnRa/2sf+YnIT0=
 			</data>
 		</dict>
 		<key>Frameworks/WebRTC.framework/Info.plist</key>
@@ -230,14 +230,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SAzfoDNbHEL0rn/ERiURv0Am69ywNoeHQRMfN5/8LTM=
+			CZX8q99lSIBWEAqTy/m7Et4Et5dAmKUQ1zxcaVOX41I=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uLy/iygnE/l/YgSpxYX1GCCoLLuSnL3JN4/JYK2ogyA=
+			2BbEJ17oZHPBzEggvWlELvEoRnwMi4quP0TLxS5Kjvs=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -251,14 +251,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SAzfoDNbHEL0rn/ERiURv0Am69ywNoeHQRMfN5/8LTM=
+			CZX8q99lSIBWEAqTy/m7Et4Et5dAmKUQ1zxcaVOX41I=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uLy/iygnE/l/YgSpxYX1GCCoLLuSnL3JN4/JYK2ogyA=
+			2BbEJ17oZHPBzEggvWlELvEoRnwMi4quP0TLxS5Kjvs=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -272,14 +272,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/xMVXiaJRsau+gT7/ASlRuEKDenfrHKk/KUZz+GmkY4=
+			kxN0H9ovWQU1a473DQO89eXT4aZuSanK4JhhyoaGruo=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RcWNlW7oK1FA+T98gZxJhzP2r5FGezHh7BR2PpA4imU=
+			ga9vh+2SDM+hJurAoOditxjSRX2eposfy3AIsEBtKyA=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -293,14 +293,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/xMVXiaJRsau+gT7/ASlRuEKDenfrHKk/KUZz+GmkY4=
+			kxN0H9ovWQU1a473DQO89eXT4aZuSanK4JhhyoaGruo=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RcWNlW7oK1FA+T98gZxJhzP2r5FGezHh7BR2PpA4imU=
+			ga9vh+2SDM+hJurAoOditxjSRX2eposfy3AIsEBtKyA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

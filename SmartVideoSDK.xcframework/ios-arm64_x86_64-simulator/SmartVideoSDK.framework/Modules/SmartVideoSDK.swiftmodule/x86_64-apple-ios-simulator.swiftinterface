@@ -914,8 +914,7 @@ public enum LogType : Swift.String {
   case socket
   case rtc
   case webRTC
-  case genesysCloud
-  case genesysEngage
+  case genesys
   case generic
   case callkit
   case sdkInitialization
