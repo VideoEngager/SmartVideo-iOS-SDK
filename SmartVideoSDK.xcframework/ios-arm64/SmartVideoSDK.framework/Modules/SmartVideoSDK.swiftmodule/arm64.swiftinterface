@@ -554,6 +554,7 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   public static func disconnect()
   public static func setLogging(level: SmartVideoSDK.LogLevel, types: [SmartVideoSDK.LogType])
   public static func applicationDidBecomeActive()
+  public static func veVisitorVideoCall(link: Swift.String)
   @objc deinit
 }
 @objc public protocol SmartVideoDelegate {
@@ -698,10 +699,11 @@ public struct GenesysEngine : SmartVideoSDK.SmartVideoEngine {
   public var firstName: Swift.String
   public var lastName: Swift.String
   public var memberInfo: [Swift.String : Any]?
-  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType? = .call, isVideo: Swift.Bool = true, customSettings: [Swift.String : Any]? = nil, displayName: Swift.String = "DisplayName", firstName: Swift.String = "Firstname", lastName: Swift.String = "Lastname", memberInfo: [Swift.String : Any]? = nil)
+  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType = .call, isVideo: Swift.Bool = true, customSettings: [Swift.String : Any]? = nil, displayName: Swift.String = "DisplayName", firstName: Swift.String = "Firstname", lastName: Swift.String = "Lastname", memberInfo: [Swift.String : Any]? = nil)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
+  public func connect(invitationURL: Swift.String)
   public var pureCloudParams: [Swift.String : Any] {
     get
   }
@@ -732,14 +734,17 @@ extension Swift.String {
   public var toolBarHideTimeout: Swift.Int
   @objc deinit
 }
-public struct GenericEngine : SmartVideoSDK.SmartVideoEngine {
+public class GenericEngine : SmartVideoSDK.SmartVideoEngine {
   public var environment: SmartVideoSDK.Environment
   public var shortURL: Swift.String
+  public var invitationURL: Swift.String
   public var userAgent: Swift.String
   public init(environment: SmartVideoSDK.Environment = .live, shortURL: Swift.String, userAgent: Swift.String = "")
+  public init(environment: SmartVideoSDK.Environment = .live, invitationURL: Swift.String)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class FoundationHTTPServerHandler : SmartVideoSDK.HTTPServerHandler {
   public func register(delegate: SmartVideoSDK.HTTPServerDelegate)
@@ -991,6 +996,15 @@ extension Swift.KeyedEncodingContainer {
 public let configurationsParamsError: SmartVideoSDK.SmartVideoError
 public let micPermissionsMissingError: SmartVideoSDK.SmartVideoError
 public let camPermissionsMissingError: SmartVideoSDK.SmartVideoError
+public struct ScheduleInfo : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ScheduleAgent : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ScheduleVisitor : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers open class RestManager {
   public static let shared: SmartVideoSDK.RestManager
   @objc deinit
@@ -999,6 +1013,7 @@ public let camPermissionsMissingError: SmartVideoSDK.SmartVideoError
   public static let shared: SmartVideoSDK.Networking
   public func get(urlString: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   public func get(url: Foundation.URL, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  public func getRedirectURL(url: Foundation.URL, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.URL, Swift.Error>) -> Swift.Void)
   public func post(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, params: [Swift.String : Any], jsonParams: Swift.Bool = true, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   public func delete(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   @objc deinit
