@@ -567,9 +567,7 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   @objc func failedEstablishCommunicationChannel(type: SmartVideoSDK.SmartVideoCommunicationChannelType)
   @objc func callStatusChanged(status: SmartVideoSDK.SmartVideoCallStatus)
   @objc optional func genesysEngageChat(message: Swift.String, from: Swift.String)
-  @objc optional func isConnectedToInternet(isConnected: Swift.Bool)
   @objc optional func errorHandler(error: SmartVideoSDK.SmartVideoError)
-  @objc optional func peerConnectionLost()
   @objc optional func onAgentTimeout() -> Swift.Bool
 }
 @objc public protocol SmartVideoChatDelegate {
@@ -941,6 +939,10 @@ public enum LogType : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class Logging {
+  public static func fullHistory() -> Swift.String
+  @objc deinit
 }
 public func debug(_ message: Swift.String, level: SmartVideoSDK.LogLevel, type: SmartVideoSDK.LogType, file: Swift.String = #file, method: Swift.String = #function, line: Swift.Int = #line)
 @available(macOS 10.14, iOS 12.0, watchOS 5.0, tvOS 12.0, *)

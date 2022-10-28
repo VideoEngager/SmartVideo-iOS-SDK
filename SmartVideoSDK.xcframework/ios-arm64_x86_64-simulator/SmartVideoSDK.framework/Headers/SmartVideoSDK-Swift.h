@@ -333,9 +333,7 @@ SWIFT_PROTOCOL("_TtP13SmartVideoSDK18SmartVideoDelegate_")
 - (void)callStatusChangedWithStatus:(enum SmartVideoCallStatus)status;
 @optional
 - (void)genesysEngageChatWithMessage:(NSString * _Nonnull)message from:(NSString * _Nonnull)from;
-- (void)isConnectedToInternetWithIsConnected:(BOOL)isConnected;
 - (void)errorHandlerWithError:(SmartVideoError * _Nonnull)error;
-- (void)peerConnectionLost;
 - (BOOL)onAgentTimeout SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -714,9 +712,7 @@ SWIFT_PROTOCOL("_TtP13SmartVideoSDK18SmartVideoDelegate_")
 - (void)callStatusChangedWithStatus:(enum SmartVideoCallStatus)status;
 @optional
 - (void)genesysEngageChatWithMessage:(NSString * _Nonnull)message from:(NSString * _Nonnull)from;
-- (void)isConnectedToInternetWithIsConnected:(BOOL)isConnected;
 - (void)errorHandlerWithError:(SmartVideoError * _Nonnull)error;
-- (void)peerConnectionLost;
 - (BOOL)onAgentTimeout SWIFT_WARN_UNUSED_RESULT;
 @end
 
