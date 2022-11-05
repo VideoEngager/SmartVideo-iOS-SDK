@@ -1011,6 +1011,7 @@ extension Swift.KeyedEncodingContainer {
 public let configurationsParamsError: SmartVideoSDK.SmartVideoError
 public let micPermissionsMissingError: SmartVideoSDK.SmartVideoError
 public let camPermissionsMissingError: SmartVideoSDK.SmartVideoError
+public let secondCallDuringCallInProgressError: SmartVideoSDK.SmartVideoError
 public struct ScheduleInfo : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }
