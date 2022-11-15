@@ -298,7 +298,8 @@ typedef SWIFT_ENUM(NSInteger, SmartVideoCallStatus, open) {
   SmartVideoCallStatusCallWaiting = 2,
   SmartVideoCallStatusCallStarted = 3,
   SmartVideoCallStatusCallOnHold = 4,
-  SmartVideoCallStatusCallFinished = 5,
+  SmartVideoCallStatusCallHanguped = 5,
+  SmartVideoCallStatusCallFinished = 6,
 };
 
 enum SmartVideoChatStatus : NSInteger;
@@ -677,7 +678,8 @@ typedef SWIFT_ENUM(NSInteger, SmartVideoCallStatus, open) {
   SmartVideoCallStatusCallWaiting = 2,
   SmartVideoCallStatusCallStarted = 3,
   SmartVideoCallStatusCallOnHold = 4,
-  SmartVideoCallStatusCallFinished = 5,
+  SmartVideoCallStatusCallHanguped = 5,
+  SmartVideoCallStatusCallFinished = 6,
 };
 
 enum SmartVideoChatStatus : NSInteger;

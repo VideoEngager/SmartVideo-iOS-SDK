@@ -599,6 +599,7 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   case callWaiting
   case callStarted
   case callOnHold
+  case callHanguped
   case callFinished
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
