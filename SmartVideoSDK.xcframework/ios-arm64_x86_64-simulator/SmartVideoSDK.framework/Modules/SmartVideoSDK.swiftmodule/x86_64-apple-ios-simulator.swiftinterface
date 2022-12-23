@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SmartVideoSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
 import CallKit
@@ -15,6 +16,7 @@ import SystemConfiguration
 import UIKit
 import WebRTC
 import _Concurrency
+import _StringProcessing
 import zlib
 @frozen public struct AnyDecodable : Swift.Decodable {
   public let value: Any
@@ -65,6 +67,11 @@ public protocol SmartVideoEngine {
   func connect()
   func disconnect()
   func applicationDidBecomeActive()
+}
+public struct SmartVideoAgent {
+  public let name: Swift.String
+  public let tennathID: Swift.String
+  public let customerLabel: Swift.String?
 }
 public enum TCPTransportError : Swift.Error {
   case invalidRequest
@@ -409,13 +416,12 @@ public class FoundationHTTPHandler : SmartVideoSDK.HTTPHandler {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class OutgoingCallVC : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var hasVideo: Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
-    @_Concurrency.MainActor(unsafe) @objc get
+    @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -435,7 +441,8 @@ public struct GenesysConfigurations {
   public var environmentURL: Swift.String
   public var queue: Swift.String
   public var baseURL: Swift.String
-  public init(environment: SmartVideoSDK.Environment, organizationID: Swift.String, deploymentID: Swift.String, shortUrl: Swift.String, tenantId: Swift.String, environmentURL: Swift.String, queue: Swift.String, engineUrl: Swift.String)
+  public var tenantId: Swift.String
+  public init(environment: SmartVideoSDK.Environment, organizationID: Swift.String, deploymentID: Swift.String, tenantId: Swift.String, environmentURL: Swift.String, queue: Swift.String, engineUrl: Swift.String)
   public init(dictionary: [Swift.String : Any]) throws
 }
 public class WSCompression : SmartVideoSDK.CompressionHandler {
@@ -550,10 +557,13 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   public static var chatDelegate: SmartVideoSDK.SmartVideoChatDelegate?
   public static var callManager: SmartVideoSDK.CallManager
   public static func connect(shortURL: Swift.String)
+  public static func setup(engine: SmartVideoSDK.SmartVideoEngine)
   public static func connect(engine: SmartVideoSDK.SmartVideoEngine, isVideo: Swift.Bool? = nil, lang: Swift.String)
   public static func disconnect()
   public static func setLogging(level: SmartVideoSDK.LogLevel, types: [SmartVideoSDK.LogType])
   public static func applicationDidBecomeActive()
+  public static func veVisitorVideoCall(link: Swift.String)
+  public static func veVisitorCreateScheduleMeeting(date: Foundation.Date? = nil, useOldProtocol: Swift.Bool = false, completion: @escaping (SmartVideoSDK.ScheduleDateInfo?, SmartVideoSDK.SmartVideoError?) -> Swift.Void)
   @objc deinit
 }
 @objc public protocol SmartVideoDelegate {
@@ -561,9 +571,7 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   @objc func failedEstablishCommunicationChannel(type: SmartVideoSDK.SmartVideoCommunicationChannelType)
   @objc func callStatusChanged(status: SmartVideoSDK.SmartVideoCallStatus)
   @objc optional func genesysEngageChat(message: Swift.String, from: Swift.String)
-  @objc optional func isConnectedToInternet(isConnected: Swift.Bool)
   @objc optional func errorHandler(error: SmartVideoSDK.SmartVideoError)
-  @objc optional func peerConnectionLost()
   @objc optional func onAgentTimeout() -> Swift.Bool
 }
 @objc public protocol SmartVideoChatDelegate {
@@ -595,6 +603,7 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   case callWaiting
   case callStarted
   case callOnHold
+  case callHanguped
   case callFinished
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -698,13 +707,11 @@ public struct GenesysEngine : SmartVideoSDK.SmartVideoEngine {
   public var firstName: Swift.String
   public var lastName: Swift.String
   public var memberInfo: [Swift.String : Any]?
-  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType? = .call, isVideo: Swift.Bool = true, customSettings: [Swift.String : Any]? = nil, displayName: Swift.String = "DisplayName", firstName: Swift.String = "Firstname", lastName: Swift.String = "Lastname", memberInfo: [Swift.String : Any]? = nil)
+  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType = .call, isVideo: Swift.Bool = true, configurations: SmartVideoSDK.GenesysConfigurations? = nil, customSettings: [Swift.String : Any]? = nil, memberInfo: [Swift.String : Any]? = nil)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
-  public var pureCloudParams: [Swift.String : Any] {
-    get
-  }
+  public func connect(invitationURL: Swift.String)
 }
 extension Foundation.NSURL {
   public func mimeType() -> Swift.String
@@ -717,6 +724,12 @@ extension Foundation.NSString {
 }
 extension Swift.String {
   public func mimeType() -> Swift.String
+}
+public struct GenericConfigurations {
+  public let environment: SmartVideoSDK.Environment
+  public let baseURL: Swift.String
+  public let agents: [SmartVideoSDK.SmartVideoAgent]
+  public init(dictionary: [Swift.String : Any]) throws
 }
 @_hasMissingDesignatedInitializers public class SmartVideoToast {
   public static func show(file: SmartVideoSDK.File, controller: UIKit.UIViewController, acceptAction: @escaping () -> Swift.Void, rejectAction: @escaping () -> Swift.Void)
@@ -732,14 +745,22 @@ extension Swift.String {
   public var toolBarHideTimeout: Swift.Int
   @objc deinit
 }
-public struct GenericEngine : SmartVideoSDK.SmartVideoEngine {
+public class GenericEngine : SmartVideoSDK.SmartVideoEngine {
   public var environment: SmartVideoSDK.Environment
   public var shortURL: Swift.String
+  public var invitationURL: Swift.String
   public var userAgent: Swift.String
   public init(environment: SmartVideoSDK.Environment = .live, shortURL: Swift.String, userAgent: Swift.String = "")
+  public init(environment: SmartVideoSDK.Environment = .live, invitationURL: Swift.String)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
+  @objc deinit
+}
+extension Swift.Double {
+  public var stringTime: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class FoundationHTTPServerHandler : SmartVideoSDK.HTTPServerHandler {
   public func register(delegate: SmartVideoSDK.HTTPServerDelegate)
@@ -847,7 +868,7 @@ open class WebSocket : SmartVideoSDK.WebSocketClient, SmartVideoSDK.EngineDelega
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CallManager {
-  public func call(hasVideo: Swift.Bool)
+  public func call()
   public func startWebRTC()
   public func hangup()
   public func hangupAndEnd()
@@ -924,6 +945,11 @@ public enum LogType : Swift.String {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class Logging {
+  public static func resetHistory()
+  public static func fullHistory() -> Swift.String
+  @objc deinit
+}
 public func debug(_ message: Swift.String, level: SmartVideoSDK.LogLevel, type: SmartVideoSDK.LogType, file: Swift.String = #file, method: Swift.String = #function, line: Swift.Int = #line)
 @available(macOS 10.14, iOS 12.0, watchOS 5.0, tvOS 12.0, *)
 @available(watchOS, unavailable)
@@ -991,6 +1017,43 @@ extension Swift.KeyedEncodingContainer {
 public let configurationsParamsError: SmartVideoSDK.SmartVideoError
 public let micPermissionsMissingError: SmartVideoSDK.SmartVideoError
 public let camPermissionsMissingError: SmartVideoSDK.SmartVideoError
+public let secondCallDuringCallInProgressError: SmartVideoSDK.SmartVideoError
+public struct ScheduleInfo : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ScheduleAgent : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ScheduleVisitor : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ScheduleDateInfo : Swift.Decodable, Swift.Identifiable {
+  public let id: Foundation.UUID
+  public let icsCalendarData: Swift.String
+  public let genesys: SmartVideoSDK.ScheduleDateGenesysInfo
+  public let videoengager: SmartVideoSDK.ScheduleDateVideoEngagerInfo
+  public typealias ID = Foundation.UUID
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ScheduleDateGenesysInfo : Swift.Decodable {
+  public let conversation: SmartVideoSDK.ScheduleDateGenesysConversationInfo
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ScheduleDateGenesysConversationInfo : Swift.Decodable {
+  public let id: Swift.String
+  public let selfUri: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ScheduleDateVideoEngagerInfo : Swift.Decodable {
+  public let autoAnswer: Swift.Bool
+  public let name: Swift.String?
+  public let email: Swift.String?
+  public let phone: Swift.String?
+  public let meetingUrl: Swift.String
+  public let code: Swift.String
+  public let date: Foundation.Date
+  public init(from decoder: Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers open class RestManager {
   public static let shared: SmartVideoSDK.RestManager
   @objc deinit
@@ -999,6 +1062,7 @@ public let camPermissionsMissingError: SmartVideoSDK.SmartVideoError
   public static let shared: SmartVideoSDK.Networking
   public func get(urlString: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   public func get(url: Foundation.URL, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  public func getRedirectURL(url: Foundation.URL, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.URL, Swift.Error>) -> Swift.Void)
   public func post(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, params: [Swift.String : Any], jsonParams: Swift.Bool = true, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   public func delete(url: Swift.String, headers: [Swift.String : Swift.String] = defaultHeadersWithUserAgent, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   @objc deinit
