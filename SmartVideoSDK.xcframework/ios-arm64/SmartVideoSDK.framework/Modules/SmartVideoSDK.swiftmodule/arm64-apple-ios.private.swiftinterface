@@ -1,13 +1,16 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SmartVideoSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
 import CallKit
+import CocoaAsyncSocket
 import CommonCrypto
 import CoreAudioTypes
+import CoreVideo
 import Foundation
+import ImageIO
 import Network
 import PDFKit
 import ReplayKit
@@ -17,6 +20,8 @@ import UIKit
 import WebRTC
 import _Concurrency
 import _StringProcessing
+import os.log
+import os
 import zlib
 @frozen public struct AnyDecodable : Swift.Decodable {
   public let value: Any
@@ -394,6 +399,30 @@ public protocol CompressionHandler {
   func decompress(data: Foundation.Data, isFinal: Swift.Bool) -> Foundation.Data?
   func compress(data: Foundation.Data) -> Foundation.Data?
 }
+public func GetPixelFormatName(p: Darwin.OSType) -> Swift.String
+public func CVPixelBufferGetPixelFormatName(pixelBuffer: CoreVideo.CVPixelBuffer) -> Swift.String
+public protocol BroadcastSenderDelegate {
+  func finishSending(from sender: SmartVideoSDK.BroadcastSender, with error: Swift.Error?)
+}
+public protocol BroadcastSender {
+  var isRunning: Swift.Bool { get }
+  func start()
+  func stop()
+  func pause()
+  func resume()
+  func send(image buffer: CoreVideo.CVImageBuffer, timestamp: Swift.Int64, orientation: ImageIO.CGImagePropertyOrientation)
+  var delegate: SmartVideoSDK.BroadcastSenderDelegate? { get set }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BroadcastSenderBase : ObjectiveC.NSObject, SmartVideoSDK.BroadcastSender {
+  public var delegate: SmartVideoSDK.BroadcastSenderDelegate?
+  public var isRunning: Swift.Bool
+  public func start()
+  public func stop()
+  public func pause()
+  public func resume()
+  public func send(image buffer: CoreVideo.CVImageBuffer, timestamp: Swift.Int64, orientation: ImageIO.CGImagePropertyOrientation)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class Genesys {
   public static var shared: SmartVideoSDK.Genesys
   public func connect(with connectEngine: SmartVideoSDK.GenesysEngine)
@@ -432,6 +461,9 @@ public class FoundationHTTPHandler : SmartVideoSDK.HTTPHandler {
   final public let sender: Swift.String?
   public init(message: Swift.String, date: Foundation.Date, sender: Swift.String? = nil)
   @objc deinit
+}
+public enum BroadcastParameters {
+  public static let defaultFps: Swift.Int
 }
 public struct GenesysConfigurations {
   public let environment: SmartVideoSDK.Environment
@@ -707,11 +739,37 @@ public struct GenesysEngine : SmartVideoSDK.SmartVideoEngine {
   public var firstName: Swift.String
   public var lastName: Swift.String
   public var memberInfo: [Swift.String : Any]?
-  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType = .call, isVideo: Swift.Bool = true, configurations: SmartVideoSDK.GenesysConfigurations? = nil, customSettings: [Swift.String : Any]? = nil, memberInfo: [Swift.String : Any]? = nil)
+  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType = .call, isVideo: Swift.Bool = true, configurations: SmartVideoSDK.GenesysConfigurations? = nil, settings: SmartVideoSDK.GenesysEngineSettings? = nil, memberInfo: [Swift.String : Any]? = nil)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
   public func connect(invitationURL: Swift.String)
+}
+public struct GenesysEngineSettings {
+  public struct InCallViewSettings {
+    public var toolBarHideTimeout: Swift.Int
+    public init(toolBarHideTimeout: Swift.Int)
+  }
+  public struct OutgoingPreCallViewSettings {
+    public var hideAvatar: Swift.Bool
+    public var hideName: Swift.Bool
+    public init(hideAvatar: Swift.Bool, hideName: Swift.Bool)
+  }
+  public struct ShareScreenSettings {
+    public var isOn: Swift.Bool
+    public var appGroupName: Swift.String
+    public var fps: Swift.Int
+    public init(isOn: Swift.Bool, appGroupName: Swift.String, fps: Swift.Int = BroadcastParameters.defaultFps)
+  }
+  public var agentWaitingTimeout: Swift.Int?
+  public var customerLabel: Swift.String?
+  public var allowVisitorToSwitchAudioCallToVideoCall: Swift.Bool?
+  public var securityCode: Swift.String?
+  public var shareScreen: SmartVideoSDK.GenesysEngineSettings.ShareScreenSettings?
+  public var backgroundImageURL: Swift.String?
+  public var outgoingCallViewSettings: SmartVideoSDK.GenesysEngineSettings.OutgoingPreCallViewSettings?
+  public var inCallViewSettings: SmartVideoSDK.GenesysEngineSettings.InCallViewSettings?
+  public init(agentWaitingTimeout: Swift.Int? = nil, customerLabel: Swift.String? = nil, allowVisitorToSwitchAudioCallToVideoCall: Swift.Bool? = nil, securityCode: Swift.String? = nil, shareScreen: SmartVideoSDK.GenesysEngineSettings.ShareScreenSettings? = nil, backgroundImageURL: Swift.String? = nil, outgoingCallViewSettings: SmartVideoSDK.GenesysEngineSettings.OutgoingPreCallViewSettings? = nil, inCallViewSettings: SmartVideoSDK.GenesysEngineSettings.InCallViewSettings? = nil)
 }
 extension Foundation.NSURL {
   public func mimeType() -> Swift.String
@@ -756,6 +814,22 @@ public class GenericEngine : SmartVideoSDK.SmartVideoEngine {
   public func disconnect()
   public func applicationDidBecomeActive()
   @objc deinit
+}
+public class SmartVideoShareScreen {
+  weak public var delegate: SmartVideoSDK.SmartVideoShareScreenDelegate?
+  public init(appGroupName: Swift.String)
+  public func start()
+  public func pause()
+  public func resume()
+  public func stop()
+  public func processSampleBuffer(_ sampleBuffer: CoreMedia.CMSampleBuffer, with sampleBufferType: ReplayKit.RPSampleBufferType)
+  @objc deinit
+}
+extension SmartVideoSDK.SmartVideoShareScreen : SmartVideoSDK.BroadcastSenderDelegate {
+  public func finishSending(from sender: SmartVideoSDK.BroadcastSender, with error: Swift.Error?)
+}
+public protocol SmartVideoShareScreenDelegate : AnyObject {
+  func finished(with error: Swift.Error)
 }
 extension Swift.Double {
   public var stringTime: Swift.String {
@@ -938,6 +1012,7 @@ public enum LogType : Swift.String {
   case genesys
   case generic
   case callkit
+  case sharescreen
   case sdkInitialization
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
