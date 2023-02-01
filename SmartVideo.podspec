@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SmartVideo"
-  spec.version      = "1.13.8"
+  spec.version      = "1.14.0"
   spec.summary      = "SmartVideo iOS Swift SDK"
   spec.description  = "The SmartVideo SDK for iOS allows you to integrate SmartVideo application in your own iOS mobile applications. This way, you would enable your customers to call your Genesys Cloud, Genesys Engage, or VideoEngager agents directly from your iOS application through Click to Audio/Video type of functionality."
   spec.platform = :ios
@@ -18,4 +18,5 @@ Pod::Spec.new do |spec|
   spec.dependency 'CocoaAsyncSocket', '7.6.5'
 
 end
+ 
  
