@@ -415,6 +415,12 @@ typedef SWIFT_ENUM(NSInteger, SmartVideoErrorLevel, open) {
 
 
 
+
+
+
+
+
+
 typedef SWIFT_ENUM(NSInteger, VideoStreamState, open) {
   VideoStreamStateLoading = 0,
   VideoStreamStateReady = 1,
