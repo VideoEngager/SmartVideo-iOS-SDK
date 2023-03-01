@@ -1,15 +1,20 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SmartVideoSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
 import CallKit
+import CocoaAsyncSocket
+import Combine
 import CommonCrypto
 import CoreAudioTypes
+import CoreVideo
 import Foundation
+import ImageIO
 import Network
 import PDFKit
+import QuartzCore
 import ReplayKit
 import Swift
 import SystemConfiguration
@@ -17,6 +22,8 @@ import UIKit
 import WebRTC
 import _Concurrency
 import _StringProcessing
+import os.log
+import os
 import zlib
 @frozen public struct AnyDecodable : Swift.Decodable {
   public let value: Any
@@ -42,6 +49,28 @@ extension SmartVideoSDK.AnyDecodable : Swift.CustomStringConvertible {
 }
 extension SmartVideoSDK.AnyDecodable : Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
+    get
+  }
+}
+extension SmartVideoSDK.PIPKit {
+  public static var isAVPIPKitSupported: Swift.Bool {
+    get
+  }
+}
+@available(iOS 15.0, *)
+public enum AVPIPKitRenderPolicy {
+  case once
+  case preferredFramesPerSecond(Swift.Int)
+}
+@available(iOS 15.0, *)
+public protocol AVPIPKitUsable {
+  var renderer: SmartVideoSDK.AVPIPKitRenderer { get }
+  func startPictureInPicture()
+  func stopPictureInPicture()
+}
+@available(iOS 15.0, *)
+extension SmartVideoSDK.AVPIPKitUsable {
+  public var isAVKitPIPSupported: Swift.Bool {
     get
   }
 }
@@ -301,6 +330,47 @@ public class NativeEngine : ObjectiveC.NSObject, SmartVideoSDK.Engine, Foundatio
   @objc override dynamic public init()
   @objc deinit
 }
+public protocol PIPUsable {
+  var initialState: SmartVideoSDK.PIPState { get }
+  var initialPosition: SmartVideoSDK.PIPPosition { get }
+  var insetsPIPFromSafeArea: Swift.Bool { get }
+  var pipEdgeInsets: UIKit.UIEdgeInsets { get }
+  var pipSize: CoreFoundation.CGSize { get }
+  var pipShadow: SmartVideoSDK.PIPShadow? { get }
+  var pipCorner: SmartVideoSDK.PIPCorner? { get }
+  func didChangedState(_ state: SmartVideoSDK.PIPState)
+  func didChangePosition(_ position: SmartVideoSDK.PIPPosition)
+}
+extension SmartVideoSDK.PIPUsable {
+  public var initialState: SmartVideoSDK.PIPState {
+    get
+  }
+  public var initialPosition: SmartVideoSDK.PIPPosition {
+    get
+  }
+  public var insetsPIPFromSafeArea: Swift.Bool {
+    get
+  }
+  public var pipEdgeInsets: UIKit.UIEdgeInsets {
+    get
+  }
+  public var pipSize: CoreFoundation.CGSize {
+    get
+  }
+  public var pipShadow: SmartVideoSDK.PIPShadow? {
+    get
+  }
+  public var pipCorner: SmartVideoSDK.PIPCorner? {
+    get
+  }
+  public func didChangedState(_ state: SmartVideoSDK.PIPState)
+  public func didChangePosition(_ position: SmartVideoSDK.PIPPosition)
+}
+extension SmartVideoSDK.PIPUsable where Self : UIKit.UIViewController {
+  public func setNeedsUpdatePIPFrame()
+  public func startPIPMode()
+  public func stopPIPMode()
+}
 @frozen public struct AnyCodable : Swift.Codable {
   public let value: Any
   public init<T>(_ value: T?)
@@ -365,6 +435,55 @@ public enum FoundationTransportError : Swift.Error {
   public func write(data: Foundation.Data, completion: @escaping ((Swift.Error?) -> ()))
   @objc open func stream(_ aStream: Foundation.Stream, handle eventCode: Foundation.Stream.Event)
 }
+public struct PIPShadow {
+  public let color: UIKit.UIColor
+  public let opacity: Swift.Float
+  public let offset: CoreFoundation.CGSize
+  public let radius: CoreFoundation.CGFloat
+  public init(color: UIKit.UIColor, opacity: Swift.Float, offset: CoreFoundation.CGSize, radius: CoreFoundation.CGFloat)
+}
+public struct PIPCorner {
+  public let radius: CoreFoundation.CGFloat
+  public let curve: QuartzCore.CALayerCornerCurve?
+  public init(radius: CoreFoundation.CGFloat, curve: QuartzCore.CALayerCornerCurve? = nil)
+}
+public enum PIPState {
+  case pip
+  case full
+  public static func == (a: SmartVideoSDK.PIPState, b: SmartVideoSDK.PIPState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PIPPosition {
+  case topLeft
+  case middleLeft
+  case bottomLeft
+  case topRight
+  case middleRight
+  case bottomRight
+  public static func == (a: SmartVideoSDK.PIPPosition, b: SmartVideoSDK.PIPPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public typealias PIPKitViewController = (UIKit.UIViewController & SmartVideoSDK.PIPUsable)
+@_hasMissingDesignatedInitializers final public class PIPKit {
+  public static var isActive: Swift.Bool {
+    get
+  }
+  public static var isPIP: Swift.Bool {
+    get
+  }
+  public static var visibleViewController: SmartVideoSDK.PIPKitViewController? {
+    get
+  }
+  final public class func show(with viewController: SmartVideoSDK.PIPKitViewController, completion: (() -> Swift.Void)? = nil)
+  final public class func dismiss(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
 public struct UserAgent : Swift.Codable, Swift.Equatable {
   public static let shared: SmartVideoSDK.UserAgent
   public static func == (a: SmartVideoSDK.UserAgent, b: SmartVideoSDK.UserAgent) -> Swift.Bool
@@ -393,6 +512,30 @@ public protocol CompressionHandler {
   func load(headers: [Swift.String : Swift.String])
   func decompress(data: Foundation.Data, isFinal: Swift.Bool) -> Foundation.Data?
   func compress(data: Foundation.Data) -> Foundation.Data?
+}
+public func GetPixelFormatName(p: Darwin.OSType) -> Swift.String
+public func CVPixelBufferGetPixelFormatName(pixelBuffer: CoreVideo.CVPixelBuffer) -> Swift.String
+public protocol BroadcastSenderDelegate {
+  func finishSending(from sender: SmartVideoSDK.BroadcastSender, with error: Swift.Error?)
+}
+public protocol BroadcastSender {
+  var isRunning: Swift.Bool { get }
+  func start()
+  func stop()
+  func pause()
+  func resume()
+  func send(image buffer: CoreVideo.CVImageBuffer, timestamp: Swift.Int64, orientation: ImageIO.CGImagePropertyOrientation)
+  var delegate: SmartVideoSDK.BroadcastSenderDelegate? { get set }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BroadcastSenderBase : ObjectiveC.NSObject, SmartVideoSDK.BroadcastSender {
+  public var delegate: SmartVideoSDK.BroadcastSenderDelegate?
+  public var isRunning: Swift.Bool
+  public func start()
+  public func stop()
+  public func pause()
+  public func resume()
+  public func send(image buffer: CoreVideo.CVImageBuffer, timestamp: Swift.Int64, orientation: ImageIO.CGImagePropertyOrientation)
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Genesys {
   public static var shared: SmartVideoSDK.Genesys
@@ -432,6 +575,9 @@ public class FoundationHTTPHandler : SmartVideoSDK.HTTPHandler {
   final public let sender: Swift.String?
   public init(message: Swift.String, date: Foundation.Date, sender: Swift.String? = nil)
   @objc deinit
+}
+public enum BroadcastParameters {
+  public static let defaultFps: Swift.Int
 }
 public struct GenesysConfigurations {
   public let environment: SmartVideoSDK.Environment
@@ -564,6 +710,8 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   public static func applicationDidBecomeActive()
   public static func veVisitorVideoCall(link: Swift.String)
   public static func veVisitorCreateScheduleMeeting(date: Foundation.Date? = nil, useOldProtocol: Swift.Bool = false, completion: @escaping (SmartVideoSDK.ScheduleDateInfo?, SmartVideoSDK.SmartVideoError?) -> Swift.Void)
+  public static func forbidShareScreen()
+  public static func allowShareScreen()
   @objc deinit
 }
 @objc public protocol SmartVideoDelegate {
@@ -707,11 +855,37 @@ public struct GenesysEngine : SmartVideoSDK.SmartVideoEngine {
   public var firstName: Swift.String
   public var lastName: Swift.String
   public var memberInfo: [Swift.String : Any]?
-  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType = .call, isVideo: Swift.Bool = true, configurations: SmartVideoSDK.GenesysConfigurations? = nil, customSettings: [Swift.String : Any]? = nil, memberInfo: [Swift.String : Any]? = nil)
+  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType = .call, isVideo: Swift.Bool = true, configurations: SmartVideoSDK.GenesysConfigurations? = nil, settings: SmartVideoSDK.GenesysEngineSettings? = nil, memberInfo: [Swift.String : Any]? = nil)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
   public func connect(invitationURL: Swift.String)
+}
+public struct GenesysEngineSettings {
+  public struct InCallViewSettings {
+    public var toolBarHideTimeout: Swift.Int
+    public init(toolBarHideTimeout: Swift.Int)
+  }
+  public struct OutgoingPreCallViewSettings {
+    public var hideAvatar: Swift.Bool
+    public var hideName: Swift.Bool
+    public init(hideAvatar: Swift.Bool, hideName: Swift.Bool)
+  }
+  public struct ShareScreenSettings {
+    public var isOn: Swift.Bool
+    public var appGroupName: Swift.String
+    public var fps: Swift.Int
+    public init(isOn: Swift.Bool, appGroupName: Swift.String, fps: Swift.Int = BroadcastParameters.defaultFps)
+  }
+  public var agentWaitingTimeout: Swift.Int?
+  public var customerLabel: Swift.String?
+  public var allowVisitorToSwitchAudioCallToVideoCall: Swift.Bool?
+  public var securityCode: Swift.String?
+  public var shareScreen: SmartVideoSDK.GenesysEngineSettings.ShareScreenSettings?
+  public var backgroundImageURL: Swift.String?
+  public var outgoingCallViewSettings: SmartVideoSDK.GenesysEngineSettings.OutgoingPreCallViewSettings?
+  public var inCallViewSettings: SmartVideoSDK.GenesysEngineSettings.InCallViewSettings?
+  public init(agentWaitingTimeout: Swift.Int? = nil, customerLabel: Swift.String? = nil, allowVisitorToSwitchAudioCallToVideoCall: Swift.Bool? = nil, securityCode: Swift.String? = nil, shareScreen: SmartVideoSDK.GenesysEngineSettings.ShareScreenSettings? = nil, backgroundImageURL: Swift.String? = nil, outgoingCallViewSettings: SmartVideoSDK.GenesysEngineSettings.OutgoingPreCallViewSettings? = nil, inCallViewSettings: SmartVideoSDK.GenesysEngineSettings.InCallViewSettings? = nil)
 }
 extension Foundation.NSURL {
   public func mimeType() -> Swift.String
@@ -757,6 +931,22 @@ public class GenericEngine : SmartVideoSDK.SmartVideoEngine {
   public func applicationDidBecomeActive()
   @objc deinit
 }
+public class SmartVideoShareScreen {
+  weak public var delegate: SmartVideoSDK.SmartVideoShareScreenDelegate?
+  public init(appGroupName: Swift.String)
+  public func start()
+  public func pause()
+  public func resume()
+  public func stop()
+  public func processSampleBuffer(_ sampleBuffer: CoreMedia.CMSampleBuffer, with sampleBufferType: ReplayKit.RPSampleBufferType)
+  @objc deinit
+}
+extension SmartVideoSDK.SmartVideoShareScreen : SmartVideoSDK.BroadcastSenderDelegate {
+  public func finishSending(from sender: SmartVideoSDK.BroadcastSender, with error: Swift.Error?)
+}
+public protocol SmartVideoShareScreenDelegate : AnyObject {
+  func finished(with error: Swift.Error)
+}
 extension Swift.Double {
   public var stringTime: Swift.String {
     get
@@ -776,6 +966,48 @@ public struct AgentInfo : Swift.Decodable {
     get
   }
   public init(from decoder: Swift.Decoder) throws
+}
+@available(iOS 15.0, *)
+public protocol AVPIPUIKitUsable : SmartVideoSDK.AVPIPKitUsable {
+  var pipTargetView: UIKit.UIView { get }
+  var renderPolicy: SmartVideoSDK.AVPIPKitRenderPolicy { get }
+  var exitPublisher: Combine.AnyPublisher<Swift.Void, Swift.Never> { get }
+}
+@available(iOS 15.0, *)
+extension SmartVideoSDK.AVPIPUIKitUsable {
+  public var renderPolicy: SmartVideoSDK.AVPIPKitRenderPolicy {
+    get
+  }
+}
+@available(iOS 15.0, *)
+extension SmartVideoSDK.AVPIPUIKitUsable where Self : UIKit.UIViewController {
+  public var pipTargetView: UIKit.UIView {
+    get
+  }
+  public var renderer: SmartVideoSDK.AVPIPKitRenderer {
+    get
+  }
+  public var exitPublisher: Combine.AnyPublisher<Swift.Void, Swift.Never> {
+    get
+  }
+  public func startPictureInPicture()
+  public func stopPictureInPicture()
+  public func renderPictureInPicture()
+}
+@available(iOS 15.0, *)
+extension SmartVideoSDK.AVPIPUIKitUsable where Self : UIKit.UIView {
+  public var pipTargetView: UIKit.UIView {
+    get
+  }
+  public var renderer: SmartVideoSDK.AVPIPKitRenderer {
+    get
+  }
+  public var exitPublisher: Combine.AnyPublisher<Swift.Void, Swift.Never> {
+    get
+  }
+  public func startPictureInPicture()
+  public func stopPictureInPicture()
+  public func renderPictureInPicture()
 }
 public enum ErrorType : Swift.Error {
   case compressionError
@@ -938,6 +1170,7 @@ public enum LogType : Swift.String {
   case genesys
   case generic
   case callkit
+  case sharescreen
   case sdkInitialization
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -988,6 +1221,14 @@ public protocol Engine {
   func forceStop()
   func write(data: Foundation.Data, opcode: SmartVideoSDK.FrameOpCode, completion: (() -> ())?)
   func write(string: Swift.String, completion: (() -> ())?)
+}
+@available(iOS 15.0, *)
+public protocol AVPIPKitRenderer {
+  var policy: SmartVideoSDK.AVPIPKitRenderPolicy { get }
+  var renderPublisher: Combine.AnyPublisher<UIKit.UIImage, Swift.Never> { get }
+  func start()
+  func stop()
+  func exit()
 }
 public enum SecurityErrorCode : Swift.UInt16 {
   case acceptFailed
@@ -1106,6 +1347,10 @@ extension SmartVideoSDK.Version.Format : Swift.Equatable {}
 extension SmartVideoSDK.Version.Format : Swift.Hashable {}
 extension SmartVideoSDK.FoundationTransportError : Swift.Equatable {}
 extension SmartVideoSDK.FoundationTransportError : Swift.Hashable {}
+extension SmartVideoSDK.PIPState : Swift.Equatable {}
+extension SmartVideoSDK.PIPState : Swift.Hashable {}
+extension SmartVideoSDK.PIPPosition : Swift.Equatable {}
+extension SmartVideoSDK.PIPPosition : Swift.Hashable {}
 extension SmartVideoSDK.SmartVideoErrorLevel : Swift.Equatable {}
 extension SmartVideoSDK.SmartVideoErrorLevel : Swift.Hashable {}
 extension SmartVideoSDK.SmartVideoErrorLevel : Swift.RawRepresentable {}
