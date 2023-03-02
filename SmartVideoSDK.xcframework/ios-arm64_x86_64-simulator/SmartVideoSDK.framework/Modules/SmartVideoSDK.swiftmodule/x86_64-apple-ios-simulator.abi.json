@@ -11161,17 +11161,13 @@
       },
       {
         "kind": "Import",
-        "name": "CocoaAsyncSocket",
-        "printedName": "CocoaAsyncSocket",
-        "declKind": "Import",
-        "moduleName": "SmartVideoSDK"
-      },
-      {
-        "kind": "Import",
         "name": "CoreVideo",
         "printedName": "CoreVideo",
         "declKind": "Import",
-        "moduleName": "SmartVideoSDK"
+        "moduleName": "SmartVideoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -12362,13 +12358,6 @@
         "kind": "Import",
         "name": "os.log",
         "printedName": "os.log",
-        "declKind": "Import",
-        "moduleName": "SmartVideoSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CocoaAsyncSocket",
-        "printedName": "CocoaAsyncSocket",
         "declKind": "Import",
         "moduleName": "SmartVideoSDK"
       },
@@ -46601,35 +46590,35 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastSender.swift",
       "kind": "StringLiteral",
-      "offset": 886,
+      "offset": 888,
       "length": 34,
       "value": "\"BroadcastSenderBase.sendingQueue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastSender.swift",
       "kind": "IntegerLiteral",
-      "offset": 1001,
+      "offset": 1003,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastSender.swift",
       "kind": "IntegerLiteral",
-      "offset": 1120,
+      "offset": 1122,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastSender.swift",
       "kind": "FloatLiteral",
-      "offset": 3342,
+      "offset": 3344,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastSender.swift",
       "kind": "IntegerLiteral",
-      "offset": 3450,
+      "offset": 3452,
       "length": 1,
       "value": "0"
     },
@@ -46762,63 +46751,63 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "Dictionary",
-      "offset": 1730,
+      "offset": 1705,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "BooleanLiteral",
-      "offset": 1796,
+      "offset": 1771,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "BooleanLiteral",
-      "offset": 11089,
+      "offset": 11064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "IntegerLiteral",
-      "offset": 11314,
+      "offset": 11289,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "IntegerLiteral",
-      "offset": 11318,
+      "offset": 11293,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "IntegerLiteral",
-      "offset": 11325,
+      "offset": 11300,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "IntegerLiteral",
-      "offset": 11369,
+      "offset": 11344,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "IntegerLiteral",
-      "offset": 11535,
+      "offset": 11510,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "FloatLiteral",
-      "offset": 17495,
+      "offset": 17470,
       "length": 3,
       "value": "3.0"
     },
@@ -48311,7 +48300,7 @@
       "kind": "StringLiteral",
       "offset": 128,
       "length": 8,
-      "value": "\"1.14.2\""
+      "value": "\"1.14.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",

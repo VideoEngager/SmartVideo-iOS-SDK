@@ -8,13 +8,25 @@
 		<data>
 		pifQDMwzML36zGLbQEIXlXxRyR4=
 		</data>
-		<key>Headers/SmartVideo.h</key>
+		<key>Documentation.html</key>
 		<data>
-		iDfy5z/6mQmabVgT5Nv07YMiMqk=
+		dcEucIglXwxcUKB8tFPUAOb+XBI=
+		</data>
+		<key>Headers/GCDAsyncSocket.h</key>
+		<data>
+		JwDJxahaKup9fnB5MJuoxDHbdDs=
+		</data>
+		<key>Headers/GCDAsyncUdpSocket.h</key>
+		<data>
+		9hL7D86xSUKQ1TBRDa+fDNkDlqI=
 		</data>
 		<key>Headers/SmartVideoSDK-Swift.h</key>
 		<data>
 		eCLCJDKsKzrIXTovE6eTeT7RDAo=
+		</data>
+		<key>Headers/SmartVideoSDK.h</key>
+		<data>
+		sbSfN2hv/5Oy4TqZuWiCKy9i9vk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -22,11 +34,11 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		NS7223v5WaoCHxfykjJjbXNOPog=
+		jOsyqtPH4sYlutNdK7aMp+/RBbk=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8gV8TEWZVUgH3PApkmDNhlkg6Ek=
+		ROStbOais42d/6vxR2EhDbnlcDo=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +46,19 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8gV8TEWZVUgH3PApkmDNhlkg6Ek=
+		ROStbOais42d/6vxR2EhDbnlcDo=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PPCsssIYRrv6FOC6KJXf1IZ2jXw=
+		OJCRI9KED+ayFazSucK/yCQSgPM=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		NS7223v5WaoCHxfykjJjbXNOPog=
+		jOsyqtPH4sYlutNdK7aMp+/RBbk=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+1fj2FWSZyN4Tr67zT+LtxOktew=
+		8TQWmBZCgIgRDacaRPlDzR8JUL4=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,15 +66,19 @@
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+1fj2FWSZyN4Tr67zT+LtxOktew=
+		8TQWmBZCgIgRDacaRPlDzR8JUL4=
 		</data>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Snq1Lm3E6mT9zd2BujYlOqBGPSI=
+		269J6Q0zdLO+dVQjsyZh82nCfW0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ElEG2H1YFUrrILhkejzUMiiHnWw=
+		jHVuZQbEY1WSDjB5SqXPqKMhf9g=
+		</data>
+		<key>README.txt</key>
+		<data>
+		jluxXI6KDrd1SzA7T/Lp6qeVPR8=
 		</data>
 		<key>bg-BG.lproj/Localizable.json</key>
 		<dict>
@@ -164,11 +180,25 @@
 			cZe8EcB2+GyBt+ROwMjC7tPXn1KAkhq7yJuDThLxWIQ=
 			</data>
 		</dict>
-		<key>Headers/SmartVideo.h</key>
+		<key>Documentation.html</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FYnM+XgC+7TXCSnmfHcoi7ZAzZ03H5T4M3Ge7awwvOA=
+			CxOSauq5DDuhyvXXSJ0p3LE7LsajJsw0rPkSXbBEzig=
+			</data>
+		</dict>
+		<key>Headers/GCDAsyncSocket.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JL0b2lWPgVphz/ekZLsGMKrShDXTK2YY53aKtusc9hk=
+			</data>
+		</dict>
+		<key>Headers/GCDAsyncUdpSocket.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uNVm5yZ0jBhGDXZuAynPXvem1qcBvAVdWXAewQdJbh8=
 			</data>
 		</dict>
 		<key>Headers/SmartVideoSDK-Swift.h</key>
@@ -178,18 +208,25 @@
 			iBJJlL64vQkXVfz/QDAOMKG5eBzd4+IvT+IIathaU2k=
 			</data>
 		</dict>
+		<key>Headers/SmartVideoSDK.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wTgwxQp7JcfmL+RxG9PqW9xn+olrjSHIK7JlgpG4BjE=
+			</data>
+		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C8K28ze12TL3925wZW8qCjt8pl5Aw2tMNbgkXV1aaQw=
+			K80U7PI35w0kHVkHWvQr4XPQeedAVMlAa9p6i6FFaeM=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			73OkbJBtK1iwW+Hd1twzgi3AoxENJCw6d61HWrZmLQA=
+			iVMJ+PDc/S+XK/4hzWnvFq/YAiLonL7n1xxLYJz/HRk=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -203,28 +240,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			73OkbJBtK1iwW+Hd1twzgi3AoxENJCw6d61HWrZmLQA=
+			iVMJ+PDc/S+XK/4hzWnvFq/YAiLonL7n1xxLYJz/HRk=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oylptbTlWKkALcXIIzHtdtGcJpXvnoYsCaTrIA4VLFI=
+			ronOIbHG63MzrWvN5IHLeiraYyOXb1VgFAE1pNSjF8o=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C8K28ze12TL3925wZW8qCjt8pl5Aw2tMNbgkXV1aaQw=
+			K80U7PI35w0kHVkHWvQr4XPQeedAVMlAa9p6i6FFaeM=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3twToPDn+KGNGTOMgDJU83L5hGyChGtqvp/e/+a9svI=
+			r97dcfSuPPJypYgaV7gEW/k3ibqsrYHAtzwD1IOrkVg=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -238,21 +275,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3twToPDn+KGNGTOMgDJU83L5hGyChGtqvp/e/+a9svI=
+			r97dcfSuPPJypYgaV7gEW/k3ibqsrYHAtzwD1IOrkVg=
 			</data>
 		</dict>
 		<key>Modules/SmartVideoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+cOJOalKullDFMyToVbKvzgoz+ilAOid3gEk0/+D0G0=
+			SSc6B4CL6vpyD2nDr8WmkN59WJDCZVS45KMGwrDSmOQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CldWv1aWEy4Dmd+8lU6tS9Yf8AahumSK6dyhvamYXTM=
+			brj0faF1Am3MkP7k2LQJcy300ubcWhVNWM9iLvRGBss=
+			</data>
+		</dict>
+		<key>README.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZYd/KoXmGXfR3ifh3uEEZnc8zUI3q/IppdeWJ+0dO8E=
 			</data>
 		</dict>
 		<key>bg-BG.lproj/Localizable.json</key>
