@@ -15,7 +15,6 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = 'SmartVideoSDK.xcframework'
 
   spec.dependency 'WebRTC-lib', '104.0.0'
-  spec.dependency 'CocoaAsyncSocket', '7.6.5'
 
 end
  
