@@ -873,9 +873,10 @@ public struct GenesysEngineSettings {
   }
   public struct ShareScreenSettings {
     public var isOn: Swift.Bool
+    public var broadcasterBundleIdentifier: Swift.String?
     public var appGroupName: Swift.String
     public var fps: Swift.Int
-    public init(isOn: Swift.Bool, appGroupName: Swift.String, fps: Swift.Int = BroadcastParameters.defaultFps)
+    public init(isOn: Swift.Bool, broadcasterBundleIdentifier: Swift.String?, appGroupName: Swift.String, fps: Swift.Int = BroadcastParameters.defaultFps)
   }
   public var agentWaitingTimeout: Swift.Int?
   public var customerLabel: Swift.String?
