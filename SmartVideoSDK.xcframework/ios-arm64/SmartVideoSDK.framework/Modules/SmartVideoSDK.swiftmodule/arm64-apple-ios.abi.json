@@ -3126,50 +3126,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "environment",
-            "printedName": "environment",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SmartVideoSDK27GenesysEngageConfigurationsV11environmentAA11EnvironmentOvp",
-            "mangledName": "$s13SmartVideoSDK27GenesysEngageConfigurationsV11environmentAA11EnvironmentOvp",
-            "moduleName": "SmartVideoSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK27GenesysEngageConfigurationsV11environmentAA11EnvironmentOvg",
-                "mangledName": "$s13SmartVideoSDK27GenesysEngageConfigurationsV11environmentAA11EnvironmentOvg",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "engineURL",
             "printedName": "engineURL",
             "children": [
@@ -3599,19 +3555,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:engineURL:chatURL:serverBaseURL:service:agentURL:authorizationValue:)",
+            "printedName": "init(engineURL:chatURL:serverBaseURL:service:agentURL:authorizationValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "GenesysEngageConfigurations",
                 "printedName": "SmartVideoSDK.GenesysEngageConfigurations",
                 "usr": "s:13SmartVideoSDK27GenesysEngageConfigurationsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -3651,8 +3601,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK27GenesysEngageConfigurationsV11environment9engineURL04chatI0010serverBaseI07service05agentI018authorizationValueAcA11EnvironmentO_S6Stcfc",
-            "mangledName": "$s13SmartVideoSDK27GenesysEngageConfigurationsV11environment9engineURL04chatI0010serverBaseI07service05agentI018authorizationValueAcA11EnvironmentO_S6Stcfc",
+            "usr": "s:13SmartVideoSDK27GenesysEngageConfigurationsV9engineURL04chatH0010serverBaseH07service05agentH018authorizationValueACSS_S5Stcfc",
+            "mangledName": "$s13SmartVideoSDK27GenesysEngageConfigurationsV9engineURL04chatH0010serverBaseH07service05agentH018authorizationValueACSS_S5Stcfc",
             "moduleName": "SmartVideoSDK",
             "declAttributes": [
               "AccessControl"
@@ -10487,32 +10437,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateConfiguration",
-            "printedName": "updateConfiguration(configuration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenesysEngageConfigurations",
-                "printedName": "SmartVideoSDK.GenesysEngageConfigurations",
-                "usr": "s:13SmartVideoSDK27GenesysEngageConfigurationsV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SmartVideoSDK13GenesysEngageC19updateConfiguration13configurationyAA0dE14ConfigurationsV_tF",
-            "mangledName": "$s13SmartVideoSDK13GenesysEngageC19updateConfiguration13configurationyAA0dE14ConfigurationsV_tF",
-            "moduleName": "SmartVideoSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -12107,32 +12031,6 @@
           },
           {
             "kind": "Function",
-            "name": "updateConfiguration",
-            "printedName": "updateConfiguration(configuration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenesysConfigurations",
-                "printedName": "SmartVideoSDK.GenesysConfigurations",
-                "usr": "s:13SmartVideoSDK21GenesysConfigurationsV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13SmartVideoSDK7GenesysC19updateConfiguration13configurationyAA0D14ConfigurationsV_tF",
-            "mangledName": "$s13SmartVideoSDK7GenesysC19updateConfiguration13configurationyAA0D14ConfigurationsV_tF",
-            "moduleName": "SmartVideoSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "didReceive",
             "printedName": "didReceive(event:client:)",
             "children": [
@@ -13170,50 +13068,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "environment",
-            "printedName": "environment",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SmartVideoSDK21GenesysConfigurationsV11environmentAA11EnvironmentOvp",
-            "mangledName": "$s13SmartVideoSDK21GenesysConfigurationsV11environmentAA11EnvironmentOvp",
-            "moduleName": "SmartVideoSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK21GenesysConfigurationsV11environmentAA11EnvironmentOvg",
-                "mangledName": "$s13SmartVideoSDK21GenesysConfigurationsV11environmentAA11EnvironmentOvg",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "organizationID",
             "printedName": "organizationID",
             "children": [
@@ -13810,19 +13664,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:organizationID:deploymentID:tenantId:environmentURL:queue:engineUrl:)",
+            "printedName": "init(organizationID:deploymentID:tenantId:environmentURL:queue:engineUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "GenesysConfigurations",
                 "printedName": "SmartVideoSDK.GenesysConfigurations",
                 "usr": "s:13SmartVideoSDK21GenesysConfigurationsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -13862,8 +13710,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK21GenesysConfigurationsV11environment14organizationID010deploymentH08tenantId0F3URL5queue9engineUrlAcA11EnvironmentO_S6Stcfc",
-            "mangledName": "$s13SmartVideoSDK21GenesysConfigurationsV11environment14organizationID010deploymentH08tenantId0F3URL5queue9engineUrlAcA11EnvironmentO_S6Stcfc",
+            "usr": "s:13SmartVideoSDK21GenesysConfigurationsV14organizationID010deploymentG08tenantId14environmentURL5queue9engineUrlACSS_S5Stcfc",
+            "mangledName": "$s13SmartVideoSDK21GenesysConfigurationsV14organizationID010deploymentG08tenantId14environmentURL5queue9engineUrlACSS_S5Stcfc",
             "moduleName": "SmartVideoSDK",
             "declAttributes": [
               "AccessControl"
@@ -16979,106 +16827,6 @@
           },
           {
             "kind": "Var",
-            "name": "environment",
-            "printedName": "environment",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SmartVideoSDK0aB0C11environmentAA11EnvironmentOvpZ",
-            "mangledName": "$s13SmartVideoSDK0aB0C11environmentAA11EnvironmentOvpZ",
-            "moduleName": "SmartVideoSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK0aB0C11environmentAA11EnvironmentOvgZ",
-                "mangledName": "$s13SmartVideoSDK0aB0C11environmentAA11EnvironmentOvgZ",
-                "moduleName": "SmartVideoSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK0aB0C11environmentAA11EnvironmentOvsZ",
-                "mangledName": "$s13SmartVideoSDK0aB0C11environmentAA11EnvironmentOvsZ",
-                "moduleName": "SmartVideoSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK0aB0C11environmentAA11EnvironmentOvMZ",
-                "mangledName": "$s13SmartVideoSDK0aB0C11environmentAA11EnvironmentOvMZ",
-                "moduleName": "SmartVideoSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "settings",
             "printedName": "settings",
             "children": [
@@ -17600,18 +17348,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
+                "name": "Bool",
+                "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -17621,8 +17361,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13SmartVideoSDK0aB0C7connect6engine02isB04langyAA0aB6Engine_p_SbSgSStFZ",
-            "mangledName": "$s13SmartVideoSDK0aB0C7connect6engine02isB04langyAA0aB6Engine_p_SbSgSStFZ",
+            "usr": "s:13SmartVideoSDK0aB0C7connect6engine02isB04langyAA0aB6Engine_p_SbSStFZ",
+            "mangledName": "$s13SmartVideoSDK0aB0C7connect6engine02isB04langyAA0aB6Engine_p_SbSStFZ",
             "moduleName": "SmartVideoSDK",
             "static": true,
             "declAttributes": [
@@ -19578,206 +19318,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Environment",
-        "printedName": "Environment",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "staging",
-            "printedName": "staging",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SmartVideoSDK.Environment.Type) -> SmartVideoSDK.Environment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SmartVideoSDK.Environment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "SmartVideoSDK.Environment",
-                        "usr": "s:13SmartVideoSDK11EnvironmentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SmartVideoSDK11EnvironmentO7stagingyA2CmF",
-            "mangledName": "$s13SmartVideoSDK11EnvironmentO7stagingyA2CmF",
-            "moduleName": "SmartVideoSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "live",
-            "printedName": "live",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SmartVideoSDK.Environment.Type) -> SmartVideoSDK.Environment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SmartVideoSDK.Environment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "SmartVideoSDK.Environment",
-                        "usr": "s:13SmartVideoSDK11EnvironmentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SmartVideoSDK11EnvironmentO4liveyA2CmF",
-            "mangledName": "$s13SmartVideoSDK11EnvironmentO4liveyA2CmF",
-            "moduleName": "SmartVideoSDK"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SmartVideoSDK.Environment?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK11EnvironmentO8rawValueACSgSS_tcfc",
-            "mangledName": "$s13SmartVideoSDK11EnvironmentO8rawValueACSgSS_tcfc",
-            "moduleName": "SmartVideoSDK",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SmartVideoSDK11EnvironmentO8rawValueSSvp",
-            "mangledName": "$s13SmartVideoSDK11EnvironmentO8rawValueSSvp",
-            "moduleName": "SmartVideoSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK11EnvironmentO8rawValueSSvg",
-                "mangledName": "$s13SmartVideoSDK11EnvironmentO8rawValueSSvg",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:13SmartVideoSDK11EnvironmentO",
-        "mangledName": "$s13SmartVideoSDK11EnvironmentO",
-        "moduleName": "SmartVideoSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "VideoStreamState",
         "printedName": "VideoStreamState",
         "children": [
@@ -21657,92 +21197,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "environment",
-            "printedName": "environment",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SmartVideoSDK13GenesysEngineV11environmentAA11EnvironmentOvp",
-            "mangledName": "$s13SmartVideoSDK13GenesysEngineV11environmentAA11EnvironmentOvp",
-            "moduleName": "SmartVideoSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK13GenesysEngineV11environmentAA11EnvironmentOvg",
-                "mangledName": "$s13SmartVideoSDK13GenesysEngineV11environmentAA11EnvironmentOvg",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK13GenesysEngineV11environmentAA11EnvironmentOvs",
-                "mangledName": "$s13SmartVideoSDK13GenesysEngineV11environmentAA11EnvironmentOvs",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK13GenesysEngineV11environmentAA11EnvironmentOvM",
-                "mangledName": "$s13SmartVideoSDK13GenesysEngineV11environmentAA11EnvironmentOvM",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "commType",
             "printedName": "commType",
             "children": [
@@ -22496,20 +21950,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:commType:isVideo:configurations:settings:memberInfo:)",
+            "printedName": "init(commType:isVideo:configurations:settings:memberInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "GenesysEngine",
                 "printedName": "SmartVideoSDK.GenesysEngine",
                 "usr": "s:13SmartVideoSDK13GenesysEngineV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "hasDefaultArg": true,
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -22527,18 +21974,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SmartVideoSDK.GenesysConfigurations?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenesysConfigurations",
-                    "printedName": "SmartVideoSDK.GenesysConfigurations",
-                    "usr": "s:13SmartVideoSDK21GenesysConfigurationsV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "name": "GenesysConfigurations",
+                "printedName": "SmartVideoSDK.GenesysConfigurations",
+                "usr": "s:13SmartVideoSDK21GenesysConfigurationsV"
               },
               {
                 "kind": "TypeNominal",
@@ -22585,8 +22023,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK13GenesysEngineV11environment8commType02isB014configurations8settings10memberInfoAcA11EnvironmentO_AA0ab20CommunicationChannelH0OSbAA0D14ConfigurationsVSgAA0dE8SettingsVSgSDySSypGSgtcfc",
-            "mangledName": "$s13SmartVideoSDK13GenesysEngineV11environment8commType02isB014configurations8settings10memberInfoAcA11EnvironmentO_AA0ab20CommunicationChannelH0OSbAA0D14ConfigurationsVSgAA0dE8SettingsVSgSDySSypGSgtcfc",
+            "usr": "s:13SmartVideoSDK13GenesysEngineV8commType02isB014configurations8settings10memberInfoAcA0ab20CommunicationChannelG0O_SbAA0D14ConfigurationsVAA0dE8SettingsVSgSDySSypGSgtcfc",
+            "mangledName": "$s13SmartVideoSDK13GenesysEngineV8commType02isB014configurations8settings10memberInfoAcA0ab20CommunicationChannelG0O_SbAA0D14ConfigurationsVAA0dE8SettingsVSgSDySSypGSgtcfc",
             "moduleName": "SmartVideoSDK",
             "declAttributes": [
               "AccessControl"
@@ -24580,50 +24018,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "environment",
-            "printedName": "environment",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SmartVideoSDK21GenericConfigurationsV11environmentAA11EnvironmentOvp",
-            "mangledName": "$s13SmartVideoSDK21GenericConfigurationsV11environmentAA11EnvironmentOvp",
-            "moduleName": "SmartVideoSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK21GenericConfigurationsV11environmentAA11EnvironmentOvg",
-                "mangledName": "$s13SmartVideoSDK21GenericConfigurationsV11environmentAA11EnvironmentOvg",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "baseURL",
             "printedName": "baseURL",
             "children": [
@@ -25302,91 +24696,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "environment",
-            "printedName": "environment",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SmartVideoSDK13GenericEngineC11environmentAA11EnvironmentOvp",
-            "mangledName": "$s13SmartVideoSDK13GenericEngineC11environmentAA11EnvironmentOvp",
-            "moduleName": "SmartVideoSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK13GenericEngineC11environmentAA11EnvironmentOvg",
-                "mangledName": "$s13SmartVideoSDK13GenericEngineC11environmentAA11EnvironmentOvg",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK13GenericEngineC11environmentAA11EnvironmentOvs",
-                "mangledName": "$s13SmartVideoSDK13GenericEngineC11environmentAA11EnvironmentOvs",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK13GenericEngineC11environmentAA11EnvironmentOvM",
-                "mangledName": "$s13SmartVideoSDK13GenericEngineC11environmentAA11EnvironmentOvM",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "shortURL",
             "printedName": "shortURL",
             "children": [
@@ -25646,20 +24955,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:shortURL:userAgent:)",
+            "printedName": "init(shortURL:userAgent:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "GenericEngine",
                 "printedName": "SmartVideoSDK.GenericEngine",
                 "usr": "s:13SmartVideoSDK13GenericEngineC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "hasDefaultArg": true,
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -25676,8 +24978,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK13GenericEngineC11environment8shortURL9userAgentAcA11EnvironmentO_S2Stcfc",
-            "mangledName": "$s13SmartVideoSDK13GenericEngineC11environment8shortURL9userAgentAcA11EnvironmentO_S2Stcfc",
+            "usr": "s:13SmartVideoSDK13GenericEngineC8shortURL9userAgentACSS_SStcfc",
+            "mangledName": "$s13SmartVideoSDK13GenericEngineC8shortURL9userAgentACSS_SStcfc",
             "moduleName": "SmartVideoSDK",
             "declAttributes": [
               "AccessControl"
@@ -25687,7 +24989,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:invitationURL:)",
+            "printedName": "init(invitationURL:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -25697,21 +24999,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "hasDefaultArg": true,
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK13GenericEngineC11environment13invitationURLAcA11EnvironmentO_SStcfc",
-            "mangledName": "$s13SmartVideoSDK13GenericEngineC11environment13invitationURLAcA11EnvironmentO_SStcfc",
+            "usr": "s:13SmartVideoSDK13GenericEngineC13invitationURLACSS_tcfc",
+            "mangledName": "$s13SmartVideoSDK13GenericEngineC13invitationURLACSS_tcfc",
             "moduleName": "SmartVideoSDK",
             "declAttributes": [
               "AccessControl"
@@ -29832,92 +29127,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "environment",
-            "printedName": "environment",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SmartVideoSDK19GenesysEngageEngineC11environmentAA11EnvironmentOvp",
-            "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC11environmentAA11EnvironmentOvp",
-            "moduleName": "SmartVideoSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK19GenesysEngageEngineC11environmentAA11EnvironmentOvg",
-                "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC11environmentAA11EnvironmentOvg",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "SmartVideoSDK.Environment",
-                    "usr": "s:13SmartVideoSDK11EnvironmentO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK19GenesysEngageEngineC11environmentAA11EnvironmentOvs",
-                "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC11environmentAA11EnvironmentOvs",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SmartVideoSDK19GenesysEngageEngineC11environmentAA11EnvironmentOvM",
-                "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC11environmentAA11EnvironmentOvM",
-                "moduleName": "SmartVideoSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "email",
             "printedName": "email",
             "children": [
@@ -30435,20 +29644,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:shortURL:firstName:lastName:email:subject:)",
+            "printedName": "init(shortURL:firstName:lastName:email:subject:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "GenesysEngageEngine",
                 "printedName": "SmartVideoSDK.GenesysEngageEngine",
                 "usr": "s:13SmartVideoSDK19GenesysEngageEngineC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "hasDefaultArg": true,
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -30498,8 +29700,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK19GenesysEngageEngineC11environment8shortURL9firstName04lastK05email7subjectAcA11EnvironmentO_S4SSgALtcfc",
-            "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC11environment8shortURL9firstName04lastK05email7subjectAcA11EnvironmentO_S4SSgALtcfc",
+            "usr": "s:13SmartVideoSDK19GenesysEngageEngineC8shortURL9firstName04lastJ05email7subjectACSS_S3SSgAItcfc",
+            "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC8shortURL9firstName04lastJ05email7subjectACSS_S3SSgAItcfc",
             "moduleName": "SmartVideoSDK",
             "declAttributes": [
               "Convenience",
@@ -30510,20 +29712,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:shortURL:nickname:email:subject:)",
+            "printedName": "init(shortURL:nickname:email:subject:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "GenesysEngageEngine",
                 "printedName": "SmartVideoSDK.GenesysEngageEngine",
                 "usr": "s:13SmartVideoSDK19GenesysEngageEngineC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "hasDefaultArg": true,
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -30567,8 +29762,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK19GenesysEngageEngineC11environment8shortURL8nickname5email7subjectAcA11EnvironmentO_S3SSgAKtcfc",
-            "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC11environment8shortURL8nickname5email7subjectAcA11EnvironmentO_S3SSgAKtcfc",
+            "usr": "s:13SmartVideoSDK19GenesysEngageEngineC8shortURL8nickname5email7subjectACSS_S2SSgAHtcfc",
+            "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC8shortURL8nickname5email7subjectACSS_S2SSgAHtcfc",
             "moduleName": "SmartVideoSDK",
             "declAttributes": [
               "Convenience",
@@ -30579,20 +29774,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(environment:shortURL:firstName:lastName:nickname:email:subject:)",
+            "printedName": "init(shortURL:firstName:lastName:nickname:email:subject:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "GenesysEngageEngine",
                 "printedName": "SmartVideoSDK.GenesysEngageEngine",
                 "usr": "s:13SmartVideoSDK19GenesysEngageEngineC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "SmartVideoSDK.Environment",
-                "hasDefaultArg": true,
-                "usr": "s:13SmartVideoSDK11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -30648,8 +29836,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13SmartVideoSDK19GenesysEngageEngineC11environment8shortURL9firstName04lastK08nickname5email7subjectAcA11EnvironmentO_S5SSgAMtcfc",
-            "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC11environment8shortURL9firstName04lastK08nickname5email7subjectAcA11EnvironmentO_S5SSgAMtcfc",
+            "usr": "s:13SmartVideoSDK19GenesysEngageEngineC8shortURL9firstName04lastJ08nickname5email7subjectACSS_S4SSgAJtcfc",
+            "mangledName": "$s13SmartVideoSDK19GenesysEngageEngineC8shortURL9firstName04lastJ08nickname5email7subjectACSS_S4SSgAJtcfc",
             "moduleName": "SmartVideoSDK",
             "declAttributes": [
               "Convenience",
@@ -43458,1547 +42646,1547 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1168,
+      "offset": 1162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1213,
+      "offset": 1207,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 1255,
+      "offset": 1249,
       "length": 13,
       "value": "\"phoneCallBg\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1333,
+      "offset": 1327,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1363,
+      "offset": 1357,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1553,
+      "offset": 1547,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1589,
+      "offset": 1583,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1616,
+      "offset": 1610,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1899,
+      "offset": 1893,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2226,
+      "offset": 2220,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2284,
+      "offset": 2278,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2367,
+      "offset": 2361,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2409,
+      "offset": 2403,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2448,
+      "offset": 2442,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2628,
+      "offset": 2622,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2674,
+      "offset": 2668,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 2717,
+      "offset": 2711,
       "length": 11,
       "value": "\"mic-muted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2787,
+      "offset": 2781,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2862,
+      "offset": 2856,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3050,
+      "offset": 3044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3161,
+      "offset": 3155,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3170,
+      "offset": 3164,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3181,
+      "offset": 3175,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3191,
+      "offset": 3185,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 3234,
+      "offset": 3228,
       "length": 15,
       "value": "\"camera-switch\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3540,
+      "offset": 3534,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3610,
+      "offset": 3604,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3802,
+      "offset": 3796,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3831,
+      "offset": 3825,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4310,
+      "offset": 4304,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4380,
+      "offset": 4374,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4553,
+      "offset": 4547,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4599,
+      "offset": 4593,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 4642,
+      "offset": 4636,
       "length": 11,
       "value": "\"mic-muted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4763,
+      "offset": 4757,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4789,
+      "offset": 4783,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4952,
+      "offset": 4946,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4999,
+      "offset": 4993,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 5025,
+      "offset": 5019,
       "length": 9,
       "value": "\"  REC  \""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5140,
+      "offset": 5134,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5178,
+      "offset": 5172,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "Array",
-      "offset": 5314,
+      "offset": 5308,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5376,
+      "offset": 5370,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5423,
+      "offset": 5417,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5450,
+      "offset": 5444,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5543,
+      "offset": 5537,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5743,
+      "offset": 5737,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7717,
+      "offset": 7711,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7762,
+      "offset": 7756,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7942,
+      "offset": 7936,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8421,
+      "offset": 8415,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8460,
+      "offset": 8454,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8483,
+      "offset": 8477,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8756,
+      "offset": 8750,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8790,
+      "offset": 8784,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8833,
+      "offset": 8827,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8990,
+      "offset": 8984,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9682,
+      "offset": 9676,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9779,
+      "offset": 9773,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 43356,
+      "offset": 43350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 43408,
+      "offset": 43402,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 43637,
+      "offset": 43631,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 43719,
+      "offset": 43713,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 43883,
+      "offset": 43877,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 43929,
+      "offset": 43923,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 43955,
+      "offset": 43949,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 43995,
+      "offset": 43989,
       "length": 8,
       "value": "\"onHold\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 44114,
+      "offset": 44108,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 44192,
+      "offset": 44186,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 44227,
+      "offset": 44221,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 45752,
+      "offset": 45746,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 45857,
+      "offset": 45851,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 45866,
+      "offset": 45860,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 45877,
+      "offset": 45871,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 45887,
+      "offset": 45881,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 45930,
+      "offset": 45924,
       "length": 12,
       "value": "\"chevron.up\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46080,
+      "offset": 46074,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46109,
+      "offset": 46103,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46266,
+      "offset": 46260,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46373,
+      "offset": 46367,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46382,
+      "offset": 46376,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46393,
+      "offset": 46387,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46403,
+      "offset": 46397,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 46444,
+      "offset": 46438,
       "length": 14,
       "value": "\"endPhoneCall\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46651,
+      "offset": 46645,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46758,
+      "offset": 46752,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46767,
+      "offset": 46761,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46778,
+      "offset": 46772,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 46788,
+      "offset": 46782,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 46829,
+      "offset": 46823,
       "length": 19,
       "value": "\"microphone-active\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 46918,
+      "offset": 46912,
       "length": 21,
       "value": "\"microphone-inactive\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 47040,
+      "offset": 47034,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 47077,
+      "offset": 47071,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 49045,
+      "offset": 49039,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 49088,
+      "offset": 49082,
       "length": 12,
       "value": "\"infoButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 49232,
+      "offset": 49226,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 49241,
+      "offset": 49235,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 49252,
+      "offset": 49246,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 49262,
+      "offset": 49256,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 49288,
+      "offset": 49282,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 49440,
+      "offset": 49434,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 49486,
+      "offset": 49480,
       "length": 14,
       "value": "\"chevron.down\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 49690,
+      "offset": 49684,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 49870,
+      "offset": 49864,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 49922,
+      "offset": 49916,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 50054,
+      "offset": 50048,
       "length": 12,
       "value": "\"Agent Name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 50095,
+      "offset": 50089,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50314,
+      "offset": 50308,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 50366,
+      "offset": 50360,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 50472,
+      "offset": 50466,
       "length": 7,
       "value": "\"00:00\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 50508,
+      "offset": 50502,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50735,
+      "offset": 50729,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50779,
+      "offset": 50773,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 50820,
+      "offset": 50814,
       "length": 19,
       "value": "\"speaker-indicator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50975,
+      "offset": 50969,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 50999,
+      "offset": 50993,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 51157,
+      "offset": 51151,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 51322,
+      "offset": 51316,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 51374,
+      "offset": 51368,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 51489,
+      "offset": 51483,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 51610,
+      "offset": 51604,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56486,
+      "offset": 56480,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 56618,
+      "offset": 56612,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 56782,
+      "offset": 56776,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 56826,
+      "offset": 56820,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 56867,
+      "offset": 56861,
       "length": 7,
       "value": "\"swipe\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 57097,
+      "offset": 57091,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 57294,
+      "offset": 57288,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 57333,
+      "offset": 57327,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 57370,
+      "offset": 57364,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59169,
+      "offset": 59163,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59207,
+      "offset": 59201,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59253,
+      "offset": 59247,
       "length": 2,
       "value": "84"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 59375,
+      "offset": 59369,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59423,
+      "offset": 59417,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59426,
+      "offset": 59420,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59438,
+      "offset": 59432,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59441,
+      "offset": 59435,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59452,
+      "offset": 59446,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59455,
+      "offset": 59449,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "FloatLiteral",
-      "offset": 59467,
+      "offset": 59461,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 59655,
+      "offset": 59649,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "FloatLiteral",
-      "offset": 59735,
+      "offset": 59729,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 59794,
+      "offset": 59788,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59848,
+      "offset": 59842,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59851,
+      "offset": 59845,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59863,
+      "offset": 59857,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59866,
+      "offset": 59860,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59877,
+      "offset": 59871,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59880,
+      "offset": 59874,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "FloatLiteral",
-      "offset": 59892,
+      "offset": 59886,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 60049,
+      "offset": 60043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60097,
+      "offset": 60091,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60100,
+      "offset": 60094,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60112,
+      "offset": 60106,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60115,
+      "offset": 60109,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60126,
+      "offset": 60120,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60129,
+      "offset": 60123,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "FloatLiteral",
-      "offset": 60141,
+      "offset": 60135,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 60338,
+      "offset": 60332,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "FloatLiteral",
-      "offset": 60418,
+      "offset": 60412,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 60477,
+      "offset": 60471,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60531,
+      "offset": 60525,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60534,
+      "offset": 60528,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60546,
+      "offset": 60540,
       "length": 2,
       "value": "33"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60549,
+      "offset": 60543,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60560,
+      "offset": 60554,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60563,
+      "offset": 60557,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "FloatLiteral",
-      "offset": 60575,
+      "offset": 60569,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 60749,
+      "offset": 60743,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60856,
+      "offset": 60850,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60865,
+      "offset": 60859,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60876,
+      "offset": 60870,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 60886,
+      "offset": 60880,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 60927,
+      "offset": 60921,
       "length": 14,
       "value": "\"endPhoneCall\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 61134,
+      "offset": 61128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61241,
+      "offset": 61235,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61250,
+      "offset": 61244,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61261,
+      "offset": 61255,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61271,
+      "offset": 61265,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 61312,
+      "offset": 61306,
       "length": 19,
       "value": "\"microphone-active\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 61401,
+      "offset": 61395,
       "length": 21,
       "value": "\"microphone-inactive\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 61623,
+      "offset": 61617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61730,
+      "offset": 61724,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61739,
+      "offset": 61733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61750,
+      "offset": 61744,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61760,
+      "offset": 61754,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 61801,
+      "offset": 61795,
       "length": 14,
       "value": "\"video-active\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 61885,
+      "offset": 61879,
       "length": 16,
       "value": "\"video-inactive\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 62098,
+      "offset": 62092,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62205,
+      "offset": 62199,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62214,
+      "offset": 62208,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62225,
+      "offset": 62219,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62235,
+      "offset": 62229,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 62276,
+      "offset": 62270,
       "length": 18,
       "value": "\"speaker-inactive\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 62494,
+      "offset": 62488,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62601,
+      "offset": 62595,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62610,
+      "offset": 62604,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62621,
+      "offset": 62615,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 62631,
+      "offset": 62625,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 62672,
+      "offset": 62666,
       "length": 24,
       "value": "\"file-transfer-inactive\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 62766,
+      "offset": 62760,
       "length": 22,
       "value": "\"file-transfer-active\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 62984,
+      "offset": 62978,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63091,
+      "offset": 63085,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63100,
+      "offset": 63094,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63111,
+      "offset": 63105,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63121,
+      "offset": 63115,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 63162,
+      "offset": 63156,
       "length": 23,
       "value": "\"screen-share-inactive\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 63255,
+      "offset": 63249,
       "length": 21,
       "value": "\"screen-share-active\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 63466,
+      "offset": 63460,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63573,
+      "offset": 63567,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63582,
+      "offset": 63576,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63593,
+      "offset": 63587,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 63603,
+      "offset": 63597,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 63631,
+      "offset": 63625,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 63675,
+      "offset": 63669,
       "length": 16,
       "value": "\"torch-inactive\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 63761,
+      "offset": 63755,
       "length": 14,
       "value": "\"torch-active\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "BooleanLiteral",
-      "offset": 74197,
+      "offset": 74191,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "StringLiteral",
-      "offset": 74302,
+      "offset": 74296,
       "length": 13,
       "value": "\"Not Allowed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 74360,
+      "offset": 74354,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/Views\/InCallView.swift",
       "kind": "IntegerLiteral",
-      "offset": 74391,
+      "offset": 74385,
       "length": 1,
       "value": "0"
     },
@@ -46839,35 +46027,42 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 793,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
-      "kind": "IntegerLiteral",
-      "offset": 882,
-      "length": 3,
-      "value": "120"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
-      "kind": "IntegerLiteral",
-      "offset": 895,
-      "length": 3,
-      "value": "160"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1032,
+      "offset": 785,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1145,
+      "offset": 848,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 937,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 950,
+      "length": 3,
+      "value": "160"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1087,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideoUI\/ViewControllers\/InCallVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1200,
       "length": 5,
       "value": "false"
     },
@@ -46930,7 +46125,7 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Broadcaster\/BroadcastReceiver.swift",
       "kind": "FloatLiteral",
-      "offset": 17470,
+      "offset": 17330,
       "length": 3,
       "value": "3.0"
     },
@@ -48423,334 +47618,341 @@
       "kind": "StringLiteral",
       "offset": 128,
       "length": 8,
-      "value": "\"1.14.8\""
+      "value": "\"1.14.9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 3735,
+      "offset": 944,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "StringLiteral",
-      "offset": 4980,
+      "offset": 4630,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "StringLiteral",
-      "offset": 5021,
+      "offset": 4671,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "StringLiteral",
-      "offset": 5065,
+      "offset": 4715,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "StringLiteral",
-      "offset": 4923,
+      "offset": 4573,
       "length": 16,
       "value": "\"SmartVideoSDK.GenesysAgentInfo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5340,
+      "offset": 4990,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5372,
+      "offset": 5022,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5395,
+      "offset": 5045,
       "length": 12,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5340,
+      "offset": 4990,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5372,
+      "offset": 5022,
       "length": 13,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5395,
+      "offset": 5045,
       "length": 12,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5495,
+      "offset": 5145,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5527,
+      "offset": 5177,
       "length": 11,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5548,
+      "offset": 5198,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5569,
+      "offset": 5219,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5589,
+      "offset": 5239,
       "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5611,
+      "offset": 5261,
       "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5495,
+      "offset": 5145,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5527,
+      "offset": 5177,
       "length": 11,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5548,
+      "offset": 5198,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5569,
+      "offset": 5219,
       "length": 10,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5589,
+      "offset": 5239,
       "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5611,
+      "offset": 5261,
       "length": 12,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5744,
+      "offset": 5394,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5744,
+      "offset": 5394,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5903,
+      "offset": 5470,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5918,
+      "offset": 5485,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5935,
+      "offset": 5502,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5903,
+      "offset": 5470,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5918,
+      "offset": 5485,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 5935,
+      "offset": 5502,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6014,
+      "offset": 5581,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6029,
+      "offset": 5596,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6044,
+      "offset": 5611,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6014,
+      "offset": 5581,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6029,
+      "offset": 5596,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6044,
+      "offset": 5611,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6135,
+      "offset": 5702,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6167,
+      "offset": 5734,
       "length": 21,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6198,
+      "offset": 5765,
       "length": 24,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6135,
+      "offset": 5702,
       "length": 22,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6167,
+      "offset": 5734,
       "length": 21,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6198,
+      "offset": 5765,
       "length": 24,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6297,
+      "offset": 5864,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6317,
+      "offset": 5884,
       "length": 4,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6297,
+      "offset": 5864,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/SmartVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 6317,
+      "offset": 5884,
       "length": 4,
       "value": "2"
     },
@@ -48771,56 +47973,56 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/Networking\/RestCompletions.swift",
       "kind": "BooleanLiteral",
-      "offset": 2882,
+      "offset": 2883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/Networking\/RestCompletions.swift",
       "kind": "StringLiteral",
-      "offset": 3091,
+      "offset": 3092,
       "length": 10,
       "value": "\"agentUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/Networking\/RestCompletions.swift",
       "kind": "BooleanLiteral",
-      "offset": 3158,
+      "offset": 3159,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysCloud\/GenesysEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 515,
+      "offset": 452,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysCloud\/GenesysEngine.swift",
       "kind": "StringLiteral",
-      "offset": 622,
+      "offset": 559,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysCloud\/GenesysEngine.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 607,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysCloud\/GenesysEngine.swift",
       "kind": "StringLiteral",
-      "offset": 718,
+      "offset": 655,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysCloud\/GenesysEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 940,
+      "offset": 827,
       "length": 4,
       "value": "true"
     },
@@ -49114,35 +48316,35 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/Engines\/Generic\/GenericEngine.swift",
       "kind": "StringLiteral",
-      "offset": 216,
+      "offset": 176,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/Engines\/Generic\/GenericEngine.swift",
       "kind": "StringLiteral",
-      "offset": 258,
+      "offset": 218,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/Engines\/Generic\/GenericEngine.swift",
       "kind": "StringLiteral",
-      "offset": 296,
+      "offset": 256,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/Engines\/Generic\/GenericEngine.swift",
       "kind": "Array",
-      "offset": 372,
+      "offset": 332,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/Engines\/Generic\/GenericEngine.swift",
       "kind": "StringLiteral",
-      "offset": 561,
+      "offset": 471,
       "length": 2,
       "value": "\"\""
     },
@@ -49485,42 +48687,42 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysEngage\/GenesysEngageEngine.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 286,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysEngage\/GenesysEngageEngine.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 334,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysEngage\/GenesysEngageEngine.swift",
       "kind": "StringLiteral",
-      "offset": 438,
+      "offset": 382,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysEngage\/GenesysEngageEngine.swift",
       "kind": "StringLiteral",
-      "offset": 486,
+      "offset": 430,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysEngage\/GenesysEngageEngine.swift",
       "kind": "StringLiteral",
-      "offset": 534,
+      "offset": 478,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/GenesysEngage\/GenesysEngageEngine.swift",
       "kind": "StringLiteral",
-      "offset": 582,
+      "offset": 526,
       "length": 2,
       "value": "\"\""
     },
@@ -50038,175 +49240,175 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3458,
+      "offset": 3213,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3479,
+      "offset": 3234,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3503,
+      "offset": 3258,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3524,
+      "offset": 3283,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3545,
+      "offset": 3304,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3566,
+      "offset": 3325,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3584,
+      "offset": 3343,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3604,
+      "offset": 3363,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3632,
+      "offset": 3391,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3653,
+      "offset": 3412,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3664,
+      "offset": 3423,
       "length": 5,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3458,
+      "offset": 3213,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3479,
+      "offset": 3234,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3503,
+      "offset": 3258,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3524,
+      "offset": 3283,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3545,
+      "offset": 3304,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3566,
+      "offset": 3325,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3584,
+      "offset": 3343,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3604,
+      "offset": 3363,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3632,
+      "offset": 3391,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3653,
+      "offset": 3412,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3664,
+      "offset": 3423,
       "length": 5,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "StringLiteral",
-      "offset": 4121,
+      "offset": 3880,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "StringLiteral",
-      "offset": 4155,
+      "offset": 3914,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/ConnectionData.swift",
       "kind": "IntegerLiteral",
-      "offset": 4439,
+      "offset": 4198,
       "length": 1,
       "value": "0"
     },
@@ -50262,7 +49464,7 @@
     {
       "filePath": "\/Users\/runner\/work\/SmartVideo-iOS-project\/SmartVideo-iOS-project\/SmartVideo\/SmartVideo\/Sources\/SmartVideo\/RTC\/RTCCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 18570,
+      "offset": 18574,
       "length": 4,
       "value": "true"
     },

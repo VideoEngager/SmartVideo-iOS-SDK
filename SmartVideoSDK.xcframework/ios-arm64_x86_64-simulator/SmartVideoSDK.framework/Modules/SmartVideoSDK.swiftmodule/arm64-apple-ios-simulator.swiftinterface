@@ -176,14 +176,13 @@ extension SmartVideoSDK.Version : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
 }
 public struct GenesysEngageConfigurations {
-  public let environment: SmartVideoSDK.Environment
   public let engineURL: Swift.String
   public let chatURL: Swift.String
   public var serverBaseURL: Swift.String
   public var service: Swift.String
   public var agentURL: Swift.String
   public var authorizationValue: Swift.String
-  public init(environment: SmartVideoSDK.Environment, engineURL: Swift.String, chatURL: Swift.String, serverBaseURL: Swift.String, service: Swift.String, agentURL: Swift.String, authorizationValue: Swift.String)
+  public init(engineURL: Swift.String, chatURL: Swift.String, serverBaseURL: Swift.String, service: Swift.String, agentURL: Swift.String, authorizationValue: Swift.String)
   public init(dictionary: [Swift.String : Any]) throws
 }
 @frozen public struct AnyEncodable : Swift.Encodable {
@@ -498,7 +497,6 @@ extension SmartVideoSDK.UserAgent : Swift.CustomStringConvertible {
 @_hasMissingDesignatedInitializers public class GenesysEngage {
   public static var shared: SmartVideoSDK.GenesysEngage
   public func connect(with connectEngine: SmartVideoSDK.GenesysEngageEngine)
-  public func updateConfiguration(configuration: SmartVideoSDK.GenesysEngageConfigurations)
   @objc deinit
 }
 public struct FileInfo : Swift.Codable {
@@ -542,7 +540,6 @@ public protocol BroadcastSender {
   public func connect(with connectEngine: SmartVideoSDK.GenesysEngine)
   public func disconnect()
   public func applicationDidBecomeActive()
-  public func updateConfiguration(configuration: SmartVideoSDK.GenesysConfigurations)
   @objc deinit
 }
 extension SmartVideoSDK.Genesys : SmartVideoSDK.WebSocketDelegate {
@@ -580,7 +577,6 @@ public enum BroadcastParameters {
   public static let defaultFps: Swift.Int
 }
 public struct GenesysConfigurations {
-  public let environment: SmartVideoSDK.Environment
   public var organizationID: Swift.String
   public var deploymentID: Swift.String
   public var engineUrl: Swift.String
@@ -588,7 +584,7 @@ public struct GenesysConfigurations {
   public var queue: Swift.String
   public var baseURL: Swift.String
   public var tenantId: Swift.String
-  public init(environment: SmartVideoSDK.Environment, organizationID: Swift.String, deploymentID: Swift.String, tenantId: Swift.String, environmentURL: Swift.String, queue: Swift.String, engineUrl: Swift.String)
+  public init(organizationID: Swift.String, deploymentID: Swift.String, tenantId: Swift.String, environmentURL: Swift.String, queue: Swift.String, engineUrl: Swift.String)
   public init(dictionary: [Swift.String : Any]) throws
 }
 public class WSCompression : SmartVideoSDK.CompressionHandler {
@@ -697,14 +693,13 @@ public func writeUint32(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
 public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value: Swift.UInt64)
 @_hasMissingDesignatedInitializers open class SmartVideo {
   public static let version: Swift.String
-  public static var environment: SmartVideoSDK.Environment
   public static var settings: SmartVideoSDK.SmartVideoSettings
   public static var delegate: SmartVideoSDK.SmartVideoDelegate?
   public static var chatDelegate: SmartVideoSDK.SmartVideoChatDelegate?
   public static var callManager: SmartVideoSDK.CallManager
   public static func connect(shortURL: Swift.String)
   public static func setup(engine: SmartVideoSDK.SmartVideoEngine)
-  public static func connect(engine: SmartVideoSDK.SmartVideoEngine, isVideo: Swift.Bool? = nil, lang: Swift.String)
+  public static func connect(engine: SmartVideoSDK.SmartVideoEngine, isVideo: Swift.Bool = false, lang: Swift.String)
   public static func disconnect()
   public static func setLogging(level: SmartVideoSDK.LogLevel, types: [SmartVideoSDK.LogType])
   public static func applicationDidBecomeActive()
@@ -765,15 +760,6 @@ public func writeUint64(_ buffer: inout [Swift.UInt8], offset: Swift.Int, value:
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum Environment : Swift.String {
-  case staging
-  case live
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
     get
   }
 }
@@ -847,7 +833,6 @@ public protocol Transport : AnyObject {
   var usingTLS: Swift.Bool { get }
 }
 public struct GenesysEngine : SmartVideoSDK.SmartVideoEngine {
-  public var environment: SmartVideoSDK.Environment
   public var commType: SmartVideoSDK.SmartVideoCommunicationChannelType?
   public var isVideo: Swift.Bool
   public var customSettings: [Swift.String : Any]?
@@ -855,7 +840,7 @@ public struct GenesysEngine : SmartVideoSDK.SmartVideoEngine {
   public var firstName: Swift.String
   public var lastName: Swift.String
   public var memberInfo: [Swift.String : Any]?
-  public init(environment: SmartVideoSDK.Environment = .live, commType: SmartVideoSDK.SmartVideoCommunicationChannelType = .call, isVideo: Swift.Bool = true, configurations: SmartVideoSDK.GenesysConfigurations? = nil, settings: SmartVideoSDK.GenesysEngineSettings? = nil, memberInfo: [Swift.String : Any]? = nil)
+  public init(commType: SmartVideoSDK.SmartVideoCommunicationChannelType = .call, isVideo: Swift.Bool = true, configurations: SmartVideoSDK.GenesysConfigurations, settings: SmartVideoSDK.GenesysEngineSettings? = nil, memberInfo: [Swift.String : Any]? = nil)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
@@ -901,7 +886,6 @@ extension Swift.String {
   public func mimeType() -> Swift.String
 }
 public struct GenericConfigurations {
-  public let environment: SmartVideoSDK.Environment
   public let baseURL: Swift.String
   public let agents: [SmartVideoSDK.SmartVideoAgent]
   public init(dictionary: [Swift.String : Any]) throws
@@ -921,12 +905,11 @@ public struct GenericConfigurations {
   @objc deinit
 }
 public class GenericEngine : SmartVideoSDK.SmartVideoEngine {
-  public var environment: SmartVideoSDK.Environment
   public var shortURL: Swift.String
   public var invitationURL: Swift.String
   public var userAgent: Swift.String
-  public init(environment: SmartVideoSDK.Environment = .live, shortURL: Swift.String, userAgent: Swift.String = "")
-  public init(environment: SmartVideoSDK.Environment = .live, invitationURL: Swift.String)
+  public init(shortURL: Swift.String, userAgent: Swift.String = "")
+  public init(invitationURL: Swift.String)
   public func connect()
   public func disconnect()
   public func applicationDidBecomeActive()
@@ -1081,16 +1064,15 @@ open class WebSocket : SmartVideoSDK.WebSocketClient, SmartVideoSDK.EngineDelega
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GenesysEngageEngine : SmartVideoSDK.SmartVideoEngine {
-  public var environment: SmartVideoSDK.Environment
   public var email: Swift.String
   public var firstName: Swift.String
   public var lastName: Swift.String
   public var nickname: Swift.String
   public var subject: Swift.String
   public var shortURL: Swift.String
-  convenience public init(environment: SmartVideoSDK.Environment = .live, shortURL: Swift.String, firstName: Swift.String, lastName: Swift.String, email: Swift.String?, subject: Swift.String?)
-  convenience public init(environment: SmartVideoSDK.Environment = .live, shortURL: Swift.String, nickname: Swift.String, email: Swift.String?, subject: Swift.String?)
-  convenience public init(environment: SmartVideoSDK.Environment = .live, shortURL: Swift.String, firstName: Swift.String, lastName: Swift.String, nickname: Swift.String, email: Swift.String?, subject: Swift.String?)
+  convenience public init(shortURL: Swift.String, firstName: Swift.String, lastName: Swift.String, email: Swift.String?, subject: Swift.String?)
+  convenience public init(shortURL: Swift.String, nickname: Swift.String, email: Swift.String?, subject: Swift.String?)
+  convenience public init(shortURL: Swift.String, firstName: Swift.String, lastName: Swift.String, nickname: Swift.String, email: Swift.String?, subject: Swift.String?)
   public func connect()
   public func disconnect()
   public func startChat()
@@ -1373,9 +1355,6 @@ extension SmartVideoSDK.SmartVideoCallStatus : Swift.RawRepresentable {}
 extension SmartVideoSDK.SmartVideoCommunicationChannelType : Swift.Equatable {}
 extension SmartVideoSDK.SmartVideoCommunicationChannelType : Swift.Hashable {}
 extension SmartVideoSDK.SmartVideoCommunicationChannelType : Swift.RawRepresentable {}
-extension SmartVideoSDK.Environment : Swift.Equatable {}
-extension SmartVideoSDK.Environment : Swift.Hashable {}
-extension SmartVideoSDK.Environment : Swift.RawRepresentable {}
 extension SmartVideoSDK.VideoStreamState : Swift.Equatable {}
 extension SmartVideoSDK.VideoStreamState : Swift.Hashable {}
 extension SmartVideoSDK.VideoStreamState : Swift.RawRepresentable {}
