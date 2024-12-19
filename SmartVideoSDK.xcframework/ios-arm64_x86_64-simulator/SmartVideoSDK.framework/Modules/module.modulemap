@@ -1,7 +1,12 @@
 framework module SmartVideoSDK {
   umbrella header "SmartVideoSDK.h"
+<<<<<<< HEAD
   export *
 
+=======
+
+  export *
+>>>>>>> main
   module * { export * }
 }
 
