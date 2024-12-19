@@ -1,0 +1,71 @@
+
+{
+    "vc": {
+        "general": {
+            "alertTitle": "Съжаляваме",
+            "alertMessage": "Възникна неочаквана грешка. Моля, опитайте отново по-късно.",
+            "alertButton": "Добре"
+        },
+        "comm": {
+            "alertTitle_401": "Съжаляваме",
+            "alertMessage_401": "Не можем да изпълним вашата заявка. Моля, опитайте отново по-късно.",
+            "alertButton_401": "Добре"
+        },
+        "outgoing": {
+            "connecting": "Свързване ...",
+            "agentName": "Име на агент"
+        },
+        "callTimeout": {
+            "agentBusy": "Агентът е зает",
+            "cancelButtonText": "Отказ",
+            "callBackButtonText": "Обади се отново"
+        },
+        "no_internet_ctrl": {
+            "exit": "Изход",
+            "title": "Няма интернет връзка",
+            "subtitle": "Не сте свързани с интернет. Ние ще продължим да наблюдаваме вашата свързаност и ще известим веднага след възстановяването. Междувременно се уверете, че Wi-Fi е включен или самолетен режим е изключен.",
+            "alertTitle": "Вече сте свързани",
+            "alertMessage": "Вашата интернет връзка беше възстановена и вече можете да се обадите до вашия агент.",
+            "alertButton": "Добре"
+        },
+        "incall": {
+            "peerConnectionLost_alertTitle": "Съжаляваме",
+            "peerConnectionLost_alertMessage": "За съжаление загубихме комуникация с вашия агент и обаждането скоро ще бъде прекратено.",
+            "peerConnectionLost_buttonTitle": "Добре",
+            "torch_notSupported_alertTitle": "Съжаляваме",
+            "torch_notSupported_alertMessage": "Текущата ви камера не поддържа флаш. Ако в момента използвате предната камера, моля, превключете на задната камера и опитайте отново.",
+            "torch_notSupported_buttonTitle": "Добре",
+            "torch_configErr_alertTitle": "Съжаляваме",
+            "torch_configErr_alertMessage": "За съжаление, възникна грешка при конфигуриране на флаша и не можем да изпълним заявката ви. Моля, опитайте отново по-късно.",
+            "torch_configErr_buttonTitle": "Добре",
+            "call_on_hold": "Агентът постави това обаждане в режим на задържане. Изчакайте секунда",
+            "file_transfer_in_accept": "Приемете",
+            "file_transfer_in_reject": "Отхвърлете",
+            "switch_from_audio_to_video_call_not_allowed": "Тази операция е забранена от администратора на приложението"
+        },
+        "sendfile": {
+            "recent": "Recent",
+            "media": "Media",
+            "browse": "Browse",
+            "photo_selector_backBarButton_cancel": "Cancel",
+            "photo_selector_rightBarButton_share": "Send",
+            "photo_selector_notificationTitleString1": "Allow",
+            "photo_selector_notificationTitleString2": "access to your photos".
+            "photo_selector_notificationSubtitleString": "Access was previously denied, please grant access from Settings.",
+            "photo_selector_iOSSettingsLabel": "Open iPhone settings",
+            "photo_selector_iOSPrivacyLabel": "Tap Privacy",
+            "photo_selector_iOSSwitchLabel1": "Change",
+            "photo_selector_iOSSwitchLabel2": "from None to All Photos",
+            "photo_selector_iOSPhotosLabel": "Tap Photos",
+            "photo_selector_iOSSwitchIcon": "None",
+            "photo_selector_gotItButtonText": "Got It"
+        },
+        "photoselector": {
+            "selectedImage_alertTitle": "Съжаляваме",
+            "selectedImage_alertMessage1": "The image you would like to send is larger that the allowed limit of ",
+            "selectedImage_alertMessage2": "We won't be able to send it. Please select a different image or compress this image and try to send it again.",
+            "selectedImage_buttonTitle": "Добре"
+            
+        }
+    }
+}
