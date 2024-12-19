@@ -31,5 +31,6 @@ Pod::Spec.new do |spec|
 
  spec.dependency 'WebRTC-lib'
  spec.dependency 'GenesysCloudMessengerTransport'
+ spec.dependency 'CobrowseIO'
 
 end
