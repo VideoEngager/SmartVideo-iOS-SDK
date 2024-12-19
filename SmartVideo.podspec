@@ -25,9 +25,11 @@ Pod::Spec.new do |spec|
   spec.homepage = 'https://github.com/VideoEngager/SmartVideo-iOS-SDK'
   spec.license = { :type => "MIT", :file => "LICENSE" }
   spec.authors = { 'VideoEngager' => 'support@videoengager.com' }
-  spec.source = { :git => 'https://github.com/VideoEngager/SmartVideo-iOS-SDK.git', :tag => spec.version }
+  # spec.source = { :git => 'https://github.com/VideoEngager/SmartVideo-iOS-SDK.git', :tag => spec.version }
+  spec.source = { :http => 'https://github.com/VideoEngager/SmartVideo-iOS-SDK/releases/download/1.15.0/SmartVideo.xcframework.zip' }
   spec.vendored_frameworks = 'SmartVideoSDK.xcframework'
 
-  spec.dependency 'WebRTC-lib', '104.0.0
-  spec.dependency 'GenesysCloudMessengerTransport'
+ spec.dependency 'WebRTC-lib'
+ spec.dependency 'GenesysCloudMessengerTransport'
+
 end
