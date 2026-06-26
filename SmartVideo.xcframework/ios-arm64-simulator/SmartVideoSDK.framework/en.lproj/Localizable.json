@@ -1,0 +1,71 @@
+
+{
+    "vc": {
+        "general": {
+            "alertTitle": "Woooops",
+            "alertMessage": "Unfortunately, an unexpected error has occurred. Please try again later.",
+            "alertButton": "Ok"
+        },
+        "comm": {
+            "alertTitle_401": "Woooops",
+            "alertMessage_401": "Unfortunately, we are unable to serve your request. Please try again later.",
+            "alertButton_401": "Ok"
+        },
+        "outgoing": {
+            "connecting": "Connecting ...",
+            "agentName": "Agent name"
+        },
+        "callTimeout": {
+            "agentBusy": "Agent busy",
+            "cancelButtonText": "Cancel",
+            "callBackButtonText": "Call Back"
+        },
+        "no_internet_ctrl": {
+            "exit": "Exit",
+            "title": "No Internet Connection",
+            "subtitle": "You are not connected to the internet. We will continue to monitor your conectivity and will notify as soon as restored. In the meantime, please make sure Wi-Fi is on or Airplane Mode is off.",
+            "alertTitle": "You'are now connected",
+            "alertMessage": "Your internet connectivity was restored and you are now able to place a call to your support agent.",
+            "alertButton": "Ok"
+        },
+        "incall": {
+            "peerConnectionLost_alertTitle": "Woooops",
+            "peerConnectionLost_alertMessage": "Unfortunately, we lost communication with your agent and the call will be shortly terminated.",
+            "peerConnectionLost_buttonTitle": "Ok",
+            "torch_notSupported_alertTitle": "Woooops",
+            "torch_notSupported_alertMessage": "Your current camera does NOT support torch. If you currently use your front camera, please switch to your back camera and try again.",
+            "torch_notSupported_buttonTitle": "OK",
+            "torch_configErr_alertTitle": "Woooops",
+            "torch_configErr_alertMessage": "Unfortunately, there was a torch config error and we are unable to serve your request. Please try again later.",
+            "torch_configErr_buttonTitle": "OK",
+            "call_on_hold": "The agent put this call on hold. Hang on a sec.",
+            "file_transfer_in_accept": "Accept",
+            "file_transfer_in_reject": "Reject",
+            "switch_from_audio_to_video_call_not_allowed": "This operation is prohibited by app administrator"
+        },
+        "sendfile": {
+            "recent": "Recent",
+            "media": "Media",
+            "browse": "Browse",
+            "photo_selector_backBarButton_cancel": "Cancel",
+            "photo_selector_rightBarButton_share": "Send",
+            "photo_selector_notificationTitleString1": "Allow",
+            "photo_selector_notificationTitleString2": "access to your photos".
+            "photo_selector_notificationSubtitleString": "Access was previously denied, please grant access from Settings.",
+            "photo_selector_iOSSettingsLabel": "Open iPhone settings",
+            "photo_selector_iOSPrivacyLabel": "Tap Privacy",
+            "photo_selector_iOSSwitchLabel1": "Change",
+            "photo_selector_iOSSwitchLabel2": "from None to All Photos",
+            "photo_selector_iOSPhotosLabel": "Tap Photos",
+            "photo_selector_iOSSwitchIcon": "None",
+            "photo_selector_gotItButtonText": "Got It"
+        },
+        "photoselector": {
+            "selectedImage_alertTitle": "Woooops",
+            "selectedImage_alertMessage1": "The image you would like to send is larger that the allowed limit of ",
+            "selectedImage_alertMessage2": "We won't be able to send it. Please select a different image or compress this image and try to send it again.",
+            "selectedImage_buttonTitle": "OK"
+            
+        }
+    }
+}

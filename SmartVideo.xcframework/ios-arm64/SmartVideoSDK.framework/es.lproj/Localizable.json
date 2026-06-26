@@ -1,0 +1,71 @@
+
+{
+    "vc": {
+        "general": {
+            "alertTitle": "Lo siento",
+            "alertMessage": "Desafortunadamente, ha ocurrido un error inesperado. Por favor, inténtelo de nuevo más tarde.",
+            "alertButton": "Multa"
+        },
+        "comm": {
+            "alertTitle_401": "Lo siento",
+            "alertMessage_401": "Desafortunadamente, no podemos atender su solicitud. Por favor, inténtelo de nuevo más tarde.",
+            "alertButton_401": "Multa"
+        },
+        "outgoing": {
+            "connecting": "Conectando ...",
+            "agentName": "Nombre del agente"
+        },
+        "callTimeout": {
+            "agentBusy": "Agente ocupado/a",
+            "cancelButtonText": "Cancelar",
+            "callBackButtonText": "Llamar de vuelta"
+        },
+        "no_internet_ctrl": {
+            "exit": "Salida",
+            "title": "Sin conexión a Internet",
+            "subtitle": "No estás conectado a Internet. Continuaremos monitoreando su conectividad y le notificaremos tan pronto como se restaure. Mientras tanto, asegúrese de que la conexión Wi-Fi esté encendida o que el modo avión esté apagado.",
+            "alertTitle": "Ahora estas conectado/a",
+            "alertMessage": "Se restauró su conectividad a Internet y ahora puede llamar a su agente de soporte.",
+            "alertButton": "Multa"
+        },
+        "incall": {
+            "peerConnectionLost_alertTitle": "Lo siento",
+            "peerConnectionLost_alertMessage": "Desafortunadamente, perdimos la comunicación con su agente y la llamada terminará en breve.",
+            "peerConnectionLost_buttonTitle": "Multa",
+            "torch_notSupported_alertTitle": "Lo siento",
+            "torch_notSupported_alertMessage": "Su cámara actual NO es compatible con antorcha. Si actualmente usa su cámara frontal, cambie a su cámara trasera y vuelva a intentarlo.",
+            "torch_notSupported_buttonTitle": "Multa",
+            "torch_configErr_alertTitle": "Lo siento",
+            "torch_configErr_alertMessage": "Desafortunadamente, hubo un error de configuración de la antorcha y no podemos atender su solicitud. Por favor, inténtelo de nuevo más tarde.",
+            "torch_configErr_buttonTitle": "Multa",
+            "call_on_hold": "El agente puso esta llamada en espera. Espera un segundo.",
+            "file_transfer_in_accept": "Aceptar",
+            "file_transfer_in_reject": "Rechazar",
+            "switch_from_audio_to_video_call_not_allowed": "Esta operación está prohibida por el administrador de la aplicación."
+        },
+        "sendfile": {
+            "recent": "Recent",
+            "media": "Media",
+            "browse": "Browse",
+            "photo_selector_backBarButton_cancel": "Cancel",
+            "photo_selector_rightBarButton_share": "Send",
+            "photo_selector_notificationTitleString1": "Allow",
+            "photo_selector_notificationTitleString2": "access to your photos".
+            "photo_selector_notificationSubtitleString": "Access was previously denied, please grant access from Settings.",
+            "photo_selector_iOSSettingsLabel": "Open iPhone settings",
+            "photo_selector_iOSPrivacyLabel": "Tap Privacy",
+            "photo_selector_iOSSwitchLabel1": "Change",
+            "photo_selector_iOSSwitchLabel2": "from None to All Photos",
+            "photo_selector_iOSPhotosLabel": "Tap Photos",
+            "photo_selector_iOSSwitchIcon": "None",
+            "photo_selector_gotItButtonText": "Got It"
+        },
+        "photoselector": {
+            "selectedImage_alertTitle": "Lo siento",
+            "selectedImage_alertMessage1": "The image you would like to send is larger that the allowed limit of ",
+            "selectedImage_alertMessage2": "We won't be able to send it. Please select a different image or compress this image and try to send it again.",
+            "selectedImage_buttonTitle": "Multa"
+            
+        }
+    }
+}
