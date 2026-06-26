@@ -1,0 +1,71 @@
+
+{
+    "vc": {
+        "general": {
+            "alertTitle": "Entschuldigung",
+            "alertMessage": "Leider ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.",
+            "alertButton": "Fein"
+        },
+        "comm": {
+            "alertTitle_401": "Entschuldigung",
+            "alertMessage_401": "Leider können wir Ihre Anfrage nicht bearbeiten. Bitte versuchen Sie es später noch einmal.",
+            "alertButton_401": "Fein"
+        },
+        "outgoing": {
+            "connecting": "Anschließen ...",
+            "agentName": "Agentenname"
+        },
+        "callTimeout": {
+            "agentBusy": "Agent beschäftigt",
+            "cancelButtonText": "Stornieren",
+            "callBackButtonText": "Zurückrufen"
+        },
+        "no_internet_ctrl": {
+            "exit": "Ausgang",
+            "title": "Keine Internetverbindung",
+            "subtitle": "Sie sind nicht mit dem Internet verbunden. Wir werden Ihre Konnektivität weiterhin überwachen und benachrichtigen, sobald sie wiederhergestellt ist. Stellen Sie in der Zwischenzeit sicher, dass WLAN aktiviert oder der Flugzeugmodus deaktiviert ist.",
+            "alertTitle": "Sie sind jetzt verbunden",
+            "alertMessage": "Ihre Internetverbindung wurde wiederhergestellt und Sie können jetzt einen Anruf bei Ihrem Support-Mitarbeiter tätigen.",
+            "alertButton": "Fein"
+        },
+        "incall": {
+            "peerConnectionLost_alertTitle": "Entschuldigung",
+            "peerConnectionLost_alertMessage": "Leider haben wir die Kommunikation mit Ihrem Agenten verloren und der Anruf wird in Kürze beendet.",
+            "peerConnectionLost_buttonTitle": "Fein",
+            "torch_notSupported_alertTitle": "Entschuldigung",
+            "torch_notSupported_alertMessage": "Ihre aktuelle Kamera unterstützt keine Taschenlampe. Wenn Sie derzeit Ihre Frontkamera verwenden, wechseln Sie bitte zu Ihrer Rückkamera und versuchen Sie es erneut.",
+            "torch_notSupported_buttonTitle": "Fein",
+            "torch_configErr_alertTitle": "Entschuldigung",
+            "torch_configErr_alertMessage": "Leider ist ein Fehler bei der Konfiguration der Taschenlampe aufgetreten, und wir können Ihre Anfrage nicht bearbeiten. Bitte versuchen Sie es später noch einmal.",
+            "torch_configErr_buttonTitle": "Fein",
+            "call_on_hold": "Der Agent hat diesen Anruf gehalten. Warte eine Sekunde.",
+            "file_transfer_in_accept": "Akzeptieren",
+            "file_transfer_in_reject": "Ablehnen",
+            "switch_from_audio_to_video_call_not_allowed": "Dieser Vorgang wurde vom App-Administrator verboten"
+        },
+        "sendfile": {
+            "recent": "Recent",
+            "media": "Media",
+            "browse": "Browse",
+            "photo_selector_backBarButton_cancel": "Cancel",
+            "photo_selector_rightBarButton_share": "Send",
+            "photo_selector_notificationTitleString1": "Allow",
+            "photo_selector_notificationTitleString2": "access to your photos".
+            "photo_selector_notificationSubtitleString": "Access was previously denied, please grant access from Settings.",
+            "photo_selector_iOSSettingsLabel": "Open iPhone settings",
+            "photo_selector_iOSPrivacyLabel": "Tap Privacy",
+            "photo_selector_iOSSwitchLabel1": "Change",
+            "photo_selector_iOSSwitchLabel2": "from None to All Photos",
+            "photo_selector_iOSPhotosLabel": "Tap Photos",
+            "photo_selector_iOSSwitchIcon": "None",
+            "photo_selector_gotItButtonText": "Got It
+        },
+        "photoselector": {
+            "selectedImage_alertTitle": "Entschuldigung",
+            "selectedImage_alertMessage1": "The image you would like to send is larger that the allowed limit of ",
+            "selectedImage_alertMessage2": "We won't be able to send it. Please select a different image or compress this image and try to send it again.",
+            "selectedImage_buttonTitle": "Fein"
+            
+        }
+    }
+}
