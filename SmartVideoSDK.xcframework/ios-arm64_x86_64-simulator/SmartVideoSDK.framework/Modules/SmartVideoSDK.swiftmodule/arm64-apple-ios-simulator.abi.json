@@ -54435,273 +54435,273 @@
       "value": "\"i386 : iPhone Simulator\nx86_64 : iPhone Simulator\niPhone1,1 : iPhone\niPhone1,2 : iPhone 3G\niPhone2,1 : iPhone 3GS\niPhone3,1 : iPhone 4\niPhone3,2 : iPhone 4 GSM Rev A\niPhone3,3 : iPhone 4 CDMA\niPhone4,1 : iPhone 4S\niPhone5,1 : iPhone 5 (GSM)\niPhone5,2 : iPhone 5 (GSM+CDMA)\niPhone5,3 : iPhone 5C (GSM)\niPhone5,4 : iPhone 5C (Global)\niPhone6,1 : iPhone 5S (GSM)\niPhone6,2 : iPhone 5S (Global)\niPhone7,1 : iPhone 6 Plus\niPhone7,2 : iPhone 6\niPhone8,1 : iPhone 6s\niPhone8,2 : iPhone 6s Plus\niPhone8,4 : iPhone SE (GSM)\niPhone9,1 : iPhone 7\niPhone9,2 : iPhone 7 Plus\niPhone9,3 : iPhone 7\niPhone9,4 : iPhone 7 Plus\niPhone10,1 : iPhone 8\niPhone10,2 : iPhone 8 Plus\niPhone10,3 : iPhone X Global\niPhone10,4 : iPhone 8\niPhone10,5 : iPhone 8 Plus\niPhone10,6 : iPhone X GSM\niPhone11,2 : iPhone XS\niPhone11,4 : iPhone XS Max\niPhone11,6 : iPhone XS Max Global\niPhone11,8 : iPhone XR\niPhone12,1 : iPhone 11\niPhone12,3 : iPhone 11 Pro\niPhone12,5 : iPhone 11 Pro Max\niPhone12,8 : iPhone SE 2nd Gen\niPhone13,1 : iPhone 12 Mini\niPhone13,2 : iPhone 12\niPhone13,3 : iPhone 12 Pro\niPhone13,4 : iPhone 12 Pro Max\n\niPod1,1 : 1st Gen iPod\niPod2,1 : 2nd Gen iPod\niPod3,1 : 3rd Gen iPod\niPod4,1 : 4th Gen iPod\niPod5,1 : 5th Gen iPod\niPod7,1 : 6th Gen iPod\niPod9,1 : 7th Gen iPod\n\niPad1,1 : iPad\niPad1,2 : iPad 3G\niPad2,1 : 2nd Gen iPad\niPad2,2 : 2nd Gen iPad GSM\niPad2,3 : 2nd Gen iPad CDMA\niPad2,4 : 2nd Gen iPad New Revision\niPad3,1 : 3rd Gen iPad\niPad3,2 : 3rd Gen iPad CDMA\niPad3,3 : 3rd Gen iPad GSM\niPad2,5 : iPad mini\niPad2,6 : iPad mini GSM+LTE\niPad2,7 : iPad mini CDMA+LTE\niPad3,4 : 4th Gen iPad\niPad3,5 : 4th Gen iPad GSM+LTE\niPad3,6 : 4th Gen iPad CDMA+LTE\niPad4,1 : iPad Air (WiFi)\niPad4,2 : iPad Air (GSM+CDMA)\niPad4,3 : 1st Gen iPad Air (China)\niPad4,4 : iPad mini Retina (WiFi)\niPad4,5 : iPad mini Retina (GSM+CDMA)\niPad4,6 : iPad mini Retina (China)\niPad4,7 : iPad mini 3 (WiFi)\niPad4,8 : iPad mini 3 (GSM+CDMA)\niPad4,9 : iPad Mini 3 (China)\niPad5,1 : iPad mini 4 (WiFi)\niPad5,2 : 4th Gen iPad mini (WiFi+Cellular)\niPad5,3 : iPad Air 2 (WiFi)\niPad5,4 : iPad Air 2 (Cellular)\niPad6,3 : iPad Pro (9.7 inch, WiFi)\niPad6,4 : iPad Pro (9.7 inch, WiFi+LTE)\niPad6,7 : iPad Pro (12.9 inch, WiFi)\niPad6,8 : iPad Pro (12.9 inch, WiFi+LTE)\niPad6,11 : iPad (2017)\niPad6,12 : iPad (2017)\niPad7,1 : iPad Pro 2nd Gen (WiFi)\niPad7,2 : iPad Pro 2nd Gen (WiFi+Cellular)\niPad7,3 : iPad Pro 10.5-inch\niPad7,4 : iPad Pro 10.5-inch\niPad7,5 : iPad 6th Gen (WiFi)\niPad7,6 : iPad 6th Gen (WiFi+Cellular)\niPad7,11 : iPad 7th Gen 10.2-inch (WiFi)\niPad7,12 : iPad 7th Gen 10.2-inch (WiFi+Cellular)\niPad8,1 : iPad Pro 11 inch 3rd Gen (WiFi)\niPad8,2 : iPad Pro 11 inch 3rd Gen (1TB, WiFi)\niPad8,3 : iPad Pro 11 inch 3rd Gen (WiFi+Cellular)\niPad8,4 : iPad Pro 11 inch 3rd Gen (1TB, WiFi+Cellular)\niPad8,5 : iPad Pro 12.9 inch 3rd Gen (WiFi)\niPad8,6 : iPad Pro 12.9 inch 3rd Gen (1TB, WiFi)\niPad8,7 : iPad Pro 12.9 inch 3rd Gen (WiFi+Cellular)\niPad8,8 : iPad Pro 12.9 inch 3rd Gen (1TB, WiFi+Cellular)\niPad8,9 : iPad Pro 11 inch 4th Gen (WiFi)\niPad8,10 : iPad Pro 11 inch 4th Gen (WiFi+Cellular)\niPad8,11 : iPad Pro 12.9 inch 4th Gen (WiFi)\niPad8,12 : iPad Pro 12.9 inch 4th Gen (WiFi+Cellular)\niPad11,1 : iPad mini 5th Gen (WiFi)\niPad11,2 : iPad mini 5th Gen\niPad11,3 : iPad Air 3rd Gen (WiFi)\niPad11,4 : iPad Air 3rd Gen\niPad11,6 : iPad 8th Gen (WiFi)\niPad11,7 : iPad 8th Gen (WiFi+Cellular)\niPad13,1 : iPad air 4th Gen (WiFi)\niPad13,2 : iPad air 4th Gen (WiFi+Celular)\n\nWatch1,1 : Apple Watch 38mm case\nWatch1,2 : Apple Watch 42mm case\nWatch2,6 : Apple Watch Series 1 38mm case\nWatch2,7 : Apple Watch Series 1 42mm case\nWatch2,3 : Apple Watch Series 2 38mm case\nWatch2,4 : Apple Watch Series 2 42mm case\nWatch3,1 : Apple Watch Series 3 38mm case (GPS+Cellular)\nWatch3,2 : Apple Watch Series 3 42mm case (GPS+Cellular)\nWatch3,3 : Apple Watch Series 3 38mm case (GPS)\nWatch3,4 : Apple Watch Series 3 42mm case (GPS)\nWatch4,1 : Apple Watch Series 4 40mm case (GPS)\nWatch4,2 : Apple Watch Series 4 44mm case (GPS)\nWatch4,3 : Apple Watch Series 4 40mm case (GPS+Cellular)\nWatch4,4 : Apple Watch Series 4 44mm case (GPS+Cellular)\nWatch5,1 : Apple Watch Series 5 40mm case (GPS)\nWatch5,2 : Apple Watch Series 5 44mm case (GPS)\nWatch5,3 : Apple Watch Series 5 40mm case (GPS+Cellular)\nWatch5,4 : Apple Watch Series 5 44mm case (GPS+Cellular)\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 749,
       "length": 20,
       "value": "\"ShareScreenWarning\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 904,
       "length": 17,
       "value": "\"alertErrorImage\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1060,
       "length": 19,
       "value": "\"alertSuccessImage\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1206,
       "length": 11,
       "value": "\"call-back\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1359,
       "length": 19,
       "value": "\"call-center-agent\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1500,
       "length": 8,
       "value": "\"camera\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1643,
       "length": 15,
       "value": "\"camera-switch\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1780,
       "length": 8,
       "value": "\"cancel\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1928,
       "length": 17,
       "value": "\"closeCallButton\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2079,
       "length": 14,
       "value": "\"endPhoneCall\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2241,
       "length": 22,
       "value": "\"file-transfer-active\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2415,
       "length": 24,
       "value": "\"file-transfer-inactive\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2575,
       "length": 15,
       "value": "\"iOSPhotosIcon\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2728,
       "length": 16,
       "value": "\"iOSPrivacyIcon\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2884,
       "length": 17,
       "value": "\"iOSSettingsIcon\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3031,
       "length": 12,
       "value": "\"infoButton\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3180,
       "length": 16,
       "value": "\"infoButton-bkp\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3323,
       "length": 11,
       "value": "\"mic-muted\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3477,
       "length": 19,
       "value": "\"microphone-active\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3643,
       "length": 21,
       "value": "\"microphone-inactive\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3816,
       "length": 24,
       "value": "\"no-internet-connection\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3997,
       "length": 27,
       "value": "\"no-internet-connection-bg\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4146,
       "length": 8,
       "value": "\"onHold\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4286,
       "length": 13,
       "value": "\"phoneCallBg\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4435,
       "length": 15,
       "value": "\"photoSelector\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4584,
       "length": 14,
       "value": "\"rotateCamera\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4744,
       "length": 21,
       "value": "\"screen-share-active\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4915,
       "length": 23,
       "value": "\"screen-share-inactive\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5075,
       "length": 16,
       "value": "\"speaker-active\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5232,
       "length": 18,
       "value": "\"speaker-inactive\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5393,
       "length": 19,
       "value": "\"speaker-indicator\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5532,
       "length": 7,
       "value": "\"swipe\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5679,
       "length": 17,
       "value": "\"takePhotoButton\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5838,
       "length": 18,
       "value": "\"takePhotoButton1\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5998,
       "length": 18,
       "value": "\"takePhotoButton2\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6149,
       "length": 14,
       "value": "\"torch-active\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6300,
       "length": 16,
       "value": "\"torch-inactive\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6449,
       "length": 14,
       "value": "\"video-active\""
     },
     {
-      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/DemoPureCloud-fruaoiwjpeliadgrxgzmzysvjwek\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/slavsarafski\/Library\/Developer\/Xcode\/DerivedData\/SmartVideo-dneuypsqzntbnjaurzzjvvixcbvz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SmartVideo\/IntermediateBuildFilesPath\/SmartVideo.build\/Release-iphonesimulator\/SmartVideo.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6600,
       "length": 16,
